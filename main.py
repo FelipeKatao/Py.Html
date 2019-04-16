@@ -9,8 +9,8 @@ from Framework import PyHtml
 
 #code exemple:
 vr2= PyHtml.HtmlPy()
-vr2.CreateNewHtml("about","Project",1)
-vr2.CreateNewHtml("index","Project",1)
-vr2.LinkCss(R"Project\style.css",R"Project\about.html")
-vr2.LinkCss(R"Project\style.css",R"Project\index.html")
+vr1= PyHtml.CssPy()
+gs=PyHtml.CssPy()
+gs.appendNewRule("Project/Style.css","zz","float:left;","margin:auto;","")
 #Test
+

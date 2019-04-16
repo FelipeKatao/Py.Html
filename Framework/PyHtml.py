@@ -43,7 +43,71 @@ class HtmlPy():
 
 #Create, edit and read CSS files 
 class CssPy():
+  def CreateCss(self,path,CssName):
 
+    with open(path+"/"+CssName,"w") as f:
+      f.write("/*Css Code write with: [Py.Html]*/")
+      f.close()
+      pass
+    pass
+  def CreateRuleId(self,NameCss,Local,Id,Rule):
+    try:
+      with open(Local+"/"+NameCss+".css", "a") as f: 
+        f.write("\n")
+        f.write("#"+Id+"{\n"+Rule+"\n" +"} \n")
+        f.close()
+        pass
+      pass
+    except:
+      print("Error of local CSS file.")
+      pass
+    pass
+  def CreateRuleIdRules(self,NameCss,Local,Id,RuleA,Rule0,Rule1,Rule2):
+    try:
+      with open(Local+"/"+NameCss+".css", "a") as f: 
+        f.write("\n")
+        f.write("#"+Id+"{\n"+RuleA+"\n")
+        f.write(Rule0+"\n"+Rule1+"\n"+Rule2+"\n")
+        f.write("}\n")
+        f.close()
+        pass
+      pass
+    except:
+      print("Error of local CSS file.")
+      pass
+    pass  
+  def appendNewRule(self,CssPath,Id,RuleX1,RuleX2,RuleX3):
+    line=0
+    endline=0
+    text=""
+    with open(CssPath,"r")as f:
+      text=f.readlines()
+      for linha in text:
+        print(linha)
+        if "#"+Id+"{" == linha:
+          print(line)
+          for enline  in text:
+            if "}" in enline:
+              print(enline)
+              break
+            endline+=1
+          f.close()
+          break
+        line+=1
+      f.close()    
+    pass
+    with open(CssPath,"w")as f:
+      if(RuleX1!=""):
+        text[endline-2]+=RuleX1+"\n"
+      if(RuleX2!=""):
+        text[endline-2]+=RuleX2+"\n"
+      if(RuleX3!=""):
+        text[endline-2]+=RuleX3+"\n"  
+       
+      for linha in text:
+        f.write(linha)
+      f.close()   
+      pass
   pass
 
 #Class for search data in HTML files and create analitic data.
