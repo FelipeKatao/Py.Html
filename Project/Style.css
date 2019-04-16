@@ -13,16 +13,26 @@ float:left;
 margin:auto;
 background-color:red;
 }
-#zz{
-color:red;
-float:left;
-margin:auto;
-float:left;
-margin:auto;
-float:left;
-margin:auto;
-}
 
-.hzero{
+#menunavinit{
 background-color:red;
+color:white;
+float:left;
+background-color:red;
+color:white;
+float:left;
+} 
+
+#menunavinit ul li{
+float:left;
+color:white;
+float:left;
+} 
+
+#menunavinit ul li{
+float:left;
+color:white;
+padding:10px;
+text-decoration:none;
+list-style: none;
 } 

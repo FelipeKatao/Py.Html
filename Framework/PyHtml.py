@@ -3,6 +3,7 @@ from io import StringIO
 #Create, edit and read Html files 
 class HtmlPy(): 
   _menuHtmlConst="<nav id=""{Menuname}"">\n <ul>\n  <li>Item</li>\n  <li>Item</li>\n  <li>Item</li>\n </ul>\n</nav>\n"
+  _formHtmlConst="<form action='{actForm1}'>\n   <label>Label</label>\n  <input id='{idName}' type='text' name='name'>\n  <input type='submit' value='save'>\n</form>"
   def CreateNewHtml(self,NameHtml,Local,PreCode):
     #Project\codReadme.md
     if PreCode == 1:
@@ -50,6 +51,19 @@ class HtmlPy():
       for lines in text:
         f.write(lines)
       pass
+    pass  
+  def CreateFormHtml(self,local,idform,LineIndex,ActForm,IdnameInput)
+    text=""
+    with open(local,'r') as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,'w')as f:
+      LineIndex-=1
+      text[LineIndex]+="\n"+self._formHtmlConst.format(actForm1=ActForm,idName=IdnameInput)+"\n"
+      for lines in text:
+        f.write(lines)
+      pass  
     pass
   pass
 
