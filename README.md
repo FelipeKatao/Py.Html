@@ -8,6 +8,10 @@ Algoritmo faz um arquivo HTML apartir do zero apartir ideia is *organization* wh
 # Sumary: 
 In this documentt your can see: 
 -  How to use Py.html 
+     +  Basic with Python 
+     + How to import Class 
+     + WorkFlow Py.html
+     
 - Create Html code with Python
 - Edit Html Code 
 - Create Css and Link to Html
@@ -15,6 +19,6 @@ In this documentt your can see:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg0NTU4OTE0MCwxMDU0MzczNjY2LC0xND
+eyJoaXN0b3J5IjpbMTU3OTg4MTYxMiwxMDU0MzczNjY2LC0xND
 E1Njc5NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2MzldfQ==
 -->
