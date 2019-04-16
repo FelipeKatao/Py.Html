@@ -10,7 +10,7 @@ from Framework import PyHtml
 #code exemple:
 vr2= PyHtml.HtmlPy()
 vr1= PyHtml.CssPy()
-gs=PyHtml.CssPy()
-gs.appendNewRule("Project/Style.css","zz","float:left;","margin:auto;","")
+
+vr2.CreateMenuHtml(R"Project\index.html","menunavinit",8)
 #Test
 

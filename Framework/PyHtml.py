@@ -1,7 +1,8 @@
 from io import StringIO
 
 #Create, edit and read Html files 
-class HtmlPy():
+class HtmlPy(): 
+  _menuHtmlConst="<nav id=""{Menuname}"">\n <ul>\n  <li>Item</li>\n  <li>Item</li>\n  <li>Item</li>\n </ul>\n</nav>\n"
   def CreateNewHtml(self,NameHtml,Local,PreCode):
     #Project\codReadme.md
     if PreCode == 1:
@@ -20,7 +21,7 @@ class HtmlPy():
     else:
       with open(Local+"/"+NameHtml+".html","w") as f:
         f.write("<html></html>")
-        f.close() 
+        f.close()  
   def LinkCss(self,CssName,HtmlPath):
     line=0
     text=""
@@ -33,12 +34,23 @@ class HtmlPy():
           break
         line+=1
     with open(HtmlPath,"w")as f:
-      #<link href="css/style.css" rel="stylesheet" type="text/css" />
       text[line]="<link href='{Cssname}' rel='stylesheet' type='text/css' />\n".format(Cssname=CssName)
       for linha in text:
         f.write(linha)
+      f.close()                             
+  def CreateMenuHtml(self,local,idMenu,LineIndex):
+    text=""
+    with open(local,'r') as f:
+      text=f.readlines()
       f.close()
-                               
+      pass
+    with open(local,'w')as f:
+      LineIndex-=1
+      text[LineIndex]+="\n"+self._menuHtmlConst.format(Menuname="'"+idMenu+"'")
+      for lines in text:
+        f.write(lines)
+      pass
+    pass
   pass
 
 #Create, edit and read CSS files 
@@ -62,6 +74,32 @@ class CssPy():
       print("Error of local CSS file.")
       pass
     pass
+  def CreateRuleClass(self,NameCss,Local,Class,Rule):
+    try:
+      with open(Local+"/"+NameCss+".css", "a") as f: 
+        f.write("\n")
+        f.write("."+Id+"{\n"+Rule+"\n" +"} \n")
+        f.close()
+        pass
+      pass
+    except:
+      print("Error of local CSS file.")
+      pass
+    pass
+  def CreateRuleClassRules(self,NameCss,Local,classCss,RuleA,Rule0,Rule1,Rule2):
+    try:
+      with open(Local+"/"+NameCss+".css", "a") as f: 
+        f.write("\n")
+        f.write("."+classCss+"{\n"+RuleA+"\n")
+        f.write(Rule0+"\n"+Rule1+"\n"+Rule2+"\n")
+        f.write("}\n")
+        f.close()
+        pass
+      pass
+    except:
+      print("Error of local CSS file.")
+      pass
+    pass  
   def CreateRuleIdRules(self,NameCss,Local,Id,RuleA,Rule0,Rule1,Rule2):
     try:
       with open(Local+"/"+NameCss+".css", "a") as f: 
@@ -102,8 +140,7 @@ class CssPy():
       if(RuleX2!=""):
         text[endline-2]+=RuleX2+"\n"
       if(RuleX3!=""):
-        text[endline-2]+=RuleX3+"\n"  
-       
+        text[endline-2]+=RuleX3+"\n"         
       for linha in text:
         f.write(linha)
       f.close()   
