@@ -26,11 +26,14 @@ In this documentt your can see:
      
  **Part two: Advanced modules**
 - Create Css and Link to Html
+     + Basic command to Html fol tag < link >
+     + Create manual config Css
+     + Suport guide to 
 - Inside Modules : **HtmlPy()** and  **CssPy()**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2ODU2MjQ3NywtOTU1ODk4MDEyLDE1Nz
-k4ODE2MTIsMTA1NDM3MzY2NiwtMTQxNTY3OTUzMywtMTk0MTI5
-NzA5NywtNzExNTg1NjM5XX0=
+eyJoaXN0b3J5IjpbMTc5NDcyNjAwNywxMzY4NTYyNDc3LC05NT
+U4OTgwMTIsMTU3OTg4MTYxMiwxMDU0MzczNjY2LC0xNDE1Njc5
+NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2MzldfQ==
 -->
