@@ -39,9 +39,9 @@ In this documentt your can see:
 
 
 #  Part one: Basic functions 
-Hello, if your install the *Py.html* now, start to its in this block your learn to: create and edit code html and css with py.html tecnology, one note very important  **PyHtml is organization web project , not one creator and editor web.** Ist tool 
+Hello, if your install the *Py.html* now, start to its in this block your learn to: create and edit code html and css with py.html tecnology, one note very important  **PyHtml is organization web project , not one creator and editor web.** Its tool  is very cool for start project with basic elements not one very big editor web, use its with about its in mind.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzY4NzkxOTIsMTM2ODU2MjQ3NywtOT
-U1ODk4MDEyLDE1Nzk4ODE2MTIsMTA1NDM3MzY2NiwtMTQxNTY3
-OTUzMywtMTk0MTI5NzA5NywtNzExNTg1NjM5XX0=
+eyJoaXN0b3J5IjpbMTM3NzA3NDczNywxMzY4NTYyNDc3LC05NT
+U4OTgwMTIsMTU3OTg4MTYxMiwxMDU0MzczNjY2LC0xNDE1Njc5
+NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2MzldfQ==
 -->
