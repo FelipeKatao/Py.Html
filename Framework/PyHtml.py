@@ -51,8 +51,9 @@ class HtmlPy():
       for lines in text:
         f.write(lines)
       pass
+      f.close()
     pass  
-  def CreateFormHtml(self,local,idform,LineIndex,ActForm,IdnameInput)
+  def CreateFormHtml(self,local,idform,LineIndex,ActForm,IdnameInput):
     text=""
     with open(local,'r') as f:
       text=f.readlines()
@@ -70,7 +71,6 @@ class HtmlPy():
 #Create, edit and read CSS files 
 class CssPy():
   def CreateCss(self,path,CssName):
-
     with open(path+"/"+CssName,"w") as f:
       f.write("/*Css Code write with: [Py.Html]*/")
       f.close()
