@@ -39,9 +39,9 @@ In this documentt your can see:
 
 
 #  Part one: Basic functions 
-Hello 
+Hello, if your install the *Py.html* now, start to its in this block your learn to: create and edit code html and css with py.html tecnology, one ps very important  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDUyNjA1NDUsMTM2ODU2MjQ3NywtOT
-U1ODk4MDEyLDE1Nzk4ODE2MTIsMTA1NDM3MzY2NiwtMTQxNTY3
-OTUzMywtMTk0MTI5NzA5NywtNzExNTg1NjM5XX0=
+eyJoaXN0b3J5IjpbNDgwNzEwNzMwLDEzNjg1NjI0NzcsLTk1NT
+g5ODAxMiwxNTc5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2Nzk1
+MzMsLTE5NDEyOTcwOTcsLTcxMTU4NTYzOV19
 -->
