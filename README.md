@@ -31,11 +31,16 @@ In this documentt your can see:
      + Suport guide to *Css and Js*
      
 - Inside Modules : **HtmlPy()** and  **CssPy()**
-     + d
+     + The PyHtml.py Code 
      + The HtmlPy() Module 
      + The CssPy() Module
+     + Index and vars 
+     + Create multi functions
+
+
+#  Par
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NjY5MzM3LDEzNjg1NjI0NzcsLTk1NT
-g5ODAxMiwxNTc5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2Nzk1
-MzMsLTE5NDEyOTcwOTcsLTcxMTU4NTYzOV19
+eyJoaXN0b3J5IjpbLTIxNzc0Mjc4MSwxMzY4NTYyNDc3LC05NT
+U4OTgwMTIsMTU3OTg4MTYxMiwxMDU0MzczNjY2LC0xNDE1Njc5
+NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2MzldfQ==
 -->
