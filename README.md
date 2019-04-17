@@ -3,7 +3,8 @@
 
 # Introducion to Py.Html
 The **Py.html** is one framework write in python for web projects create. Your majo
-Algoritmo faz um arquivo HTML apartir do zero apartir ideia is *organization* where for each document **HTML, CSS or JS**  stay with good write and functions 100%.  
+  
+Algorithm makes an HTML file from scratch starting idea is *organization* where for each document **HTML, CSS or JS**  stay with good write and functions 100%.  
 
 # Sumary: 
 In this documentt your can see: 
@@ -41,7 +42,8 @@ In this documentt your can see:
 #  Part one: Basic functions 
 Hello, if your install the *Py.html* now, start to its in this block your learn to: create and edit code html and css with py.html tecnology, one note very important  **PyHtml is organization web project , not one creator and editor web.** Its tool  is very cool for start project with basic elements not one very big editor web, we use this note in mind.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NjYyNzgyNiwxMzY4NTYyNDc3LC05NT
-U4OTgwMTIsMTU3OTg4MTYxMiwxMDU0MzczNjY2LC0xNDE1Njc5
-NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2MzldfQ==
+eyJoaXN0b3J5IjpbOTA1NTQ5MDkxLC03NDY2Mjc4MjYsMTM2OD
+U2MjQ3NywtOTU1ODk4MDEyLDE1Nzk4ODE2MTIsMTA1NDM3MzY2
+NiwtMTQxNTY3OTUzMywtMTk0MTI5NzA5NywtNzExNTg1NjM5XX
+0=
 -->
