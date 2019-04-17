@@ -10,7 +10,7 @@ In this documentt your can see:
 
 **Part one: Basic functions**
 -  How to use Py.html 
-     +  Basic with Python 
+     +  About py.html
      + How to import Class 
      + WorkFlow Py.html
      
@@ -38,9 +38,10 @@ In this documentt your can see:
      + Create multi functions
 
 
-#  Par
+#  Part one: Basic functions 
+Hello 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNzc0Mjc4MSwxMzY4NTYyNDc3LC05NT
-U4OTgwMTIsMTU3OTg4MTYxMiwxMDU0MzczNjY2LC0xNDE1Njc5
-NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2MzldfQ==
+eyJoaXN0b3J5IjpbLTIxNDUyNjA1NDUsMTM2ODU2MjQ3NywtOT
+U1ODk4MDEyLDE1Nzk4ODE2MTIsMTA1NDM3MzY2NiwtMTQxNTY3
+OTUzMywtMTk0MTI5NzA5NywtNzExNTg1NjM5XX0=
 -->
