@@ -24,12 +24,13 @@ In this documentt your can see:
      + Now, edit Html code, with Py.html
      + Less code , more functions
      
+ **Part two: Advanced modules**
 - Create Css and Link to Html
 - Inside Modules : **HtmlPy()** and  **CssPy()**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5OTgzMDA4OSwtOTU1ODk4MDEyLDE1Nz
+eyJoaXN0b3J5IjpbMTM2ODU2MjQ3NywtOTU1ODk4MDEyLDE1Nz
 k4ODE2MTIsMTA1NDM3MzY2NiwtMTQxNTY3OTUzMywtMTk0MTI5
 NzA5NywtNzExNTg1NjM5XX0=
 -->
