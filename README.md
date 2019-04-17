@@ -12,13 +12,15 @@ In this documentt your can see:
      + How to import Class 
      + WorkFlow Py.html
      
-- Create Html code with Python
+- Create Html code with Python-
+- 
 - Edit Html Code 
 - Create Css and Link to Html
 - Inside Modules : **HtmlPy()** and  **CssPy()**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3OTg4MTYxMiwxMDU0MzczNjY2LC0xND
-E1Njc5NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2MzldfQ==
+eyJoaXN0b3J5IjpbLTE2Mjk3NDEzMDQsMTU3OTg4MTYxMiwxMD
+U0MzczNjY2LC0xNDE1Njc5NTMzLC0xOTQxMjk3MDk3LC03MTE1
+ODU2MzldfQ==
 -->
