@@ -25,15 +25,17 @@ In this documentt your can see:
      + Less code , more functions
      
  **Part two: Advanced modules**
-- Create Css and Link to Html
+- Create Css and Link to *Html*
      + Basic command to Html fol tag < link >
-     + Create manual config Css
-     + Suport guide to 
+     + Create manual config *Css*
+     + Suport guide to *Css and Js*
+     
 - Inside Modules : **HtmlPy()** and  **CssPy()**
-
-
+     + d
+     + The HtmlPy() Module 
+     + The CssPy() Module
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NDcyNjAwNywxMzY4NTYyNDc3LC05NT
-U4OTgwMTIsMTU3OTg4MTYxMiwxMDU0MzczNjY2LC0xNDE1Njc5
-NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2MzldfQ==
+eyJoaXN0b3J5IjpbLTU0NjY5MzM3LDEzNjg1NjI0NzcsLTk1NT
+g5ODAxMiwxNTc5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2Nzk1
+MzMsLTE5NDEyOTcwOTcsLTcxMTU4NTYzOV19
 -->
