@@ -13,9 +13,7 @@ from Framework import PyHtml
 html= PyHtml.HtmlPy()
 css= PyHtml.CssPy()
 #start code
-html.CreateNewHtml("index","Example",1)
-css.CreateCss("Example","style.css")
-html.LinkCss("style.css","Example")
+html.LinkCssStarter("style.css",R"Example\index.html")
 html.CreateMenuHtml(R"Example\index.html","menu",7)
 css.CreateRuleIdRules("style","Example","menu ul li","background-color:red;","float:left;","padding:10px;","")
 #Test

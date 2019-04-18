@@ -23,7 +23,7 @@ class HtmlPy():
       with open(Local+"/"+NameHtml+".html","w") as f:
         f.write("<html></html>")
         f.close()  
-  def LinkCss(self,CssName,HtmlPath):
+  def LinkCssStarter(self,CssName,HtmlPath):
     line=0
     text=""
     with open(HtmlPath,"r")as f:
