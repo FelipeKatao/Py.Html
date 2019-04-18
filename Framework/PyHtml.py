@@ -2,12 +2,16 @@ from io import StringIO
 
 #Create, edit and read Html files 
 class HtmlPy(): 
+
   _menuHtmlConst="<nav id=""{Menuname}"">\n <ul>\n  <li>Item</li>\n  <li>Item</li>\n  <li>Item</li>\n </ul>\n</nav>\n"
   _formHtmlConst="<form action='{actForm1}'>\n   <label>Label</label>\n  <input id='{idName}' type='text' name='name'>\n  <input type='submit' value='save'>\n</form>"
-  def CreateNewHtml(self,NameHtml,Local,PreCode):
+  _geneticElement="<{element} id={idElement}>{value}</{element}>"
+  _LinkElement="<link href={locaLink} rel={typeLink} type={type} />"
+
+  def CreateNewHtml(self,NameHtml,LocalFile,PreCode):
     #Project\codReadme.md
     if PreCode == 1:
-      with open(Local+"/"+NameHtml+".html", "w") as f:   
+      with open(LocalFile, "w") as f:   
         f.write("<!DOCTYPE html>")
         f.write("\n<html>")
         f.write("\n<head>  <title>{Html}</title>".format(Html=NameHtml))
@@ -20,7 +24,7 @@ class HtmlPy():
         f.write("\n        </html>")
         f.close() 
     else:
-      with open(Local+"/"+NameHtml+".html","w") as f:
+      with open(LocalFile,"w") as f:
         f.write("<html></html>")
         f.close()  
   def LinkCssStarter(self,CssName,HtmlPath):
@@ -66,19 +70,45 @@ class HtmlPy():
         f.write(lines)
       pass  
     pass
+  def linkCssFile(self,local,CssPath,LineIndex):
+    text=""
+    with open(local,"r")as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=self._LinkElement.format(locaLink=local,typeLink="stylesheet",type="text/css")+"\n"
+      for lines in text:
+        f.write()
+      pass
+    pass
+  def createNewElement(self,local,id,Element,Lineindex,Value):
+    text=""
+    with open(local,"r") as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,"w") as f:
+      Lineindex-=1
+      text[Lineindex]+="\n"+self._geneticElement.format(element=Element,idElement=id,value=Value)+"\n"
+      for lines in text:
+        f.write(lines)
+        pass
+    pass
   pass
 
 #Create, edit and read CSS files 
 class CssPy():
-  def CreateCss(self,path,CssName):
-    with open(path+"/"+CssName,"w") as f:
+  def CreateCss(self,pathCss,CssName):
+    with open(pathCss,"w") as f:
       f.write("/*Css Code write with: [Py.Html]*/")
       f.close()
       pass
     pass
-  def CreateRuleId(self,NameCss,Local,Id,Rule):
+  def CreateRuleId(self,NameCss,LocalCss,Id,Rule):
     try:
-      with open(Local+"/"+NameCss+".css", "a") as f: 
+      with open(LocalCss, "a") as f: 
         f.write("\n")
         f.write("#"+Id+"{\n"+Rule+"\n" +"} \n")
         f.close()
@@ -88,9 +118,9 @@ class CssPy():
       print("Error of local CSS file.")
       pass
     pass
-  def CreateRuleClass(self,NameCss,Local,Class,Rule):
+  def CreateRuleClass(self,NameCss,LocalCss,Class,Rule):
     try:
-      with open(Local+"/"+NameCss+".css", "a") as f: 
+      with open(LocalCss, "a") as f: 
         f.write("\n")
         f.write("."+Id+"{\n"+Rule+"\n" +"} \n")
         f.close()
@@ -100,9 +130,9 @@ class CssPy():
       print("Error of local CSS file.")
       pass
     pass
-  def CreateRuleClassRules(self,NameCss,Local,classCss,RuleA,Rule0,Rule1,Rule2):
+  def CreateRuleClassRules(self,NameCss,LocalCss,classCss,RuleA,Rule0,Rule1,Rule2):
     try:
-      with open(Local+"/"+NameCss+".css", "a") as f: 
+      with open(LocalCss, "a") as f: 
         f.write("\n")
         f.write("."+classCss+"{\n"+RuleA+"\n")
         f.write(Rule0+"\n"+Rule1+"\n"+Rule2+"\n")
@@ -114,9 +144,9 @@ class CssPy():
       print("Error of local CSS file.")
       pass
     pass  
-  def CreateRuleIdRules(self,NameCss,Local,Id,RuleA,Rule0,Rule1,Rule2):
+  def CreateRuleIdRules(self,NameCss,LocalCss,Id,RuleA,Rule0,Rule1,Rule2):
     try:
-      with open(Local+"/"+NameCss+".css", "a") as f: 
+      with open(LocalCss, "a") as f: 
         f.write("\n")
         f.write("#"+Id+"{\n"+RuleA+"\n")
         f.write(Rule0+"\n"+Rule1+"\n"+Rule2+"\n")
@@ -128,11 +158,11 @@ class CssPy():
       print("Error of local CSS file.")
       pass
     pass  
-  def appendNewRule(self,CssPath,Id,RuleX1,RuleX2,RuleX3):
+  def appendNewRule(self,LocalCss,Id,RuleX1,RuleX2,RuleX3):
     line=0
     endline=0
     text=""
-    with open(CssPath,"r")as f:
+    with open(LocalCss,"r")as f:
       text=f.readlines()
       for linha in text:
         print(linha)
@@ -148,7 +178,7 @@ class CssPy():
         line+=1
       f.close()    
     pass
-    with open(CssPath,"w")as f:
+    with open(LocalCss,"w")as f:
       if(RuleX1!=""):
         text[endline-2]+=RuleX1+"\n"
       if(RuleX2!=""):
@@ -163,4 +193,17 @@ class CssPy():
 
 #Class for search data in HTML files and create analitic data.
 class SearchData():
+  
+  _localHtmlFiles=[]
+  _localCssFiles=[]
+  _localJsFiles=[]
+
+  def createNewFileLocal(self,html,css,js):
+    if html!="":
+      self._localHtmlFiles.append(html)
+    if css!="":
+      self._localCssFiles.append(css)
+    if js!="":
+      self._localJsFiles.append(js)
+    pass
   pass
