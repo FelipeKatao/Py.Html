@@ -2,7 +2,7 @@
 ### Framework for create web projects with python tecnology.
 
 # Introducion to Py.Html
-The **Py.html** is one framework write in python for web projects create. Your majo
+The **Py.html** is one framework write in python for web projects create.
   
 Algorithm makes an HTML file from scratch starting idea is *organization* where for each document **HTML, CSS or JS**  stay with good write and functions .
 
@@ -10,7 +10,7 @@ Algorithm makes an HTML file from scratch starting idea is *organization* where 
 *Felipe Catão* - Fullstack developer
 
 # Sumary: 
-In this documentt your can see: 
+In this document your can see: 
 
 **Part one: Basic functions**
 -  How to use Py.html 
