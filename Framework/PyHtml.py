@@ -80,7 +80,7 @@ class HtmlPy():
       LineIndex-=1
       text[LineIndex]+=self._LinkElement.format(locaLink=local,typeLink="stylesheet",type="text/css")+"\n"
       for lines in text:
-        f.write()
+        f.write(lines)
       pass
     pass
   def createNewElement(self,local,id,Element,Lineindex,Value):
@@ -96,6 +96,7 @@ class HtmlPy():
         f.write(lines)
         pass
     pass
+  
   pass
 
 #Create, edit and read CSS files 
@@ -193,7 +194,7 @@ class CssPy():
 
 #Class for search data in HTML files and create analitic data.
 class SearchData():
-  
+
   _localHtmlFiles=[]
   _localCssFiles=[]
   _localJsFiles=[]
