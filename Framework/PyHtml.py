@@ -6,6 +6,7 @@ class HtmlPy():
   _menuHtmlConst="<nav id=""{Menuname}"">\n <ul>\n  <li>Item</li>\n  <li>Item</li>\n  <li>Item</li>\n </ul>\n</nav>\n"
   _formHtmlConst="<form action='{actForm1}'>\n   <label>Label</label>\n  <input id='{idName}' type='text' name='name'>\n  <input type='submit' value='save'>\n</form>"
   _geneticElement="<{element} id={idElement}>{value}</{element}>"
+
   _LinkElement="<link href={locaLink} rel={typeLink} type={type} />"
 
   def CreateNewHtml(self,NameHtml,LocalFile,PreCode):

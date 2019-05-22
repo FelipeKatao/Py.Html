@@ -15,6 +15,6 @@ html= PyHtml.HtmlPy()
 css= PyHtml.CssPy()
 resp=CssTool.Responsive()
 #start code
-resp.alertBootStrap(R"Example\index.html","Hello world",10)
+resp.CardBodyBootstrap(R"Example\index.html","Empresa Formiga","4 days ago","As novas funções foram implementadas",24)
 #Test
 
