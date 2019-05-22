@@ -96,7 +96,20 @@ class HtmlPy():
         f.write(lines)
         pass
     pass
-  
+  def responsiveWindowMeta(self,local,escale,LineIndex):
+    text=""
+    with open(local,"r") as f:
+      text=f.readlines()
+      f.close()
+    pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+="\n"+"<meta name='Viewport' content='width=device-width, initial-scale={scale}'>\n".format(scale=escale)
+      for lines in text:
+        f.write(lines)
+      f.close()
+      pass
+
   pass
 
 #Create, edit and read CSS files 
@@ -190,6 +203,7 @@ class CssPy():
         f.write(linha)
       f.close()   
       pass
+  
   pass
 
 #Class for search data in HTML files and create analitic data.

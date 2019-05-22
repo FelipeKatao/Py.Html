@@ -1,4 +1,5 @@
 from Framework import PyHtml
+from Framework import CssTool
 #Template for testes
 #It's system work unique function with python tecnology
 #Create HTML and CSS files with less lines in your Body.
@@ -12,7 +13,8 @@ from Framework import PyHtml
 #Class for create
 html= PyHtml.HtmlPy()
 css= PyHtml.CssPy()
+resp=CssTool.Responsive()
 #start code
-html.createNewElement(R"Example\index.html","div0","div",16,"Hello world")
+resp.alertBootStrap(R"Example\index.html","Hello world",10)
 #Test
 
