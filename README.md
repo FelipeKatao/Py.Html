@@ -66,9 +66,15 @@ def main():
     html.CreateNewHtml("index.html,R"Example\index.html",1)
     
 ```
+In this code have 3 arguments basic its arguments create in your path destiny one Html code with or without coed base.
 
+Argument | Function
+-------- | -----
+Computer | $1600
+Phone | $12
+Pipe | $1
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3Nzk2NjY1OCwtOTU0NDg1ODcwLDEzOD
+eyJoaXN0b3J5IjpbLTkxMTkyNDc0MSwtOTU0NDg1ODcwLDEzOD
 kxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3
 ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLD
 EwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEyOTcwOTcsLTcx
