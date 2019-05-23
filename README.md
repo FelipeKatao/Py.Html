@@ -147,7 +147,8 @@ def main():
     data= PyHtml.SearchData()
     data.createNewFileLocal(R"Example\index.html","","")
     #html.CreateNewHtml("Home Page",data._localHtmlFiles[0],1)
-    html.createNewElement(R"Example\index.html","#NewDiv","div",10,"Helloworld")
+    html.createNewElement(data._localHtmlFiles[0],"#Topo","div",10,"Py.Html")
+    html.CreateMenuHtml(data._localHtmlFiles[0],idMenu,LineIndex):
 ```
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
@@ -197,7 +198,7 @@ F0ZWQiOjE1NTg1Nzk5OTI4Njh9LCI2MGR5R1VJU2UzUWhZYWhy
 Ijp7ImRpc2N1c3Npb25JZCI6ImlkSWVJZklXTkRXeVhkaW4iLC
 JzdWIiOiJnaDozNDU1OTA4MSIsInRleHQiOiJUYSBtdWl0byBt
 YWwgZGVmaW5pZG8iLCJjcmVhdGVkIjoxNTU4NTgwMDkzODU2fX
-0sImhpc3RvcnkiOlstODQ0MTQ1ODk4LC0xMTUzNzg5NzY3LC0x
+0sImhpc3RvcnkiOlstMTgwNjkwNTAwLC0xMTUzNzg5NzY3LC0x
 MDUyOTE0NTg1LC0xMjMyNjk1ODQ0LDE5MzkxMTk5MDYsNjM4OT
 kyODUsLTk1NDQ4NTg3MCwxMzg5MTE0MDIxLC0xNzk1MTc4Njk0
 LC0zMTU1NDU2ODcsLTc0NjYyNzgyNiwxMzY4NTYyNDc3LC05NT
