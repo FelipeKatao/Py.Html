@@ -151,6 +151,8 @@ def main():
     html.CreateMenuHtml(data._localHtmlFiles[0],"#menu",12):
 ```
 well in this code we create one div call "#topo" and menu call "#menu", in line 10 and 12 respective,  the function *CreateMenuHtml* create a nav div with ul and li elements inside, its function create some Html tag codes, styles and Css not implement in its process.
+### Less code , more functions
+
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
@@ -199,11 +201,11 @@ F0ZWQiOjE1NTg1Nzk5OTI4Njh9LCI2MGR5R1VJU2UzUWhZYWhy
 Ijp7ImRpc2N1c3Npb25JZCI6ImlkSWVJZklXTkRXeVhkaW4iLC
 JzdWIiOiJnaDozNDU1OTA4MSIsInRleHQiOiJUYSBtdWl0byBt
 YWwgZGVmaW5pZG8iLCJjcmVhdGVkIjoxNTU4NTgwMDkzODU2fX
-0sImhpc3RvcnkiOlstMTgyNjYxNTk0OCwtMjQzMzk1NTU3LC0x
-MTUzNzg5NzY3LC0xMDUyOTE0NTg1LC0xMjMyNjk1ODQ0LDE5Mz
-kxMTk5MDYsNjM4OTkyODUsLTk1NDQ4NTg3MCwxMzg5MTE0MDIx
-LC0xNzk1MTc4Njk0LC0zMTU1NDU2ODcsLTc0NjYyNzgyNiwxMz
-Y4NTYyNDc3LC05NTU4OTgwMTIsMTU3OTg4MTYxMiwxMDU0Mzcz
-NjY2LC0xNDE1Njc5NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2Mz
-ldfQ==
+0sImhpc3RvcnkiOlstMTkxOTUxMTgwMywtMTgyNjYxNTk0OCwt
+MjQzMzk1NTU3LC0xMTUzNzg5NzY3LC0xMDUyOTE0NTg1LC0xMj
+MyNjk1ODQ0LDE5MzkxMTk5MDYsNjM4OTkyODUsLTk1NDQ4NTg3
+MCwxMzg5MTE0MDIxLC0xNzk1MTc4Njk0LC0zMTU1NDU2ODcsLT
+c0NjYyNzgyNiwxMzY4NTYyNDc3LC05NTU4OTgwMTIsMTU3OTg4
+MTYxMiwxMDU0MzczNjY2LC0xNDE1Njc5NTMzLC0xOTQxMjk3MD
+k3LC03MTE1ODU2MzldfQ==
 -->
