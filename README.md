@@ -76,10 +76,12 @@ In this code have 3 arguments basic its arguments create in your path destiny on
 
 ##    WorkFlow Py.html
 Well we create basic code html with Py.Html was and now? Next step?
-1. Create path with CSS and HTML code base
-2. Create HTML tags 
+1. Create path with CSS and HTML code base.
+2. Create HTML tags, after CSS code.
+3. Create component Html 
+4. Edit HTML 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MzA3NjQzNCwtOTU0NDg1ODcwLDEzOD
+eyJoaXN0b3J5IjpbMTc1ODI0NDU1OCwtOTU0NDg1ODcwLDEzOD
 kxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3
 ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLD
 EwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEyOTcwOTcsLTcx
