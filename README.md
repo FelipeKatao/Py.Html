@@ -128,11 +128,11 @@ In this stage not modify your code direct in Html, use Python code for its, only
 
 
 
-[^1]:The Base code: Is your Html with structure 
+[^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcyMDQ0OTIwLDYzODk5Mjg1LC05NTQ0OD
-U4NzAsMTM4OTExNDAyMSwtMTc5NTE3ODY5NCwtMzE1NTQ1Njg3
-LC03NDY2Mjc4MjYsMTM2ODU2MjQ3NywtOTU1ODk4MDEyLDE1Nz
-k4ODE2MTIsMTA1NDM3MzY2NiwtMTQxNTY3OTUzMywtMTk0MTI5
-NzA5NywtNzExNTg1NjM5XX0=
+eyJoaXN0b3J5IjpbLTgyODA4MjAxOSw2Mzg5OTI4NSwtOTU0ND
+g1ODcwLDEzODkxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4
+NywtNzQ2NjI3ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNT
+c5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEy
+OTcwOTcsLTcxMTU4NTYzOV19
 -->
