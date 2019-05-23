@@ -81,11 +81,11 @@ Well we create basic code html with Py.Html was and now? Next step?
 3. Create component Html 
 4. Edit HTML and create rules to CSS files
 
-
+In your Python code, your call function to creation Tags or Rules Css after create its your erase and create 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMDkyNjQ1NSwtOTU0NDg1ODcwLDEzOD
-kxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3
-ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLD
-EwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEyOTcwOTcsLTcx
-MTU4NTYzOV19
+eyJoaXN0b3J5IjpbLTE0NDAxNTM2MDksLTk1NDQ4NTg3MCwxMz
+g5MTE0MDIxLC0xNzk1MTc4Njk0LC0zMTU1NDU2ODcsLTc0NjYy
+NzgyNiwxMzY4NTYyNDc3LC05NTU4OTgwMTIsMTU3OTg4MTYxMi
+wxMDU0MzczNjY2LC0xNDE1Njc5NTMzLC0xOTQxMjk3MDk3LC03
+MTE1ODU2MzldfQ==
 -->
