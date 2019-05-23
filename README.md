@@ -127,8 +127,9 @@ from Framework import PyHtml
 def main():
     html = PyHtml.htmlPy()
     data= PyHtml.SearchData()
-    data.
+    data.createNewFileLocal(R"Example\index.html","","")
     html.CreateNewHtml("Home Page",R"Example\index.html",1)
+
 ```
 
 
@@ -142,7 +143,7 @@ def main():
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzIyODY3MjQsMTkzOTExOTkwNiw2Mz
+eyJoaXN0b3J5IjpbLTE5ODUxODkyNTEsMTkzOTExOTkwNiw2Mz
 g5OTI4NSwtOTU0NDg1ODcwLDEzODkxMTQwMjEsLTE3OTUxNzg2
 OTQsLTMxNTU0NTY4NywtNzQ2NjI3ODI2LDEzNjg1NjI0NzcsLT
 k1NTg5ODAxMiwxNTc5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2
