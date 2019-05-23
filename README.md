@@ -150,7 +150,7 @@ def main():
     html.createNewElement(data._localHtmlFiles[0],"#Topo","div",10,"Py.Html")
     html.CreateMenuHtml(data._localHtmlFiles[0],"#menu",12):
 ```
-well in this code we create 
+well in this code we create one div call "#topo" and menu call "#menu", in line 10 and 12 respective,  the function *CreateMenuHtml* create a nav 
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
@@ -199,10 +199,11 @@ F0ZWQiOjE1NTg1Nzk5OTI4Njh9LCI2MGR5R1VJU2UzUWhZYWhy
 Ijp7ImRpc2N1c3Npb25JZCI6ImlkSWVJZklXTkRXeVhkaW4iLC
 JzdWIiOiJnaDozNDU1OTA4MSIsInRleHQiOiJUYSBtdWl0byBt
 YWwgZGVmaW5pZG8iLCJjcmVhdGVkIjoxNTU4NTgwMDkzODU2fX
-0sImhpc3RvcnkiOlstMjQzMzk1NTU3LC0xMTUzNzg5NzY3LC0x
-MDUyOTE0NTg1LC0xMjMyNjk1ODQ0LDE5MzkxMTk5MDYsNjM4OT
-kyODUsLTk1NDQ4NTg3MCwxMzg5MTE0MDIxLC0xNzk1MTc4Njk0
-LC0zMTU1NDU2ODcsLTc0NjYyNzgyNiwxMzY4NTYyNDc3LC05NT
-U4OTgwMTIsMTU3OTg4MTYxMiwxMDU0MzczNjY2LC0xNDE1Njc5
-NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2MzldfQ==
+0sImhpc3RvcnkiOls0NDAzNDY5ODYsLTI0MzM5NTU1NywtMTE1
+Mzc4OTc2NywtMTA1MjkxNDU4NSwtMTIzMjY5NTg0NCwxOTM5MT
+E5OTA2LDYzODk5Mjg1LC05NTQ0ODU4NzAsMTM4OTExNDAyMSwt
+MTc5NTE3ODY5NCwtMzE1NTQ1Njg3LC03NDY2Mjc4MjYsMTM2OD
+U2MjQ3NywtOTU1ODk4MDEyLDE1Nzk4ODE2MTIsMTA1NDM3MzY2
+NiwtMTQxNTY3OTUzMywtMTk0MTI5NzA5NywtNzExNTg1NjM5XX
+0=
 -->
