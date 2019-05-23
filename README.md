@@ -116,8 +116,7 @@ This function create new element , not   necessarily need one **Div** tag can se
 
 ### Don´t edit Html code dude! 
 In this stage not modify your code direct in Html, use Python code for its, only modify direct in Html after finish basic Html base code[^1]
-
-
+Thing if your use Py.Html for create news tags use the Python code, for edit  this tags 
 
 
 
@@ -130,7 +129,7 @@ In this stage not modify your code direct in Html, use Python code for its, only
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyODA4MjAxOSw2Mzg5OTI4NSwtOTU0ND
+eyJoaXN0b3J5IjpbLTI5NDU0OTkwOCw2Mzg5OTI4NSwtOTU0ND
 g1ODcwLDEzODkxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4
 NywtNzQ2NjI3ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNT
 c5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEy
