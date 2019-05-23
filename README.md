@@ -85,9 +85,10 @@ In your Python code, your call function to creation Tags or Rules Css after crea
 Thing  in your mind the code in python can static or dynamic your decide:
 | Type Py code | Function |
 |:--------:| -------------:|
-| **Dynamic** |In dynamic your not erases functions,some edit in HTML code, after create Py code your 
+| **Static** |In dynamic your not erases functions,some edit in HTML code, if your edit Py code not is one good pratical, some create new HTML or edit style from your project.
+|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIwNTc0MzM5LC05NTQ0ODU4NzAsMTM4OT
+eyJoaXN0b3J5IjpbNjg2ODMxMTkwLC05NTQ0ODU4NzAsMTM4OT
 ExNDAyMSwtMTc5NTE3ODY5NCwtMzE1NTQ1Njg3LC03NDY2Mjc4
 MjYsMTM2ODU2MjQ3NywtOTU1ODk4MDEyLDE1Nzk4ODE2MTIsMT
 A1NDM3MzY2NiwtMTQxNTY3OTUzMywtMTk0MTI5NzA5NywtNzEx
