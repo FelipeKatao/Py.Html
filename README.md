@@ -135,10 +135,17 @@ This function can create environment with files **HTML**,**CSS**,**JS** in we ca
 With basic code , now start project!  From start the module PyHtml.py is much and very important for start project, go start with class HtmlPy()  is base from to initial project.
 
 ## Edit Html Code
-Now we starter with Html code, using exclusive **HtmlPy()** class, its class create we html code fro
+Now we starter with Html code, using exclusive **HtmlPy()** class, its class create we html code from scratch, in this session we creater one html page basic some Python code. Select your Path destiny and let´s go!!
+### Now, edit Html code, with Py.html
+In back sessions your  create Html file with class **Htmlpy()** , one exemple to edit  the page create 
+previous: 
 
-
-
+def main():
+    html = PyHtml.htmlPy()
+    data= PyHtml.SearchData()
+    data.createNewFileLocal(R"Example\index.html","","")
+    html.CreateNewHtml("Home Page",data._localHtmlFiles[0],1)
+```
 
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
@@ -188,10 +195,10 @@ F0ZWQiOjE1NTg1Nzk5OTI4Njh9LCI2MGR5R1VJU2UzUWhZYWhy
 Ijp7ImRpc2N1c3Npb25JZCI6ImlkSWVJZklXTkRXeVhkaW4iLC
 JzdWIiOiJnaDozNDU1OTA4MSIsInRleHQiOiJUYSBtdWl0byBt
 YWwgZGVmaW5pZG8iLCJjcmVhdGVkIjoxNTU4NTgwMDkzODU2fX
-0sImhpc3RvcnkiOlstNTI3Njc2ODQsLTExNTM3ODk3NjcsLTEw
-NTI5MTQ1ODUsLTEyMzI2OTU4NDQsMTkzOTExOTkwNiw2Mzg5OT
-I4NSwtOTU0NDg1ODcwLDEzODkxMTQwMjEsLTE3OTUxNzg2OTQs
-LTMxNTU0NTY4NywtNzQ2NjI3ODI2LDEzNjg1NjI0NzcsLTk1NT
-g5ODAxMiwxNTc5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2Nzk1
-MzMsLTE5NDEyOTcwOTcsLTcxMTU4NTYzOV19
+0sImhpc3RvcnkiOlsxMDQ2ODI5MjAwLC0xMTUzNzg5NzY3LC0x
+MDUyOTE0NTg1LC0xMjMyNjk1ODQ0LDE5MzkxMTk5MDYsNjM4OT
+kyODUsLTk1NDQ4NTg3MCwxMzg5MTE0MDIxLC0xNzk1MTc4Njk0
+LC0zMTU1NDU2ODcsLTc0NjYyNzgyNiwxMzY4NTYyNDc3LC05NT
+U4OTgwMTIsMTU3OTg4MTYxMiwxMDU0MzczNjY2LC0xNDE1Njc5
+NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2MzldfQ==
 -->
