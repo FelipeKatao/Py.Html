@@ -92,9 +92,18 @@ Thing  in your mind the code in python can static or dynamic your decide:
 Now creater Html code using Py.html , preview we creater HTML base code was can create Html pré code with module PyHtml.py
 
 ### Basic Html  code
+```
+from Framework import PyHtml
 
+def main():
+    html = PyHtml.htmlPy()
+    html.CreateNewHtml("Home Page",R"Example\index.html",1)
+    
+```
+This basic code create Html code, now create tags to your Html. Stater create **Div** tag: 
+´´
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzE3MTcxMywtOTU0NDg1ODcwLDEzOD
+eyJoaXN0b3J5IjpbMTI2NTg5NDgzNCwtOTU0NDg1ODcwLDEzOD
 kxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3
 ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLD
 EwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEyOTcwOTcsLTcx
