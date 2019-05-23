@@ -63,11 +63,12 @@ from Framework import PyHtml
 
 def main():
     html = PyHtml.htmlPy()
-    html.Create
+    html.CreateNewHtml("index.html,R"Example\index.html",1)
+    
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4OTYwNTk3MSwtOTU0NDg1ODcwLDEzOD
+eyJoaXN0b3J5IjpbMTM3Nzk2NjY1OCwtOTU0NDg1ODcwLDEzOD
 kxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3
 ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLD
 EwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEyOTcwOTcsLTcx
