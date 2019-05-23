@@ -114,11 +114,12 @@ This function create new element , not   necessarily need one **Div** tag can se
 | LineIndex | What Line its element will be add in html file.
 | Value | Value from element to your tag.
 
-
+### Don´t edit Html code dude! 
+In this stage not modify your code direct in Html, use Python code for its, 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjkxNjA0MzQsNjM4OTkyODUsLTk1ND
-Q4NTg3MCwxMzg5MTE0MDIxLC0xNzk1MTc4Njk0LC0zMTU1NDU2
-ODcsLTc0NjYyNzgyNiwxMzY4NTYyNDc3LC05NTU4OTgwMTIsMT
-U3OTg4MTYxMiwxMDU0MzczNjY2LC0xNDE1Njc5NTMzLC0xOTQx
-Mjk3MDk3LC03MTE1ODU2MzldfQ==
+eyJoaXN0b3J5IjpbLTE0NjY1MDUyMyw2Mzg5OTI4NSwtOTU0ND
+g1ODcwLDEzODkxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4
+NywtNzQ2NjI3ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNT
+c5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEy
+OTcwOTcsLTcxMTU4NTYzOV19
 -->
