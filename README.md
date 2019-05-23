@@ -82,11 +82,14 @@ Well we create basic code html with Py.Html was and now? Next step?
 4. Edit HTML and create rules to CSS files
 
 In your Python code, your call function to creation Tags or Rules Css after create its your erase and create new tags or rules for tags in Htmlcode.
-Thing  in your mind the code in python can st
+Thing  in your mind the code in python can static or dynamic your decide:
+| Type Py code | Function |
+|:--------:| -------------:|
+| **Dynamic** |In
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc2OTA2NDA1LC05NTQ0ODU4NzAsMTM4OT
-ExNDAyMSwtMTc5NTE3ODY5NCwtMzE1NTQ1Njg3LC03NDY2Mjc4
-MjYsMTM2ODU2MjQ3NywtOTU1ODk4MDEyLDE1Nzk4ODE2MTIsMT
-A1NDM3MzY2NiwtMTQxNTY3OTUzMywtMTk0MTI5NzA5NywtNzEx
-NTg1NjM5XX0=
+eyJoaXN0b3J5IjpbLTEwODE5MDQxNDQsLTk1NDQ4NTg3MCwxMz
+g5MTE0MDIxLC0xNzk1MTc4Njk0LC0zMTU1NDU2ODcsLTc0NjYy
+NzgyNiwxMzY4NTYyNDc3LC05NTU4OTgwMTIsMTU3OTg4MTYxMi
+wxMDU0MzczNjY2LC0xNDE1Njc5NTMzLC0xOTQxMjk3MDk3LC03
+MTE1ODU2MzldfQ==
 -->
