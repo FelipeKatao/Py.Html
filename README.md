@@ -115,9 +115,22 @@ This function create new element , not   necessarily need one **Div** tag can se
 | Value | Value from element to your tag.
 
 ### Don´t edit Html code dude! 
-In this stage not modify your code direct in Html, use Python code for its, only modify direct in Html after finish basic Html base code[
+In this stage not modify your code direct in Html, use Python code for its, only modify direct in Html after finish basic Html base code[^1]
+
+
+
+
+
+
+
+
+
+
+
+
+[^1]:The Base code: Is your Html with structure 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY2MDY2Mjk1LDYzODk5Mjg1LC05NTQ0OD
+eyJoaXN0b3J5IjpbNjcyMDQ0OTIwLDYzODk5Mjg1LC05NTQ0OD
 U4NzAsMTM4OTExNDAyMSwtMTc5NTE3ODY5NCwtMzE1NTQ1Njg3
 LC03NDY2Mjc4MjYsMTM2ODU2MjQ3NywtOTU1ODk4MDEyLDE1Nz
 k4ODE2MTIsMTA1NDM3MzY2NiwtMTQxNTY3OTUzMywtMTk0MTI5
