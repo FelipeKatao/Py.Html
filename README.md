@@ -102,12 +102,14 @@ def main():
 ```
 This basic code create Html code, now create tags to your Html. Stater create **Div** tag: 
 ```
-html.createNewElement(R"Example\index.html","#
+html.createNewElement(R"Example\index.html","#NewDiv","div",10,"Helloworld"
 ```
+This function create new element , not 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NzEwNDU1NywtOTU0NDg1ODcwLDEzOD
-kxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3
-ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLD
-EwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEyOTcwOTcsLTcx
-MTU4NTYzOV19
+eyJoaXN0b3J5IjpbNjM4OTkyODUsLTk1NDQ4NTg3MCwxMzg5MT
+E0MDIxLC0xNzk1MTc4Njk0LC0zMTU1NDU2ODcsLTc0NjYyNzgy
+NiwxMzY4NTYyNDc3LC05NTU4OTgwMTIsMTU3OTg4MTYxMiwxMD
+U0MzczNjY2LC0xNDE1Njc5NTMzLC0xOTQxMjk3MDk3LC03MTE1
+ODU2MzldfQ==
 -->
