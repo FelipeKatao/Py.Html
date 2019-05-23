@@ -120,7 +120,7 @@ In this stage not modify your code direct in Html, use Python code for its, only
 Thing if your use Py.Html for create news tags use the Python code, for edit  this tags be use editing Html code.
 
 ### Envirioment and path
-The envirioment your 
+The envirioment your can  create variables to save and user in future in yours news functions, for use efficient u
 
 
 
@@ -132,9 +132,9 @@ The envirioment your
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTIxNzY5NzcsMTkzOTExOTkwNiw2Mz
-g5OTI4NSwtOTU0NDg1ODcwLDEzODkxMTQwMjEsLTE3OTUxNzg2
-OTQsLTMxNTU0NTY4NywtNzQ2NjI3ODI2LDEzNjg1NjI0NzcsLT
-k1NTg5ODAxMiwxNTc5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2
-Nzk1MzMsLTE5NDEyOTcwOTcsLTcxMTU4NTYzOV19
+eyJoaXN0b3J5IjpbOTI2Mjg5NjQ1LDE5MzkxMTk5MDYsNjM4OT
+kyODUsLTk1NDQ4NTg3MCwxMzg5MTE0MDIxLC0xNzk1MTc4Njk0
+LC0zMTU1NDU2ODcsLTc0NjYyNzgyNiwxMzY4NTYyNDc3LC05NT
+U4OTgwMTIsMTU3OTg4MTYxMiwxMDU0MzczNjY2LC0xNDE1Njc5
+NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2MzldfQ==
 -->
