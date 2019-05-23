@@ -56,11 +56,12 @@ The py.html is on framework to create envirioment to web projects, but your proj
 The main class this framework is PyHtml.py, it create html,css and js code also edit and creater new components to your project, frist fime your download (or clone ) Py.html from [Github Py.html](https://github.com/FelipeKatao/Py.Html) to your path destiny, in future the resource install via pip stay avaliable.
 
 Now in your code python start writer the frister line is: 
- 
+`from Framework import PyHtml`.
+This line 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNjYzODIxNSwtOTU0NDg1ODcwLDEzOD
-kxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3
-ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLD
-EwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEyOTcwOTcsLTcx
-MTU4NTYzOV19
+eyJoaXN0b3J5IjpbLTEyMTI5ODMwMTYsLTk1NDQ4NTg3MCwxMz
+g5MTE0MDIxLC0xNzk1MTc4Njk0LC0zMTU1NDU2ODcsLTc0NjYy
+NzgyNiwxMzY4NTYyNDc3LC05NTU4OTgwMTIsMTU3OTg4MTYxMi
+wxMDU0MzczNjY2LC0xNDE1Njc5NTMzLC0xOTQxMjk3MDk3LC03
+MTE1ODU2MzldfQ==
 -->
