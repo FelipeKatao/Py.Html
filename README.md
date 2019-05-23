@@ -101,9 +101,11 @@ def main():
     
 ```
 This basic code create Html code, now create tags to your Html. Stater create **Div** tag: 
-´´
+```
+html.createNewElement(R"Example\index.html","#
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NTg5NDgzNCwtOTU0NDg1ODcwLDEzOD
+eyJoaXN0b3J5IjpbLTc3NzEwNDU1NywtOTU0NDg1ODcwLDEzOD
 kxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3
 ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLD
 EwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEyOTcwOTcsLTcx
