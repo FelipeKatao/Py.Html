@@ -75,11 +75,12 @@ In this code have 3 arguments basic its arguments create in your path destiny on
 | PreCode | This argument should input 1 or 0 value, where 1(create Html code with  base) 0 (create html code some basics tags)
 
 ##    WorkFlow Py.html
-Well we create basic code html with 
+Well we create basic code html with Py.Html was and now? Next step?
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQyMzY3MjEwLC05NTQ0ODU4NzAsMTM4OT
-ExNDAyMSwtMTc5NTE3ODY5NCwtMzE1NTQ1Njg3LC03NDY2Mjc4
-MjYsMTM2ODU2MjQ3NywtOTU1ODk4MDEyLDE1Nzk4ODE2MTIsMT
-A1NDM3MzY2NiwtMTQxNTY3OTUzMywtMTk0MTI5NzA5NywtNzEx
-NTg1NjM5XX0=
+eyJoaXN0b3J5IjpbLTYzNjQzNzY1MywtOTU0NDg1ODcwLDEzOD
+kxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3
+ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLD
+EwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEyOTcwOTcsLTcx
+MTU4NTYzOV19
 -->
