@@ -89,8 +89,9 @@ Thing  in your mind the code in python can static or dynamic your decide:
 |**Dynamic**|In this model your create and erases new functions, always editing and new code from py code.
 
 ## Create Html code with Python
+Now creater Html code using Py.html , preview we creater HTML base code was can create 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDE2MTY4NjgsLTk1NDQ4NTg3MCwxMz
+eyJoaXN0b3J5IjpbLTExNzY2NTc5OTYsLTk1NDQ4NTg3MCwxMz
 g5MTE0MDIxLC0xNzk1MTc4Njk0LC0zMTU1NDU2ODcsLTc0NjYy
 NzgyNiwxMzY4NTYyNDc3LC05NTU4OTgwMTIsMTU3OTg4MTYxMi
 wxMDU0MzczNjY2LC0xNDE1Njc5NTMzLC0xOTQxMjk3MDk3LC03
