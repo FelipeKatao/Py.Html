@@ -83,6 +83,7 @@ Well we create basic code html with Py.Html was and now? Next step?
 
 In your Python code, your call function to creation Tags or Rules Css after create its your erase and create new tags or rules for tags in Htmlcode.
 Thing  in your mind the code in python can static or dynamic your decide:
+
 | Type Py code | Function |
 |:--------:| -------------:|
 | **Static** |In dynamic your not erases functions,some edit in HTML code, if your edit Py code not is one good pratical, some create new HTML or edit style from your project.
@@ -129,9 +130,9 @@ Thing if your use Py.Html for create news tags use the Python code, for edit  th
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzOTExOTkwNiw2Mzg5OTI4NSwtOTU0ND
-g1ODcwLDEzODkxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4
-NywtNzQ2NjI3ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNT
-c5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEy
-OTcwOTcsLTcxMTU4NTYzOV19
+eyJoaXN0b3J5IjpbLTE4Mjg1NTYwNDQsMTkzOTExOTkwNiw2Mz
+g5OTI4NSwtOTU0NDg1ODcwLDEzODkxMTQwMjEsLTE3OTUxNzg2
+OTQsLTMxNTU0NTY4NywtNzQ2NjI3ODI2LDEzNjg1NjI0NzcsLT
+k1NTg5ODAxMiwxNTc5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2
+Nzk1MzMsLTE5NDEyOTcwOTcsLTcxMTU4NTYzOV19
 -->
