@@ -50,11 +50,13 @@ In this document your can see:
 Hello, if your install the *Py.html* now, start to its in this block your learn to: create and edit code html and css with py.html tecnology, one note very important  **PyHtml is organization web project , not one creator and editor web.** Its tool  is very cool for start project with basic elements not one very big editor web, we use this note in mind.
 
 ## About py.html 
-The py.html is on framework to create
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NDQ4NTg3MCwxMzg5MTE0MDIxLC0xNz
-k1MTc4Njk0LC0zMTU1NDU2ODcsLTc0NjYyNzgyNiwxMzY4NTYy
-NDc3LC05NTU4OTgwMTIsMTU3OTg4MTYxMiwxMDU0MzczNjY2LC
-0xNDE1Njc5NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2MzldfQ==
+The py.html is on framework to create envirioment to web projects, but your project will complete with edition direct in HTML and CSS code. The Py.Html some create base to your code.
 
+
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzMDYwNjg0MzQsLTk1NDQ4NTg3MCwxMz
+g5MTE0MDIxLC0xNzk1MTc4Njk0LC0zMTU1NDU2ODcsLTc0NjYy
+NzgyNiwxMzY4NTYyNDc3LC05NTU4OTgwMTIsMTU3OTg4MTYxMi
+wxMDU0MzczNjY2LC0xNDE1Njc5NTMzLC0xOTQxMjk3MDk3LC03
+MTE1ODU2MzldfQ==
 -->
