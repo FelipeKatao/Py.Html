@@ -103,7 +103,7 @@ def main():
 ```
 This basic code create Html code, now create tags to your Html. Stater create **Div** tag: 
 ```
-html.createNewElement(R"Example\index.html","#NewDiv","div",10,"Helloworld"
+html.createNewElement(R"Example\index.html","#NewDiv","div",10,"Helloworld")
 ```
 This function create new element , not   necessarily need one **Div** tag can see img,h1,h2,span... Your decide type tag to be, how function parameters to *createNewElement* :
 
@@ -139,14 +139,16 @@ Now we starter with Html code, using exclusive **HtmlPy()** class, its class cre
 ### Now, edit Html code, with Py.html
 In back sessions your  create Html file with class **Htmlpy()** , one exemple to edit  the page create 
 previous: 
+```
+from Framework import PyHtml
 
 def main():
     html = PyHtml.htmlPy()
     data= PyHtml.SearchData()
     data.createNewFileLocal(R"Example\index.html","","")
-    html.CreateNewHtml("Home Page",data._localHtmlFiles[0],1)
+    #html.CreateNewHtml("Home Page",data._localHtmlFiles[0],1)
+    html.createNewElement(R"Example\index.html","#NewDiv","div",10,"Helloworld")
 ```
-
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
@@ -167,7 +169,7 @@ YifSwiUTJZb2FtUW9LQk9zcG05ZCI6eyJzdGFydCI6MzY0MCwi
 ZW5kIjozODAxLCJ0ZXh0IjoiSW4gZHluYW1pYyB5b3VyIG5vdC
 BlcmFzZXMgZnVuY3Rpb25zLHNvbWUgZWRpdCBpbiBIVE1MIGNv
 ZGUsIGlmIHlvdXIgZWRpdCBQeSBjb+KApiJ9LCJpZEllSWZJV0
-5EV3lYZGluIjp7InN0YXJ0Ijo1MTAwLCJlbmQiOjUyMTMsInRl
+5EV3lYZGluIjp7InN0YXJ0Ijo1MTAxLCJlbmQiOjUyMTQsInRl
 eHQiOiJUaGluZyBpZiB5b3VyIHVzZSBQeS5IdG1sIGZvciBjcm
 VhdGUgbmV3cyB0YWdzIHVzZSB0aGUgUHl0aG9uIGNvZGUsIGZv
 ciBlZGl0ICB04oCmIn19LCJjb21tZW50cyI6eyJxTjBFSVI2Wj
@@ -195,7 +197,7 @@ F0ZWQiOjE1NTg1Nzk5OTI4Njh9LCI2MGR5R1VJU2UzUWhZYWhy
 Ijp7ImRpc2N1c3Npb25JZCI6ImlkSWVJZklXTkRXeVhkaW4iLC
 JzdWIiOiJnaDozNDU1OTA4MSIsInRleHQiOiJUYSBtdWl0byBt
 YWwgZGVmaW5pZG8iLCJjcmVhdGVkIjoxNTU4NTgwMDkzODU2fX
-0sImhpc3RvcnkiOlsxMDQ2ODI5MjAwLC0xMTUzNzg5NzY3LC0x
+0sImhpc3RvcnkiOlstODQ0MTQ1ODk4LC0xMTUzNzg5NzY3LC0x
 MDUyOTE0NTg1LC0xMjMyNjk1ODQ0LDE5MzkxMTk5MDYsNjM4OT
 kyODUsLTk1NDQ4NTg3MCwxMzg5MTE0MDIxLC0xNzk1MTc4Njk0
 LC0zMTU1NDU2ODcsLTc0NjYyNzgyNiwxMzY4NTYyNDc3LC05NT
