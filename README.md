@@ -135,7 +135,7 @@ This function can create environment with files **HTML**,**CSS**,**JS** in we ca
 With basic code , now start project!  From start the module PyHtml.py is much and very important for start project, go start with class HtmlPy()  is base from to initial project.
 
 ## Edit Html Code
-
+Now we starter with Html code, using exclusive **HtmlPy()** class, its class create we html code fro
 
 
 
@@ -188,10 +188,10 @@ F0ZWQiOjE1NTg1Nzk5OTI4Njh9LCI2MGR5R1VJU2UzUWhZYWhy
 Ijp7ImRpc2N1c3Npb25JZCI6ImlkSWVJZklXTkRXeVhkaW4iLC
 JzdWIiOiJnaDozNDU1OTA4MSIsInRleHQiOiJUYSBtdWl0byBt
 YWwgZGVmaW5pZG8iLCJjcmVhdGVkIjoxNTU4NTgwMDkzODU2fX
-0sImhpc3RvcnkiOlstMTE1Mzc4OTc2NywtMTA1MjkxNDU4NSwt
-MTIzMjY5NTg0NCwxOTM5MTE5OTA2LDYzODk5Mjg1LC05NTQ0OD
-U4NzAsMTM4OTExNDAyMSwtMTc5NTE3ODY5NCwtMzE1NTQ1Njg3
-LC03NDY2Mjc4MjYsMTM2ODU2MjQ3NywtOTU1ODk4MDEyLDE1Nz
-k4ODE2MTIsMTA1NDM3MzY2NiwtMTQxNTY3OTUzMywtMTk0MTI5
-NzA5NywtNzExNTg1NjM5XX0=
+0sImhpc3RvcnkiOlstNTI3Njc2ODQsLTExNTM3ODk3NjcsLTEw
+NTI5MTQ1ODUsLTEyMzI2OTU4NDQsMTkzOTExOTkwNiw2Mzg5OT
+I4NSwtOTU0NDg1ODcwLDEzODkxMTQwMjEsLTE3OTUxNzg2OTQs
+LTMxNTU0NTY4NywtNzQ2NjI3ODI2LDEzNjg1NjI0NzcsLTk1NT
+g5ODAxMiwxNTc5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2Nzk1
+MzMsLTE5NDEyOTcwOTcsLTcxMTU4NTYzOV19
 -->
