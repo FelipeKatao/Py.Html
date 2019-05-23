@@ -63,7 +63,7 @@ from Framework import PyHtml
 
 def main():
     html = PyHtml.htmlPy()
-    html.CreateNewHtml("index.html,R"Example\index.html",1)
+    html.CreateNewHtml("Home Page",R"Example\index.html",1)
     
 ```
 In this code have 3 arguments basic its arguments create in your path destiny one Html code with or without coed base.
@@ -71,11 +71,12 @@ In this code have 3 arguments basic its arguments create in your path destiny on
 | Argument | Function |
 |:--------:| -------------:|
 | NameHtml | Define name your Html define some the title code no define name this file. |
-| LocalFile|Destiny path your HTML code this argument have extension .html with name *ex: R"
+| LocalFile|Destiny path your HTML code this argument have extension .html with name *ex: R"Example/code.html*
+| PreCode | This argument should input 1 or 0 value, where 1(create Html code 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3OTYwNDk3OSwtOTU0NDg1ODcwLDEzOD
-kxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3
-ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLD
-EwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEyOTcwOTcsLTcx
-MTU4NTYzOV19
+eyJoaXN0b3J5IjpbLTE3MDQ4NjM3ODIsLTk1NDQ4NTg3MCwxMz
+g5MTE0MDIxLC0xNzk1MTc4Njk0LC0zMTU1NDU2ODcsLTc0NjYy
+NzgyNiwxMzY4NTYyNDc3LC05NTU4OTgwMTIsMTU3OTg4MTYxMi
+wxMDU0MzczNjY2LC0xNDE1Njc5NTMzLC0xOTQxMjk3MDk3LC03
+MTE1ODU2MzldfQ==
 -->
