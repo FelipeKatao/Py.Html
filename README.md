@@ -104,12 +104,12 @@ This basic code create Html code, now create tags to your Html. Stater create **
 ```
 html.createNewElement(R"Example\index.html","#NewDiv","div",10,"Helloworld"
 ```
-This function create new element , not 
+This function create new element , not   necessarily need one **Div** tag can see img,h1,h2,span... Your decide type tag when 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM4OTkyODUsLTk1NDQ4NTg3MCwxMzg5MT
-E0MDIxLC0xNzk1MTc4Njk0LC0zMTU1NDU2ODcsLTc0NjYyNzgy
-NiwxMzY4NTYyNDc3LC05NTU4OTgwMTIsMTU3OTg4MTYxMiwxMD
-U0MzczNjY2LC0xNDE1Njc5NTMzLC0xOTQxMjk3MDk3LC03MTE1
-ODU2MzldfQ==
+eyJoaXN0b3J5IjpbMTQ4MjQwMTkwNCw2Mzg5OTI4NSwtOTU0ND
+g1ODcwLDEzODkxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4
+NywtNzQ2NjI3ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNT
+c5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEy
+OTcwOTcsLTcxMTU4NTYzOV19
 -->
