@@ -132,9 +132,9 @@ def main():
 ```
 This function can create environment with files **HTML**,**CSS**,**JS** in we case crate path Html, the parameter aceppt the path or  void " ", if void the Py.html not create news path, the function respectively follow Html,Css and Js files.
 ### Start Project
-With basic code , now start project!  From start the module PyHtml.py is much and very important for start project, go start with class 
+With basic code , now start project!  From start the module PyHtml.py is much and very important for start project, go start with class HtmlPy()  is base from to initial project.
 
-
+## Edit Html Code
 
 
 
@@ -143,10 +143,10 @@ With basic code , now start project!  From start the module PyHtml.py is much an
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzNTkyNjM3OSwtMTIzMjY5NTg0NCwxOT
-M5MTE5OTA2LDYzODk5Mjg1LC05NTQ0ODU4NzAsMTM4OTExNDAy
-MSwtMTc5NTE3ODY5NCwtMzE1NTQ1Njg3LC03NDY2Mjc4MjYsMT
-M2ODU2MjQ3NywtOTU1ODk4MDEyLDE1Nzk4ODE2MTIsMTA1NDM3
-MzY2NiwtMTQxNTY3OTUzMywtMTk0MTI5NzA5NywtNzExNTg1Nj
-M5XX0=
+eyJoaXN0b3J5IjpbLTEwNTI5MTQ1ODUsLTEyMzI2OTU4NDQsMT
+kzOTExOTkwNiw2Mzg5OTI4NSwtOTU0NDg1ODcwLDEzODkxMTQw
+MjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3ODI2LD
+EzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLDEwNTQz
+NzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEyOTcwOTcsLTcxMTU4NT
+YzOV19
 -->
