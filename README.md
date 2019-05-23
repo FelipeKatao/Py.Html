@@ -128,10 +128,9 @@ def main():
     html = PyHtml.htmlPy()
     data= PyHtml.SearchData()
     data.createNewFileLocal(R"Example\index.html","","")
-    html.CreateNewHtml("Home Page",R"Example\index.html",1)
+    html.CreateNewHtml("Home Page",data._localHtmlFiles[0],1)
 ```
-This function can create environment with files **HTML**,**CSS**,**JS** in we case crate path Html, the parameter aceppt the path or  void " ", if void the Py.html not create news path in respctve 
-
+This function can create environment with files **HTML**,**CSS**,**JS** in we case crate path Html, the parameter aceppt the path or  void " ", if void the Py.html not create news path, the function respectively follow Html,Css and Js files.
 
 
 
@@ -143,9 +142,9 @@ This function can create environment with files **HTML**,**CSS**,**JS** in we ca
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM5NTgzODU0LDE5MzkxMTk5MDYsNjM4OT
-kyODUsLTk1NDQ4NTg3MCwxMzg5MTE0MDIxLC0xNzk1MTc4Njk0
-LC0zMTU1NDU2ODcsLTc0NjYyNzgyNiwxMzY4NTYyNDc3LC05NT
-U4OTgwMTIsMTU3OTg4MTYxMiwxMDU0MzczNjY2LC0xNDE1Njc5
-NTMzLC0xOTQxMjk3MDk3LC03MTE1ODU2MzldfQ==
+eyJoaXN0b3J5IjpbLTEyMzI2OTU4NDQsMTkzOTExOTkwNiw2Mz
+g5OTI4NSwtOTU0NDg1ODcwLDEzODkxMTQwMjEsLTE3OTUxNzg2
+OTQsLTMxNTU0NTY4NywtNzQ2NjI3ODI2LDEzNjg1NjI0NzcsLT
+k1NTg5ODAxMiwxNTc5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2
+Nzk1MzMsLTE5NDEyOTcwOTcsLTcxMTU4NTYzOV19
 -->
