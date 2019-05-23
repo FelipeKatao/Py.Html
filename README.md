@@ -58,10 +58,16 @@ The main class this framework is PyHtml.py, it create html,css and js code also 
 Now in your code python start writer the frister line is: 
 `from Framework import PyHtml`.
 This line import to your python code the functions avaliable in PyHtml class start your code use the code:
-`from Framework import PyHtml`
-`html = `
+```
+from Framework import PyHtml
+
+def main():
+    html = PyHtml.htmlPy()
+    html.Create
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxNjkzOTAxNCwtOTU0NDg1ODcwLDEzOD
+eyJoaXN0b3J5IjpbLTU4OTYwNTk3MSwtOTU0NDg1ODcwLDEzOD
 kxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3
 ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLD
 EwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEyOTcwOTcsLTcx
