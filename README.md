@@ -14,7 +14,7 @@ In this document your can see:
 
 **Part one: Basic functions**
 -  How to use Py.html 
-     +  About py.html
+     +  About py.html[^1]
      + How to import Class 
      + WorkFlow Py.html
      
@@ -49,14 +49,14 @@ In this document your can see:
 #  Part one: Basic functions 
 Hello, if your install the *Py.html* now, start to its in this block your learn to: create and edit code html and css with py.html tecnology, one note very important  **PyHtml is organization web project , not one creator and editor web.** Its tool  is very cool for start project with basic elements not one very big editor web, we use this note in mind.
 
-## About py.html 
+## About py.html [^1]
 The py.html is on framework to create envirioment to web projects, but your project will complete with edition direct in HTML and CSS code. The Py.Html some create base to your code.
-
+[
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDYwNjg0MzQsLTk1NDQ4NTg3MCwxMz
-g5MTE0MDIxLC0xNzk1MTc4Njk0LC0zMTU1NDU2ODcsLTc0NjYy
-NzgyNiwxMzY4NTYyNDc3LC05NTU4OTgwMTIsMTU3OTg4MTYxMi
-wxMDU0MzczNjY2LC0xNDE1Njc5NTMzLC0xOTQxMjk3MDk3LC03
-MTE1ODU2MzldfQ==
+eyJoaXN0b3J5IjpbNzk3NDgyMTQ5LC05NTQ0ODU4NzAsMTM4OT
+ExNDAyMSwtMTc5NTE3ODY5NCwtMzE1NTQ1Njg3LC03NDY2Mjc4
+MjYsMTM2ODU2MjQ3NywtOTU1ODk4MDEyLDE1Nzk4ODE2MTIsMT
+A1NDM3MzY2NiwtMTQxNTY3OTUzMywtMTk0MTI5NzA5NywtNzEx
+NTg1NjM5XX0=
 -->
