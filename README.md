@@ -129,8 +129,8 @@ def main():
     data= PyHtml.SearchData()
     data.createNewFileLocal(R"Example\index.html","","")
     html.CreateNewHtml("Home Page",R"Example\index.html",1)
-
 ```
+This function can create environment with files **HTML**,**CSS**,**JS** in we case 
 
 
 
@@ -143,9 +143,9 @@ def main():
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODUxODkyNTEsMTkzOTExOTkwNiw2Mz
-g5OTI4NSwtOTU0NDg1ODcwLDEzODkxMTQwMjEsLTE3OTUxNzg2
-OTQsLTMxNTU0NTY4NywtNzQ2NjI3ODI2LDEzNjg1NjI0NzcsLT
-k1NTg5ODAxMiwxNTc5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2
-Nzk1MzMsLTE5NDEyOTcwOTcsLTcxMTU4NTYzOV19
+eyJoaXN0b3J5IjpbMTQ0NzYxNTQ5NSwxOTM5MTE5OTA2LDYzOD
+k5Mjg1LC05NTQ0ODU4NzAsMTM4OTExNDAyMSwtMTc5NTE3ODY5
+NCwtMzE1NTQ1Njg3LC03NDY2Mjc4MjYsMTM2ODU2MjQ3NywtOT
+U1ODk4MDEyLDE1Nzk4ODE2MTIsMTA1NDM3MzY2NiwtMTQxNTY3
+OTUzMywtMTk0MTI5NzA5NywtNzExNTg1NjM5XX0=
 -->
