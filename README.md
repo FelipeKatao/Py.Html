@@ -110,11 +110,13 @@ This function create new element , not   necessarily need one **Div** tag can se
 |:--------:| -------------:|
 | local |Destiny path your HTML code this argument have extension .html with name *ex: R"Example/code.html*
 | id | what your Id from your element < tag >
-|  |
+| Element | What is element tag.
+| LineIndex | What Line its element will be add in html file.
+| Value | 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODEyMTkxODgsNjM4OTkyODUsLTk1ND
-Q4NTg3MCwxMzg5MTE0MDIxLC0xNzk1MTc4Njk0LC0zMTU1NDU2
-ODcsLTc0NjYyNzgyNiwxMzY4NTYyNDc3LC05NTU4OTgwMTIsMT
-U3OTg4MTYxMiwxMDU0MzczNjY2LC0xNDE1Njc5NTMzLC0xOTQx
-Mjk3MDk3LC03MTE1ODU2MzldfQ==
+eyJoaXN0b3J5IjpbMTc5MzgyODExLDYzODk5Mjg1LC05NTQ0OD
+U4NzAsMTM4OTExNDAyMSwtMTc5NTE3ODY5NCwtMzE1NTQ1Njg3
+LC03NDY2Mjc4MjYsMTM2ODU2MjQ3NywtOTU1ODk4MDEyLDE1Nz
+k4ODE2MTIsMTA1NDM3MzY2NiwtMTQxNTY3OTUzMywtMTk0MTI5
+NzA5NywtNzExNTg1NjM5XX0=
 -->
