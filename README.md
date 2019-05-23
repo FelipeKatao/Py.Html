@@ -53,9 +53,12 @@ Hello, if your install the *Py.html* now, start to its in this block your learn 
 The py.html is on framework to create envirioment to web projects, but your project will complete with edition direct in HTML and CSS code. The Py.Html some create base to your code.
 
 ## How to import Class
-The main class this framework is PyHtml.py, it create html,css and js code also edit and creater new components to your project, frist fime your download (or clone ) Py.html from [Github p](https://github.com/FelipeKatao/Py.Html)
+The main class this framework is PyHtml.py, it create html,css and js code also edit and creater new components to your project, frist fime your download (or clone ) Py.html from [Github Py.html](https://github.com/FelipeKatao/Py.Html) to your path destiny, in future the resource install via pip stay avaliable.
+
+Now in your code python start writer the frister line is: 
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MTEzMDMxMywtOTU0NDg1ODcwLDEzOD
+eyJoaXN0b3J5IjpbLTYxNjYzODIxNSwtOTU0NDg1ODcwLDEzOD
 kxMTQwMjEsLTE3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3
 ODI2LDEzNjg1NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLD
 EwNTQzNzM2NjYsLTE0MTU2Nzk1MzMsLTE5NDEyOTcwOTcsLTcx
