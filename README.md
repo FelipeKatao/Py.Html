@@ -1,5 +1,6 @@
 # Py.Html Documentation 
 ### Framework for create web projects with python tecnology.
+[![Build Status](https://felipekatao.github.io/Py.Html/)
 
 # Introducion to Py.Html
 The **Py.html** is one framework write in python for web projects create.
