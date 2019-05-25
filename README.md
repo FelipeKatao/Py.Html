@@ -155,6 +155,8 @@ well in this code we create one div call "#topo" and menu call "#menu", in line 
 Write you code in Python for   Html code initial , after Html structure completed, forever think in writer less lines for created elements. There are functions that you will only use one time, for exemple create Html code from scratch.
 For start less functions is important prtatical in Py.Html, why? In your base code Html less code from your analitic is very important from edit or erases codes manuality (see in chapter "Not edit the code Dude") ,when your see your code  HTML after execute Python code much new lines you have reader and view in browser for if the result stay ok to you.
 
+# Part two: Advanced modules
+
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
 eyJkaXNjdXNzaW9ucyI6eyJlZ2xTY2Jsd3AyRkdmNGlSIjp7In
@@ -202,7 +204,7 @@ F0ZWQiOjE1NTg1Nzk5OTI4Njh9LCI2MGR5R1VJU2UzUWhZYWhy
 Ijp7ImRpc2N1c3Npb25JZCI6ImlkSWVJZklXTkRXeVhkaW4iLC
 JzdWIiOiJnaDozNDU1OTA4MSIsInRleHQiOiJUYSBtdWl0byBt
 YWwgZGVmaW5pZG8iLCJjcmVhdGVkIjoxNTU4NTgwMDkzODU2fX
-0sImhpc3RvcnkiOlsxMDE5MzAxNTYyLC0xNTE3MDY4Mjk5LC0x
+0sImhpc3RvcnkiOlstMTk0NjA2MzkxLC0xNTE3MDY4Mjk5LC0x
 OTE5NTExODAzLC0xODI2NjE1OTQ4LC0yNDMzOTU1NTcsLTExNT
 M3ODk3NjcsLTEwNTI5MTQ1ODUsLTEyMzI2OTU4NDQsMTkzOTEx
 OTkwNiw2Mzg5OTI4NSwtOTU0NDg1ODcwLDEzODkxMTQwMjEsLT
