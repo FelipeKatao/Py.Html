@@ -9,3 +9,5 @@ script:
   - python Framework/PyHtml.py
   - python Framework/CssTool.py
   - python main.py
+branches:
+  - master
