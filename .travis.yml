@@ -2,11 +2,3 @@ sudo: false
 language: python
 python:
   - "3.6"
-branches:
-  only:
-  - master
-install:
-- pip install 
-#script to test
-script:
-  - main
