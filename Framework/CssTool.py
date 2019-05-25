@@ -99,7 +99,6 @@ class Responsive():
                 f.write(line)
             pass
         pass
-
     def CardBodyBootstrap(self,local,Title,Footer,contentCard,LineIndex):
         divNav="\n   <div class='card text-center'>\n<div class='card-header'>{title}</div>\n  <div class='card-body'>\n   <p class='card-text'>\n{content}</p>\n  </div>\n  <div class='card-footer text-muted'>{sub}</div>\n   </div>   ".format(title=Title,sub=Footer,content=contentCard)
         text=""

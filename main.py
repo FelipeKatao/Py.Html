@@ -14,7 +14,7 @@ from Framework import CssTool
 html= PyHtml.HtmlPy()
 css= PyHtml.CssPy()
 resp=CssTool.Responsive()
-#start code
-resp.CardBodyBootstrap(R"Example\index.html","Empresa Formiga","4 days ago","As novas funções foram implementadas",24)
+#start code R"Example\index.html"
+
 #Test
 

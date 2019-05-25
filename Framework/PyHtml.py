@@ -204,7 +204,19 @@ class CssPy():
         f.write(linha)
       f.close()   
       pass
-  
+  def appendLinkSpaRule(self,HtmlPath,LineIndex):
+    text=""
+    rule="\n<link href='/Framework/cssComponents/Spa.css' rel='stylesheet' type='text/css' />\n"
+    with open(HtmlPath,"r")as f:
+      text=f.readlines()
+      LineIndex-=1
+      f.close()
+    with open(HtmlPath,"w")as f:
+      text[LineIndex]= rule
+      for linha in text:
+        f.write(linha)
+      f.close()      
+    pass
   pass
 
 #Class for search data in HTML files and create analitic data.
