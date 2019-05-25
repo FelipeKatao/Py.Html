@@ -8,4 +8,5 @@ branches:
 install:
 - pip install 
 #script to test
-script: main
+script:
+  - main
