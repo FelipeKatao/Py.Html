@@ -18,5 +18,8 @@ resp=CssTool.Responsive()
 print("hello world")
 vr=4+6
 print(vr)
+x=""
+x=input("input control test)
+print(x)
 #Test
 
