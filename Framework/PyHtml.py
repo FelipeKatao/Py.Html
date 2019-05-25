@@ -110,9 +110,23 @@ class HtmlPy():
         f.write(lines)
       f.close()
       pass
-  def createAppSpa(self,local,AppName,Content,LineIndex):
+  def createAppSpaDefault(self,local,AppName,Content,LineIndex):
     text=""
     element="<div id='content'>    \n<main>    \n<div id='{name}' class='app default'>\n     <div>{content}</div>\n     </div>     \n    </main>\n</div>\n".format(name=AppName,content=Content)
+    with open(local,"r") as f:
+      text=f.readlines()
+      f.close()
+    pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=element
+      for lines in text:
+        f.write(lines)
+      f.close()
+      pass
+  def createAppSpa(self,local,AppName,Content,LineIndex):
+    text=""
+    element="<div id='content'>    \n<main>    \n<div id='{name}' class='app'>\n     <div>{content}</div>\n     </div>     \n    </main>\n</div>\n".format(name=AppName,content=Content)
     with open(local,"r") as f:
       text=f.readlines()
       f.close()
