@@ -5,5 +5,5 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - python main.py < test.txt
+  - python main.py
   - python Framework/HtmlData.py
