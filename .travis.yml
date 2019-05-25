@@ -7,3 +7,5 @@ install:
 script:
   - python main.py
   - python Framework/HtmlData.py
+  - python Framework/PyHtml.py
+  - python Framework/CssTool.py
