@@ -152,7 +152,7 @@ def main():
 ```
 well in this code we create one div call "#topo" and menu call "#menu", in line 10 and 12 respective,  the function *CreateMenuHtml* create a nav div with ul and li elements inside, its function create some Html tag codes, styles and Css not implement in its process.
 ### Less code , more functions
-Write you code in Python for   Html code initial , after Html structure assemblem 
+Write you code in Python for   Html code initial , after Html structure completed your 
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
@@ -201,11 +201,11 @@ F0ZWQiOjE1NTg1Nzk5OTI4Njh9LCI2MGR5R1VJU2UzUWhZYWhy
 Ijp7ImRpc2N1c3Npb25JZCI6ImlkSWVJZklXTkRXeVhkaW4iLC
 JzdWIiOiJnaDozNDU1OTA4MSIsInRleHQiOiJUYSBtdWl0byBt
 YWwgZGVmaW5pZG8iLCJjcmVhdGVkIjoxNTU4NTgwMDkzODU2fX
-0sImhpc3RvcnkiOls1NDA4NzU4MTcsLTE5MTk1MTE4MDMsLTE4
-MjY2MTU5NDgsLTI0MzM5NTU1NywtMTE1Mzc4OTc2NywtMTA1Mj
-kxNDU4NSwtMTIzMjY5NTg0NCwxOTM5MTE5OTA2LDYzODk5Mjg1
-LC05NTQ0ODU4NzAsMTM4OTExNDAyMSwtMTc5NTE3ODY5NCwtMz
-E1NTQ1Njg3LC03NDY2Mjc4MjYsMTM2ODU2MjQ3NywtOTU1ODk4
-MDEyLDE1Nzk4ODE2MTIsMTA1NDM3MzY2NiwtMTQxNTY3OTUzMy
-wtMTk0MTI5NzA5N119
+0sImhpc3RvcnkiOlstMTQ0NDU2NTI0LC0xOTE5NTExODAzLC0x
+ODI2NjE1OTQ4LC0yNDMzOTU1NTcsLTExNTM3ODk3NjcsLTEwNT
+I5MTQ1ODUsLTEyMzI2OTU4NDQsMTkzOTExOTkwNiw2Mzg5OTI4
+NSwtOTU0NDg1ODcwLDEzODkxMTQwMjEsLTE3OTUxNzg2OTQsLT
+MxNTU0NTY4NywtNzQ2NjI3ODI2LDEzNjg1NjI0NzcsLTk1NTg5
+ODAxMiwxNTc5ODgxNjEyLDEwNTQzNzM2NjYsLTE0MTU2Nzk1Mz
+MsLTE5NDEyOTcwOTddfQ==
 -->
