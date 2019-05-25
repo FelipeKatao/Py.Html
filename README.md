@@ -1,9 +1,7 @@
 # Py.Html Documentation 
 ### Framework for create web projects with python tecnology.
 [![Build Status](https://travis-ci.org/FelipeKatao/Py.Html.svg?branch=master)](https://travis-ci.org/FelipeKatao/Py.Html)
-.. image:: http://img.shields.io/badge/license-GPLv3-brightgreen.svg?style=flat
-    :target: http://www.gnu.org/licenses/gpl-3.0-standalone.html
-    :alt: License
+
 
 # Introducion to Py.Html
 The **Py.html** is one framework write in python for web projects create.
