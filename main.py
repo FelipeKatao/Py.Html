@@ -15,6 +15,6 @@ html= PyHtml.HtmlPy()
 css= PyHtml.CssPy()
 resp=CssTool.Responsive()
 #start code R"Example\index.html"
-
+html.createAppSpa(R"Example\index.html","pyhtml","Hello world",11)
 #Test
 

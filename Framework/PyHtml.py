@@ -110,6 +110,20 @@ class HtmlPy():
         f.write(lines)
       f.close()
       pass
+  def createAppSpa(self,local,AppName,Content,LineIndex):
+    text=""
+    element="<div id='content'>    \n<main>    \n<div id='{name}' class='app default'>\n     <div>{content}</div>\n     </div>     \n    </main>\n</div>\n".format(name=AppName,content=Content)
+    with open(local,"r") as f:
+      text=f.readlines()
+      f.close()
+    pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=element
+      for lines in text:
+        f.write(lines)
+      f.close()
+      pass
 
   pass
 
@@ -206,7 +220,7 @@ class CssPy():
       pass
   def appendLinkSpaRule(self,HtmlPath,LineIndex):
     text=""
-    rule="\n<link href='/Framework/cssComponents/Spa.css' rel='stylesheet' type='text/css' />\n"
+    rule="\n<link href='\Framework\cssComponents\Spa.css' rel='stylesheet' type='text/css' />\n"
     with open(HtmlPath,"r")as f:
       text=f.readlines()
       LineIndex-=1
