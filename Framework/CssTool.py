@@ -1,4 +1,4 @@
-from Framework import PyHtml
+import PyHtml
 from io import StringIO
 OUTPUT_CODEC= "utf-8"
 
