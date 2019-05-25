@@ -16,10 +16,5 @@ css= PyHtml.CssPy()
 resp=CssTool.Responsive()
 #start code R"Example\index.html"
 print("hello world")
-vr=4+6
-print(vr)
-x=""
-x=input("input control test)
-print(x)
 #Test
 
