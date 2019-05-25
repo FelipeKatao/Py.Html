@@ -153,7 +153,7 @@ def main():
 well in this code we create one div call "#topo" and menu call "#menu", in line 10 and 12 respective,  the function *CreateMenuHtml* create a nav div with ul and li elements inside, its function create some Html tag codes, styles and Css not implement in its process.
 ### Less code , more functions
 Write you code in Python for   Html code initial , after Html structure completed, forever think in writer less lines for created elements. There are functions that you will only use one time, for exemple create Html code from scratch.
-For start 
+For start less functions is important prtatical in Py.Html, 
 
 [^1]:The Base code: Is your Html with structure ( head, body) good defined, navs, body this basic Html without Css.
 <!--stackedit_data:
@@ -202,11 +202,11 @@ F0ZWQiOjE1NTg1Nzk5OTI4Njh9LCI2MGR5R1VJU2UzUWhZYWhy
 Ijp7ImRpc2N1c3Npb25JZCI6ImlkSWVJZklXTkRXeVhkaW4iLC
 JzdWIiOiJnaDozNDU1OTA4MSIsInRleHQiOiJUYSBtdWl0byBt
 YWwgZGVmaW5pZG8iLCJjcmVhdGVkIjoxNTU4NTgwMDkzODU2fX
-0sImhpc3RvcnkiOlsxNzM1MzkxODI3LC0xNTE3MDY4Mjk5LC0x
-OTE5NTExODAzLC0xODI2NjE1OTQ4LC0yNDMzOTU1NTcsLTExNT
-M3ODk3NjcsLTEwNTI5MTQ1ODUsLTEyMzI2OTU4NDQsMTkzOTEx
-OTkwNiw2Mzg5OTI4NSwtOTU0NDg1ODcwLDEzODkxMTQwMjEsLT
-E3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3ODI2LDEzNjg1
-NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLDEwNTQzNzM2Nj
-YsLTE0MTU2Nzk1MzNdfQ==
+0sImhpc3RvcnkiOls1Njg4OTc4MTgsLTE1MTcwNjgyOTksLTE5
+MTk1MTE4MDMsLTE4MjY2MTU5NDgsLTI0MzM5NTU1NywtMTE1Mz
+c4OTc2NywtMTA1MjkxNDU4NSwtMTIzMjY5NTg0NCwxOTM5MTE5
+OTA2LDYzODk5Mjg1LC05NTQ0ODU4NzAsMTM4OTExNDAyMSwtMT
+c5NTE3ODY5NCwtMzE1NTQ1Njg3LC03NDY2Mjc4MjYsMTM2ODU2
+MjQ3NywtOTU1ODk4MDEyLDE1Nzk4ODE2MTIsMTA1NDM3MzY2Ni
+wtMTQxNTY3OTUzM119
 -->
