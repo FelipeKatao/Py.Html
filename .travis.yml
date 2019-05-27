@@ -11,6 +11,6 @@ script:
   - python main.py
   - Project/projectFile.py,
 before_install:
-  - chmod +x build.sh
+  - chmod +x Example/index.html
 branches:
   - master
