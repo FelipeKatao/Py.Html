@@ -1,4 +1,5 @@
 from Framework import PyHtml
+from Framework import CssTool
 #Template for testes
 #It's system work unique function with python tecnology
 #Create HTML and CSS files with less lines in your Body.
@@ -17,4 +18,3 @@ html.createNewElement(R"Example\index.html","div0","div",16,"Hello world")
 html.createNewElement(R"Example\index.html","div0","div",22,"Hello world")
 #Teste para branch
 #Test
-

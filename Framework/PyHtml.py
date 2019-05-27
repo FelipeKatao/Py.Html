@@ -6,6 +6,7 @@ class HtmlPy():
   _menuHtmlConst="<nav id=""{Menuname}"">\n <ul>\n  <li>Item</li>\n  <li>Item</li>\n  <li>Item</li>\n </ul>\n</nav>\n"
   _formHtmlConst="<form action='{actForm1}'>\n   <label>Label</label>\n  <input id='{idName}' type='text' name='name'>\n  <input type='submit' value='save'>\n</form>"
   _geneticElement="<{element} id={idElement}>{value}</{element}>"
+
   _LinkElement="<link href={locaLink} rel={typeLink} type={type} />"
 
   def CreateNewHtml(self,NameHtml,LocalFile,PreCode):
@@ -80,7 +81,7 @@ class HtmlPy():
       LineIndex-=1
       text[LineIndex]+=self._LinkElement.format(locaLink=local,typeLink="stylesheet",type="text/css")+"\n"
       for lines in text:
-        f.write()
+        f.write(lines)
       pass
     pass
   def createNewElement(self,local,id,Element,Lineindex,Value):
@@ -96,6 +97,48 @@ class HtmlPy():
         f.write(lines)
         pass
     pass
+  def responsiveWindowMeta(self,local,escale,LineIndex):
+    text=""
+    with open(local,"r") as f:
+      text=f.readlines()
+      f.close()
+    pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+="\n"+"<meta name='Viewport' content='width=device-width, initial-scale={scale}'>\n".format(scale=escale)
+      for lines in text:
+        f.write(lines)
+      f.close()
+      pass
+  def createAppSpaDefault(self,local,AppName,Content,LineIndex):
+    text=""
+    element="<div id='content'>    \n<main>    \n<div id='{name}' class='app default'>\n     <div>{content}</div>\n     </div>     \n    </main>\n</div>\n".format(name=AppName,content=Content)
+    with open(local,"r") as f:
+      text=f.readlines()
+      f.close()
+    pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=element
+      for lines in text:
+        f.write(lines)
+      f.close()
+      pass
+  def createAppSpa(self,local,AppName,Content,LineIndex):
+    text=""
+    element="<div id='{name}' class='app'>\n     <div>{content}</div>\n     </div>\n".format(name=AppName,content=Content)
+    with open(local,"r") as f:
+      text=f.readlines()
+      f.close()
+    pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=element
+      for lines in text:
+        f.write(lines)
+      f.close()
+      pass
+
   pass
 
 #Create, edit and read CSS files 
@@ -189,11 +232,24 @@ class CssPy():
         f.write(linha)
       f.close()   
       pass
+  def appendLinkSpaRule(self,HtmlPath,LineIndex):
+    text=""
+    rule="\n<link href='\Framework\cssComponents\Spa.css' rel='stylesheet' type='text/css' />\n"
+    with open(HtmlPath,"r")as f:
+      text=f.readlines()
+      LineIndex-=1
+      f.close()
+    with open(HtmlPath,"w")as f:
+      text[LineIndex]= rule
+      for linha in text:
+        f.write(linha)
+      f.close()      
+    pass
   pass
 
 #Class for search data in HTML files and create analitic data.
 class SearchData():
-  
+
   _localHtmlFiles=[]
   _localCssFiles=[]
   _localJsFiles=[]

@@ -1,0 +1,39 @@
+/**System of SPA basic to project**/
+html,body{
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding:0px;
+}
+* {
+    box-sizing: border-box;
+}
+*:active{
+    outline:none;
+}
+#Content{
+    height:100%;
+    width:100%;
+}
+main{
+    display:inline-block;
+    margin:0px;
+    height:100%;
+    width: 100%;
+}
+.app{
+    display:none;
+    padding-left: 20px;
+    padding-top: 60px;
+    margin:auto;
+    height:100%;
+}
+.default{
+    display:block;
+}
+:target{
+    display:block;
+}
+:target ~.default{
+    display:none;
+}
