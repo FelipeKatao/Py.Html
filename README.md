@@ -1,6 +1,6 @@
 # Py.Html Documentation 
 ### Framework for create web projects with python tecnology.
-[![Build Status](https://travis-ci.org/FelipeKatao/Py.Html.svg?branch=master)](https://travis-ci.org/FelipeKatao/Py.Html) [![Semver]https://img.shields.io/github/issues/FelipeKatao/Py.Html.svg
+[![Build Status](https://travis-ci.org/FelipeKatao/Py.Html.svg?branch=master)](https://travis-ci.org/FelipeKatao/Py.Html) [![Semver](https://img.shields.io/github/issues/FelipeKatao/Py.Html.svg)
 [![wercker status](https://app.wercker.com/status/de630c61776680291e7e1cd2cb8157bf/m/master "wercker status")](https://app.wercker.com/project/byKey/de630c61776680291e7e1cd2cb8157bf)
 
 
