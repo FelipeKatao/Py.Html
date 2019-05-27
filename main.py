@@ -14,7 +14,7 @@ from Framework import CssTool
 html= PyHtml.HtmlPy()
 css= PyHtml.CssPy()
 #start code
-html.createNewElement(R"Example\index.html","div0","div",16,"Hello world")
-html.createNewElement(R"Example\index.html","div0","div",22,"Hello world")
+html.createNewElement(R"/Example/index.html","div0","div",16,"Hello world")
+html.createNewElement(R"/Example/index.html","div0","div",22,"Hello world")
 #Teste para branch
 #Test
