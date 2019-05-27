@@ -16,7 +16,5 @@ html= PyHtml.HtmlPy()
 css= PyHtml.CssPy()
 #start code
 print("hello world")
-for _, _, arquivo in os.walk('/'):
-    print(arquivo)
 #Teste para branch
 #Test
