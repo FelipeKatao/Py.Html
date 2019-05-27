@@ -1,6 +1,6 @@
 # Py.Html Documentation 
 ### Framework for create web projects with python tecnology.
-[![Build Status](https://travis-ci.org/FelipeKatao/Py.Html.svg?branch=master)](https://travis-ci.org/FelipeKatao/Py.Html)
+[![Build Status](https://travis-ci.org/FelipeKatao/Py.Html.svg?branch=master)](https://travis-ci.org/FelipeKatao/Py.Html) https://img.shields.io/github/issues/FelipeKatao/Py.Html.svg
 
 
 # Introducion to Py.Html
