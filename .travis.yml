@@ -9,7 +9,7 @@ script:
   - python Framework/PyHtml.py
   - python Framework/CssTool.py
   - python main.py
-  - Project/projectFile.py,
+  - Project/projectFile.py
 before_install:
   - chmod +x Example/index.html
 branches:
