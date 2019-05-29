@@ -260,6 +260,20 @@ class CssPy():
       pass
     return self._CreateToLine
     pass  
+ 
+  def countLinesFile(self,local):
+    linesSum=0
+    text=0
+    with open(local,"r") as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,'w')as f:
+      for lines in text:
+        linesSum+=1
+      pass
+    return linesSum
+    pass
   
   pass
 
