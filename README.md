@@ -6,7 +6,7 @@
 
 [![wercker status](https://app.wercker.com/status/de630c61776680291e7e1cd2cb8157bf/m/master "wercker status")](https://app.wercker.com/project/byKey/de630c61776680291e7e1cd2cb8157bf)
 
-Chat of Py.Html: [![Gitter](https://badges.gitter.im/Py-Html/community.svg)](https://gitter.im/Py-Html/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://badges.gitter.im/Py-Html/community.svg)](https://gitter.im/Py-Html/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # Introducion to Py.Html
 The **Py.html** is one framework write in python for web projects create.
