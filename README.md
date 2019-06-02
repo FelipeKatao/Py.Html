@@ -4,7 +4,7 @@
 
 ![Semver](https://img.shields.io/github/issues/FelipeKatao/Py.Html.svg)
 
-[![wercker status](https://app.wercker.com/status/de630c61776680291e7e1cd2cb8157bf/m/master "wercker status")](https://app.wercker.com/project/byKey/de630c61776680291e7e1cd2cb8157bf)
+[![wercker status](https://app.wercker.com/status/de630c61776680291e7e1cd2cb8157bf/m/master "wercker status")](https://app.wercker.com/project/byKey/de630c61776680291e7e1cd2cb8157bf) [![Join the chat at https://gitter.im/Py-Html/community](https://badges.gitter.im/Py-Html/community.svg)](https://gitter.im/Py-Html/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/FelipeKatao/Py.Html/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/FelipeKatao/Py.Html/?branch=master)
 
