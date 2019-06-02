@@ -18,7 +18,7 @@ Algorithm makes an HTML file from scratch starting idea is *organization* where 
 
 *Felipe Catão* - Fullstack developer
 
-*André Luiz* - Python Developer 
+*André Luiz* - Web Developer
 
 # Sumary: 
 In this document your can see: 
