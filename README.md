@@ -20,7 +20,7 @@ Algorithm makes an HTML file from scratch starting idea is *organization* where 
 **Development team:**
 
 
-*[Felipe Catão](https://github.com/FelipeKatao)* - Fullstack developer
+*[Felipe Catão](https://github.com/FelipeKatao)* - Full Stack Web Developer
 
 *[André Luiz](https://github.com/andrentfs)* - Full Stack Web Developer
 
