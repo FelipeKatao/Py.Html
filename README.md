@@ -8,6 +8,8 @@
 
 [![Gitter](https://badges.gitter.im/Py-Html/community.svg)](https://gitter.im/Py-Html/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/FelipeKatao/Py.Html/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/FelipeKatao/Py.Html/?branch=master)
+
 # Introducion to Py.Html
 The **Py.html** is one framework write in python for web projects create.
   
