@@ -6,6 +6,8 @@
 
 [![wercker status](https://app.wercker.com/status/de630c61776680291e7e1cd2cb8157bf/m/master "wercker status")](https://app.wercker.com/project/byKey/de630c61776680291e7e1cd2cb8157bf)
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/FelipeKatao/Py.Html/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/FelipeKatao/Py.Html/?branch=master)
+
 [![Gitter](https://badges.gitter.im/Py-Html/community.svg)](https://gitter.im/Py-Html/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
 # Introducion to Py.Html
