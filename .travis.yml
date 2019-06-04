@@ -8,7 +8,5 @@ script:
   - python Framework/HtmlData.py
   - python Framework/PyHtml.py
   - python Framework/CssTool.py
-before_install:
-  - chmod +x Example/index.html
 branches:
   - master
