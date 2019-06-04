@@ -173,7 +173,7 @@ class CssPy():
       print("Error of local CSS file.")
       pass
     pass
-  def CreateRuleClassRules(self,NameCss,LocalCss,classCss,RuleA,Rule0,Rule1,Rule2):
+  def CreateMultipleRules(self,NameCss,LocalCss,classCss,RuleA,Rule0,Rule1,Rule2):
     try:
       with open(LocalCss, "a") as f: 
         f.write("\n")
