@@ -6,6 +6,7 @@ class HtmlPy():
   _menuHtmlConst="<nav id=""{Menuname}"">\n <ul>\n  <li>Item</li>\n  <li>Item</li>\n  <li>Item</li>\n </ul>\n</nav>\n"
   _formHtmlConst="<form action='{actForm1}'>\n   <label>Label</label>\n  <input id='{idName}' type='text' name='name'>\n  <input type='submit' value='save'>\n</form>"
   _geneticElement="<{element} id={idElement}>{value}</{element}>"
+  _CreateToLine=0
 
   _LinkElement="<link href={locaLink} rel={typeLink} type={type} />"
 
@@ -46,6 +47,7 @@ class HtmlPy():
       f.close()                             
   def CreateMenuHtml(self,local,idMenu,LineIndex):
     text=""
+    self._CreateToLine=8
     with open(local,'r') as f:
       text=f.readlines()
       f.close()
@@ -245,6 +247,34 @@ class CssPy():
         f.write(linha)
       f.close()      
     pass
+  
+  def toNextLine(self,sumOrSubLines,value):
+    if sumOrSubLines==1:
+      self._CreateToLine+=value
+      pass
+    if sumOrSubLines==2:
+      self._CreateToLine-=value
+      pass
+    else:
+      print("Normal value, to sum the value the SumOrsum equal 1, to sub equal 2"+str((self._CreateToLine)))
+      pass
+    return self._CreateToLine
+    pass  
+ 
+  def countLinesFile(self,local):
+    linesSum=0
+    text=0
+    with open(local,"r") as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,'w')as f:
+      for lines in text:
+        linesSum+=1
+      pass
+    return linesSum
+    pass
+  
   pass
 
 #Class for search data in HTML files and create analitic data.
