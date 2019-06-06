@@ -265,9 +265,12 @@ class SearchData():
   pass
 
 class Component():
+
   text=""
   comp=""
+
   def insertComponent(self,local,lineIndex,nameComponent):
+     
     """Inserts components target to Html file.
     
     Arguments:
@@ -275,8 +278,14 @@ class Component():
         lineIndex {int} -- Select line of your Html code, for Component.
         nameComponent {string} -- Select name valid names: nav , list , article
     """
+
     indexcount=0
-    if(nameComponent=="nav"):
+
+    if(nameComponent == "article"):
+      #inserir aqui o componente de article
+      pass
+
+    if(nameComponent == "nav"):
       with open(local,'r') as f:
         self.text= f.readlines()
       pass
