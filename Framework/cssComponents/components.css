@@ -1,0 +1,17 @@
+.articleCl{
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+  border-style: solid;
+  border-width:1px;
+  border-color: #CCC;
+}
+.articleCl h1,h3{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #848484;
+  text-align: center;
+  display: block;
+}
+.articleCl h3{
+  color:#848484;
+
+}
