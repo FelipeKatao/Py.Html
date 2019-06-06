@@ -234,7 +234,7 @@ class CssPy():
       pass
   def appendLinkSpaRule(self,HtmlPath,LineIndex):
     text=""
-    rule="\n<link href='\Framework\cssComponents\Spa.css' rel='stylesheet' type='text/css' />\n"
+    rule= R"\n<link href='\Framework\cssComponents\Spa.css' rel='stylesheet' type='text/css' />\n"
     with open(HtmlPath,"r")as f:
       text=f.readlines()
       LineIndex-=1
@@ -261,5 +261,35 @@ class SearchData():
       self._localCssFiles.append(css)
     if js!="":
       self._localJsFiles.append(js)
+    pass
+  pass
+
+class Component():
+  text=""
+  comp=""
+  def insertComponent(self,local,lineIndex,nameComponent):
+    """Inserts components target to Html file.
+    
+    Arguments:
+        local {string/Path} -- Select your  path of Html file
+        lineIndex {int} -- Select line of your Html code, for Component.
+        nameComponent {string} -- Select name valid names: nav , list , article
+    """
+
+    if(nameComponent=="nav"):
+      with open(local,'r') as f:
+        self.text= f.readlines()
+      pass
+
+      with open(R"Framework\Components\nav.html",'r') as c:
+        self.comp=c.readlines()
+        pass
+
+      with open(local,'r') as w:
+        self.text[lineIndex]+=str(self.comp)
+        for lines in self.text:
+          w.write(lines)
+        pass
+
     pass
   pass
