@@ -275,7 +275,7 @@ class Component():
         lineIndex {int} -- Select line of your Html code, for Component.
         nameComponent {string} -- Select name valid names: nav , list , article
     """
-
+    indexcount=0
     if(nameComponent=="nav"):
       with open(local,'r') as f:
         self.text= f.readlines()
@@ -285,10 +285,15 @@ class Component():
         self.comp=c.readlines()
         pass
 
-      with open(local,'r') as w:
-        self.text[lineIndex]+=str(self.comp)
+      with open(local,'w') as w:
         for lines in self.text:
           w.write(lines)
+          indexcount+=1
+          if indexcount == lineIndex:
+            print(self.comp)
+            for linesx in self.comp:
+              w.write(linesx)
+            pass
         pass
 
     pass

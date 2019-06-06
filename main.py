@@ -17,8 +17,7 @@ html= PyHtml.HtmlPy()
 css= PyHtml.CssPy()
 cht= PyHtml.Component()
 #start code
-html.CreateMenuHtml(R"DemoAplication\app.html","#",10)
-#cht.insertComponent(R"DemoAplication\main.py",10,"nav")
+cht.insertComponent(R"DemoAplication\app.html",10,"nav")
 
 #Teste para branch
 #Test
