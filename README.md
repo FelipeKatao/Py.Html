@@ -23,7 +23,8 @@ Algorithm makes an HTML file from scratch starting idea is *organization* where 
 
 *[Felipe Catão](https://github.com/FelipeKatao)* - Full Stack Web Developer
 
-*[Siva](htttps://github.com/sivakumarjsl)*- React js and Node js Developer
+*[Siva](https://github.com/sivakumarjsl)*- React js and Node js Developer
+
 
 *[André Luiz](https://github.com/andrentfs)* - Full Stack Web Developer
 
