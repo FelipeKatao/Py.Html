@@ -16,9 +16,8 @@ import os
 html= PyHtml.HtmlPy()
 css= PyHtml.CssPy()
 cht= PyHtml.Component()
+resp=CssTool.Responsive()
 #start code
-cht.insertComponent(R"DemoAplication\app.html",37,"article")
-#Aplications SPA and mobile
-
+resp.CollectionMobile(R"DemoAplication\app.html","Hello Py.html","Element one",12)
 #Teste para branch
 #Test
