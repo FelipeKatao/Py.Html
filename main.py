@@ -18,6 +18,7 @@ css= PyHtml.CssPy()
 cht= PyHtml.Component()
 #start code
 cht.insertComponent(R"DemoAplication\app.html",37,"article")
+#Aplications SPA and mobile
 
 #Teste para branch
 #Test
