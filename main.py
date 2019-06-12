@@ -18,6 +18,7 @@ css= PyHtml.CssPy()
 cht= PyHtml.Component()
 resp=CssTool.Responsive()
 #start code
-resp.CollectionMobile(R"DemoAplication\app.html","Hello Py.html","Element one",12)
+#resp.CollectionMobile(R"DemoAplication\app.html","Hello Py.html","Element one",12)
+resp.CollectionLinksMobile(R"DemoAplication\app.html","Hello Py.html","Element one",17)
 #Teste para branch
 #Test
