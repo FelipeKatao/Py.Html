@@ -165,7 +165,7 @@ class CssPy():
     try:
       with open(LocalCss, "a") as f: 
         f.write("\n")
-        f.write("."+Id+"{\n"+Rule+"\n" +"} \n")
+        f.write("."+Class+"{\n"+Rule+"\n" +"} \n")
         f.close()
         pass
       pass
