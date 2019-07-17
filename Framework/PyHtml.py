@@ -301,7 +301,6 @@ class Component():
             pass
         pass
       pass
-
     if(nameComponent == "nav"):
       with open(local,'r') as f:
         self.text= f.readlines()
@@ -321,6 +320,23 @@ class Component():
               w.write(linesx)
             pass
         pass
+    if(nameComponent == "template-mobile"):
+      with open(local,'r') as f:
+        self.text= f.readlines()
+      pass
 
-    pass
+      with open(R"Framework\Template\respMobile.html",'r') as c:
+        self.comp=c.readlines()
+        pass
+
+      with open(local,'w') as w:
+        for lines in self.text:
+          w.write(lines)
+          indexcount+=1
+          if indexcount == lineIndex:
+            print(self.comp)
+            for linesx in self.comp:
+              w.write(linesx)
+            pass
+        pass          
   pass
