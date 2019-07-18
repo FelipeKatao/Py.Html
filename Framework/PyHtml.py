@@ -8,6 +8,7 @@ class HtmlPy():
   _geneticElement="<{element} id={idElement}>{value}</{element}>"
 
   _LinkElement="<link href={locaLink} rel={typeLink} type={type} />"
+  _ScriptElement="<script src={localLink}></script>"
 
   def CreateNewHtml(self,NameHtml,LocalFile,PreCode):
     #Project\codReadme.md
@@ -43,7 +44,7 @@ class HtmlPy():
       text[line]="<link href='{Cssname}' rel='stylesheet' type='text/css' />\n".format(Cssname=CssName)
       for linha in text:
         f.write(linha)
-      f.close()                             
+      f.close()                           
   def CreateMenuHtml(self,local,idMenu,LineIndex):
     text=""
     with open(local,'r') as f:
@@ -138,6 +139,32 @@ class HtmlPy():
         f.write(lines)
       f.close()
       pass
+  def LinkJsFile(self,local,jsPath,LineIndex):
+    text=""
+    with open(local,"r")as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=self._ScriptElement.format(locaLink=local)+"\n"
+      for lines in text:
+        f.write(lines)
+      pass
+    pass
+  def LinkJquery(self,local,LineIndex):
+    text=""
+    with open(local,"r")as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=self._ScriptElement.format(localLink="https://code.jquery.com/jquery-3.2.1.min.js")+"\n"
+      for lines in text:
+        f.write(lines)
+      pass
+    pass
 
   pass
 
