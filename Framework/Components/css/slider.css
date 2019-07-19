@@ -1,0 +1,26 @@
+/*////////////////////////////////////////////////
+//////////////////// SLIDER CSS //////////////////////
+////////////////////////////////////////////////*/
+
+@charset "utf-8";
+
+html,body{
+	margin:0;
+	padding:0;
+}
+
+div, p{
+	margin: 0 auto;
+	padding:0;
+}
+
+#slider{
+	margin: 0 auto;
+	text-align: center;
+}
+
+#slider img{
+	margin:0 auto;
+	max-width: 100%;
+
+}
