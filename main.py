@@ -20,6 +20,6 @@ resp=CssTool.Responsive()
 #start code
 #resp.CollectionMobile(R"DemoAplication\app.html","Hello Py.html","Element one",12)
 #This code for mobile devices.
-resp.CollectionLinksMobile(R"DemoAplication\app.html","Hello Py.html","Element one",17)
+cht.insertComponent(R"C:\Users\Windows 8\Nova pasta\VsCode\Python\Py.Html-2\app.html",2,"template-mobile")
 #Teste para branch
 #Test

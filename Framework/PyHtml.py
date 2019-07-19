@@ -8,6 +8,7 @@ class HtmlPy():
   _geneticElement="<{element} id={idElement}>{value}</{element}>"
 
   _LinkElement="<link href={locaLink} rel={typeLink} type={type} />"
+  _ScriptElement="<script src={localLink}></script>"
 
   def CreateNewHtml(self,NameHtml,LocalFile,PreCode):
     #Project\codReadme.md
@@ -43,7 +44,7 @@ class HtmlPy():
       text[line]="<link href='{Cssname}' rel='stylesheet' type='text/css' />\n".format(Cssname=CssName)
       for linha in text:
         f.write(linha)
-      f.close()                             
+      f.close()                           
   def CreateMenuHtml(self,local,idMenu,LineIndex):
     text=""
     with open(local,'r') as f:
@@ -138,6 +139,32 @@ class HtmlPy():
         f.write(lines)
       f.close()
       pass
+  def LinkJsFile(self,local,jsPath,LineIndex):
+    text=""
+    with open(local,"r")as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=self._ScriptElement.format(locaLink=local)+"\n"
+      for lines in text:
+        f.write(lines)
+      pass
+    pass
+  def LinkJquery(self,local,LineIndex):
+    text=""
+    with open(local,"r")as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=self._ScriptElement.format(localLink="https://code.jquery.com/jquery-3.2.1.min.js")+"\n"
+      for lines in text:
+        f.write(lines)
+      pass
+    pass
 
   pass
 
@@ -165,7 +192,7 @@ class CssPy():
     try:
       with open(LocalCss, "a") as f: 
         f.write("\n")
-        f.write("."+Id+"{\n"+Rule+"\n" +"} \n")
+        f.write("."+Class+"{\n"+Rule+"\n" +"} \n")
         f.close()
         pass
       pass
@@ -301,7 +328,6 @@ class Component():
             pass
         pass
       pass
-
     if(nameComponent == "nav"):
       with open(local,'r') as f:
         self.text= f.readlines()
@@ -321,6 +347,23 @@ class Component():
               w.write(linesx)
             pass
         pass
+    if(nameComponent == "template-mobile"):
+      with open(local,'r') as f:
+        self.text= f.readlines()
+      pass
 
-    pass
+      with open(R"Framework\Template\respMobile.html",'r') as c:
+        self.comp=c.readlines()
+        pass
+
+      with open(local,'w') as w:
+        for lines in self.text:
+          w.write(lines)
+          indexcount+=1
+          if indexcount == lineIndex:
+            print(self.comp)
+            for linesx in self.comp:
+              w.write(linesx)
+            pass
+        pass          
   pass
