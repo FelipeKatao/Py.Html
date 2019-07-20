@@ -59,6 +59,7 @@ class HtmlPy():
       pass
       f.close()
     pass  
+  
   def CreateFormHtml(self,local,idform,LineIndex,ActForm,IdnameInput):
     text=""
     with open(local,'r') as f:
@@ -85,6 +86,7 @@ class HtmlPy():
         f.write(lines)
       pass
     pass
+  
   def createNewElement(self,local,id,Element,Lineindex,Value):
     text=""
     with open(local,"r") as f:
@@ -98,6 +100,7 @@ class HtmlPy():
         f.write(lines)
         pass
     pass
+  
   def responsiveWindowMeta(self,local,escale,LineIndex):
     text=""
     with open(local,"r") as f:
@@ -111,7 +114,8 @@ class HtmlPy():
         f.write(lines)
       f.close()
       pass
-  def createAppSpaDefault(self,local,AppName,Content,LineIndex):
+
+  def createAppSpa(self,local,AppName,Content,LineIndex):
     text=""
     element="<div id='content'>    \n<main>    \n<div id='{name}' class='app default'>\n     <div>{content}</div>\n     </div>     \n    </main>\n</div>\n".format(name=AppName,content=Content)
     with open(local,"r") as f:
@@ -125,20 +129,7 @@ class HtmlPy():
         f.write(lines)
       f.close()
       pass
-  def createAppSpa(self,local,AppName,Content,LineIndex):
-    text=""
-    element="<div id='{name}' class='app'>\n     <div>{content}</div>\n     </div>\n".format(name=AppName,content=Content)
-    with open(local,"r") as f:
-      text=f.readlines()
-      f.close()
-    pass
-    with open(local,"w")as f:
-      LineIndex-=1
-      text[LineIndex]+=element
-      for lines in text:
-        f.write(lines)
-      f.close()
-      pass
+    
   def LinkJsFile(self,local,jsPath,LineIndex):
     text=""
     with open(local,"r")as f:
