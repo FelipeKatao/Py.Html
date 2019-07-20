@@ -5,10 +5,10 @@ class HtmlPy():
 
   _menuHtmlConst="<nav id=""{Menuname}"">\n <ul>\n  <li>Item</li>\n  <li>Item</li>\n  <li>Item</li>\n </ul>\n</nav>\n"
   _formHtmlConst="<form action='{actForm1}'>\n   <label>Label</label>\n  <input id='{idName}' type='text' name='name'>\n  <input type='submit' value='save'>\n</form>"
-  _geneticElement="<{element} id='{idElement}'>{value}</{element}>"
-  _CreateToLine=0
+  _geneticElement="<{element} id={idElement}>{value}</{element}>"
 
   _LinkElement="<link href={locaLink} rel={typeLink} type={type} />"
+  _ScriptElement="<script src={localLink}></script>"
 
   def CreateNewHtml(self,NameHtml,LocalFile,PreCode):
     #Project\codReadme.md
@@ -44,26 +44,23 @@ class HtmlPy():
       text[line]="<link href='{Cssname}' rel='stylesheet' type='text/css' />\n".format(Cssname=CssName)
       for linha in text:
         f.write(linha)
-      f.close()                             
+      f.close()                           
   def CreateMenuHtml(self,local,idMenu,LineIndex):
     text=""
-    self._CreateToLine=8
     with open(local,'r') as f:
       text=f.readlines()
       f.close()
       pass
     with open(local,'w')as f:
       LineIndex-=1
-      text[LineIndex]+=self._menuHtmlConst.format(Menuname="'"+idMenu+"'")
+      text[LineIndex]+="\n"+self._menuHtmlConst.format(Menuname="'"+idMenu+"'")
       for lines in text:
         f.write(lines)
       pass
       f.close()
-    return text
     pass  
   def CreateFormHtml(self,local,idform,LineIndex,ActForm,IdnameInput):
     text=""
-    self._CreateToLine=4
     with open(local,'r') as f:
       text=f.readlines()
       f.close()
@@ -96,7 +93,7 @@ class HtmlPy():
       pass
     with open(local,"w") as f:
       Lineindex-=1
-      text[Lineindex]+=self._geneticElement.format(element=Element,idElement=id,value=Value)+"\n"
+      text[Lineindex]+="\n"+self._geneticElement.format(element=Element,idElement=id,value=Value)+"\n"
       for lines in text:
         f.write(lines)
         pass
@@ -105,7 +102,7 @@ class HtmlPy():
     text=""
     with open(local,"r") as f:
       text=f.readlines()
-    f.close()
+      f.close()
     pass
     with open(local,"w")as f:
       LineIndex-=1
@@ -114,30 +111,59 @@ class HtmlPy():
         f.write(lines)
       f.close()
       pass
-  def toNextLine(self,sumOrSubLines,value):
-    if sumOrSubLines==1:
-      self._CreateToLine+=value
-      pass
-    if sumOrSubLines==2:
-      self._CreateToLine-=value
-      pass
-    else:
-      print("Normal value, to sum the value the SumOrsum equal 1, to sub equal 2"+str((self._CreateToLine)))
-      pass
-    return self._CreateToLine
-    pass
-  def countLinesFile(self,local):
-    linesSum=0
-    text=0
+  def createAppSpaDefault(self,local,AppName,Content,LineIndex):
+    text=""
+    element="<div id='content'>    \n<main>    \n<div id='{name}' class='app default'>\n     <div>{content}</div>\n     </div>     \n    </main>\n</div>\n".format(name=AppName,content=Content)
     with open(local,"r") as f:
       text=f.readlines()
       f.close()
-      pass
-    with open(local,'w')as f:
+    pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=element
       for lines in text:
-        linesSum+=1
+        f.write(lines)
+      f.close()
       pass
-    return linesSum
+  def createAppSpa(self,local,AppName,Content,LineIndex):
+    text=""
+    element="<div id='{name}' class='app'>\n     <div>{content}</div>\n     </div>\n".format(name=AppName,content=Content)
+    with open(local,"r") as f:
+      text=f.readlines()
+      f.close()
+    pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=element
+      for lines in text:
+        f.write(lines)
+      f.close()
+      pass
+  def LinkJsFile(self,local,jsPath,LineIndex):
+    text=""
+    with open(local,"r")as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=self._ScriptElement.format(locaLink=local)+"\n"
+      for lines in text:
+        f.write(lines)
+      pass
+    pass
+  def LinkJquery(self,local,LineIndex):
+    text=""
+    with open(local,"r")as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=self._ScriptElement.format(localLink="https://code.jquery.com/jquery-3.2.1.min.js")+"\n"
+      for lines in text:
+        f.write(lines)
+      pass
     pass
 
   pass
@@ -174,7 +200,7 @@ class CssPy():
       print("Error of local CSS file.")
       pass
     pass
-  def CreateRuleClassRules(self,NameCss,LocalCss,classCss,RuleA,Rule0,Rule1,Rule2):
+  def CreateMultipleRules(self,NameCss,LocalCss,classCss,RuleA,Rule0,Rule1,Rule2):
     try:
       with open(LocalCss, "a") as f: 
         f.write("\n")
@@ -233,7 +259,19 @@ class CssPy():
         f.write(linha)
       f.close()   
       pass
-  
+  def appendLinkSpaRule(self,HtmlPath,LineIndex):
+    text=""
+    rule= R"\n<link href='\Framework\cssComponents\Spa.css' rel='stylesheet' type='text/css' />\n"
+    with open(HtmlPath,"r")as f:
+      text=f.readlines()
+      LineIndex-=1
+      f.close()
+    with open(HtmlPath,"w")as f:
+      text[LineIndex]= rule
+      for linha in text:
+        f.write(linha)
+      f.close()      
+    pass
   pass
 
 #Class for search data in HTML files and create analitic data.
@@ -251,4 +289,53 @@ class SearchData():
     if js!="":
       self._localJsFiles.append(js)
     pass
+  pass
+
+class Component():
+
+  text=""
+  comp=""
+
+  def _insertCodeCompReader(self,componentTarget,local,LineIndex):
+    indexcount=0
+    with open(local,'r') as f:
+      self.text= f.readlines()
+    pass
+    with open(componentTarget,'r') as g:
+      self.comp=g.readlines();
+      pass
+    with open(local,'w')as c:
+      for lines in self.text:
+        c.write(lines)
+        indexcount+=1
+        if indexcount == LineIndex:
+          print(self.comp)
+          for linesx in self.comp:
+            c.write(linesx);
+            pass
+          pass
+        pass
+      pass
+  
+  def insertComponent(self,local,lineIndex,nameComponent):
+     
+    """Inserts components target to Html file.
+    
+    Arguments:
+        local {string/Path} -- Select your  path of Html file
+        lineIndex {int} -- Select line of your Html code, for Component.
+        nameComponent {string} -- Select name valid names: nav , list , article
+    """
+    if(nameComponent == "article"):
+      self._insertCodeCompReader(R"Framework\Components\article.html",local,lineIndex)
+      pass
+    if(nameComponent == "nav"):
+      self._insertCodeCompReader(R"Framework\Components\nav.html",local,lineIndex)
+      pass
+    if(nameComponent == "template-mobile"):
+      self._insertCodeCompReader(R"Framework\Template\respMobile.html",local,lineIndex)      
+      pass
+    if(nameComponent == "template-mobile"):
+      self._insertCodeCompReader(R"Framework\Template\respMobile.html",local,lineIndex)   
+      pass
   pass
