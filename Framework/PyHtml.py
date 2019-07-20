@@ -309,12 +309,12 @@ class Component():
     indexcount=0
 
     if(nameComponent == "article"):
-      with open(local,'r') as f:
-        self.text= f.readlines()
+      with open(local,'r') as artRead:
+        self.text= artRead.readlines()
       pass
 
-      with open(R"Framework\Components\article.html",'r') as c:
-        self.comp=c.readlines()
+      with open(R"Framework\Components\article.html",'r') as createAricleHtml:
+        self.comp=createAricleHtml.readlines()
         pass
 
       with open(local,'w') as w:
