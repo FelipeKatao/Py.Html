@@ -365,5 +365,24 @@ class Component():
             for linesx in self.comp:
               w.write(linesx)
             pass
-        pass          
+        pass   
+    if(nameComponent == "banner-slider"):
+        with open(local,'r') as f:
+          self.text= f.readlines()
+          pass
+
+        with open(R"Framework\Components\slider.html",'r') as c:
+          self.comp=c.readlines()
+          pass
+
+        with open(local,'w') as w:
+          for lines in self.text:
+            w.write(lines)
+            indexcount+=1
+            if indexcount == lineIndex:
+              print(self.comp)
+              for linesx in self.comp:
+                w.write(linesx)
+            pass
+        pass        
   pass
