@@ -10,24 +10,36 @@ class HtmlPy():
   _LinkElement="<link href={locaLink} rel={typeLink} type={type} />"
   _ScriptElement="<script src={localLink}></script>"
 
+  def _BaseElement(self,local,componentTarget,lineIndex):
+    text=""
+    with open(componentTarget,'r') as f:
+      text= f.readlines()
+      pass
+    with open(local,'w')as c:
+      for lines in text:
+        c.write(lines)
+        pass
+    pass
+  def _createElements(self,local,element,lineIndexCr):
+    text=""
+    with open(local,'r') as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,'w')as f:
+      lineIndexCr-=1
+      text[lineIndexCr]+=element
+      for lines in text:
+        f.write(lines)
+      pass  
+    pass
   def CreateNewHtml(self,NameHtml,LocalFile,PreCode):
     #Project\codReadme.md
     if PreCode == 1:
-      with open(LocalFile, "w") as f:   
-        f.write("<!DOCTYPE html>")
-        f.write("\n<html>")
-        f.write("\n<head>  <title>{Html}</title>".format(Html=NameHtml))
-        f.write("\n<meta charset='UTF-8'>") 
-        f.write("\n<meta name="+"'viewport'"+ "content="+"'width=device-width, initial-scale=1.0'"+">")
-        f.write("\n<link>     ")      
-        f.write("\n </head>")
-        f.write("\n   <body>")
-        f.write("\n      </body>")
-        f.write("\n        </html>")
-        f.close() 
+      self._BaseElement(LocalFile,"htmlBase.html",1)
     else:
       with open(LocalFile,"w") as f:
-        f.write("<html></html>")
+        f.write("<html>\n\n</html>")
         f.close()  
   def LinkCssStarter(self,CssName,HtmlPath):
     line=0
@@ -44,78 +56,27 @@ class HtmlPy():
       text[line]="<link href='{Cssname}' rel='stylesheet' type='text/css' />\n".format(Cssname=CssName)
       for linha in text:
         f.write(linha)
-      f.close()                           
-  def CreateMenuHtml(self,local,idMenu,LineIndex):
-    text=""
-    with open(local,'r') as f:
-      text=f.readlines()
-      f.close()
-      pass
-    with open(local,'w')as f:
-      LineIndex-=1
-      text[LineIndex]+="\n"+self._menuHtmlConst.format(Menuname="'"+idMenu+"'")
-      for lines in text:
-        f.write(lines)
-      pass
-      f.close()
-    pass  
-  
-  def CreateFormHtml(self,local,idform,LineIndex,ActForm,IdnameInput):
-    text=""
-    with open(local,'r') as f:
-      text=f.readlines()
-      f.close()
-      pass
-    with open(local,'w')as f:
-      LineIndex-=1
-      text[LineIndex]+="\n"+self._formHtmlConst.format(actForm1=ActForm,idName=IdnameInput)+"\n"
-      for lines in text:
-        f.write(lines)
-      pass  
-    pass
-  def linkCssFile(self,local,CssPath,LineIndex):
-    text=""
-    with open(local,"r")as f:
-      text=f.readlines()
-      f.close()
-      pass
-    with open(local,"w")as f:
-      LineIndex-=1
-      text[LineIndex]+=self._LinkElement.format(locaLink=local,typeLink="stylesheet",type="text/css")+"\n"
-      for lines in text:
-        f.write(lines)
-      pass
-    pass
-  
-  def createNewElement(self,local,id,Element,Lineindex,Value):
-    text=""
-    with open(local,"r") as f:
-      text=f.readlines()
-      f.close()
-      pass
-    with open(local,"w") as f:
-      Lineindex-=1
-      text[Lineindex]+="\n"+self._geneticElement.format(element=Element,idElement=id,value=Value)+"\n"
-      for lines in text:
-        f.write(lines)
-        pass
-    pass
-  
-  def responsiveWindowMeta(self,local,escale,LineIndex):
-    text=""
-    with open(local,"r") as f:
-      text=f.readlines()
-      f.close()
-    pass
-    with open(local,"w")as f:
-      LineIndex-=1
-      text[LineIndex]+="\n"+"<meta name='Viewport' content='width=device-width, initial-scale={scale}'>\n".format(scale=escale)
-      for lines in text:
-        f.write(lines)
-      f.close()
-      pass
+      f.close()          
 
-  def createAppSpa(self,local,AppName,Content,LineIndex):
+  def CreateMenuHtml(self,local,idMenu,LineIndex):
+    self._createElements(local,"\n"+self._menuHtmlConst.format(Menuname="'"+idMenu+"'"),LineIndex)
+    pass  
+
+  def CreateFormHtml(self,local,idform,LineIndex,ActForm,IdnameInput):
+    self._createElements(local,"\n"+self._formHtmlConst.format(actForm1=ActForm,idName=IdnameInput)+"\n",LineIndex)
+    pass
+
+  def linkCssFile(self,local,CssPath,LineIndex):
+    self._createElements(local,self._LinkElement.format(locaLink=local,typeLink="stylesheet",type="text/css")+"\n",LineIndex)
+    pass
+
+  def createNewElement(self,local,id,Element,Lineindex,Value):
+    self._createElements(local,"\n"+self._geneticElement.format(element=Element,idElement=id,value=Value)+"\n",Lineindex)
+    pass
+  def responsiveWindowMeta(self,local,escale,LineIndex):
+    self._createElements(local,"\n"+"<meta name='Viewport' content='width=device-width, initial-scale={scale}'>\n".format(scale=escale),LineIndex)
+    pass
+  def createAppSpaDefault(self,local,AppName,Content,LineIndex):
     text=""
     element="<div id='content'>    \n<main>    \n<div id='{name}' class='app default'>\n     <div>{content}</div>\n     </div>     \n    </main>\n</div>\n".format(name=AppName,content=Content)
     with open(local,"r") as f:
@@ -129,7 +90,20 @@ class HtmlPy():
         f.write(lines)
       f.close()
       pass
-    
+  def createAppSpa(self,local,AppName,Content,LineIndex):
+    text=""
+    element="<div id='{name}' class='app'>\n     <div>{content}</div>\n     </div>\n".format(name=AppName,content=Content)
+    with open(local,"r") as f:
+      text=f.readlines()
+      f.close()
+    pass
+    with open(local,"w")as f:
+      LineIndex-=1
+      text[LineIndex]+=element
+      for lines in text:
+        f.write(lines)
+      f.close()
+      pass
   def LinkJsFile(self,local,jsPath,LineIndex):
     text=""
     with open(local,"r")as f:
@@ -307,7 +281,6 @@ class Component():
           pass
         pass
       pass
-  
   def insertComponent(self,local,lineIndex,nameComponent):
      
     """Inserts components target to Html file.
@@ -317,16 +290,14 @@ class Component():
         lineIndex {int} -- Select line of your Html code, for Component.
         nameComponent {string} -- Select name valid names: nav , list , article
     """
+
     if(nameComponent == "article"):
-      self._insertCodeCompReader(R"Framework\Components\article.html",local,lineIndex)
+      self._insertCodeCompReader("article.html",local,lineIndex)
       pass
     if(nameComponent == "nav"):
-      self._insertCodeCompReader(R"Framework\Components\nav.html",local,lineIndex)
+      self._insertCodeCompReader("ColocaOlinkAqui",local,lineIndex)
       pass
     if(nameComponent == "template-mobile"):
-      self._insertCodeCompReader(R"Framework\Template\respMobile.html",local,lineIndex)      
-      pass
-    if(nameComponent == "template-mobile"):
-      self._insertCodeCompReader(R"Framework\Template\respMobile.html",local,lineIndex)   
-      pass
+      self._insertCodeCompReader("ColocaOlinkAqui",local,lineIndex)      
+      pass    
   pass
