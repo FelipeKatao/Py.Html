@@ -296,6 +296,27 @@ class Component():
   text=""
   comp=""
 
+  def _insertCodeCompReader(self,componentTarget,local,LineIndex):
+    indexcount=0
+    with open(local,'r') as f:
+      self.text= f.readlines()
+    pass
+    with open(componentTarget,'r') as g:
+      self.comp=g.readlines();
+      pass
+    with open(local,'w')as c:
+      for lines in self.text:
+        c.write(lines)
+        indexcount+=1
+        if indexcount == LineIndex:
+          print(self.comp)
+          for linesx in self.comp:
+            c.write(linesx);
+            pass
+          pass
+        pass
+      pass
+  
   def insertComponent(self,local,lineIndex,nameComponent):
      
     """Inserts components target to Html file.
@@ -305,84 +326,16 @@ class Component():
         lineIndex {int} -- Select line of your Html code, for Component.
         nameComponent {string} -- Select name valid names: nav , list , article
     """
-
-    indexcount=0
-
     if(nameComponent == "article"):
-      with open(local,'r') as artRead:
-        self.text= artRead.readlines()
-      pass
-
-      with open(R"Framework\Components\article.html",'r') as createAricleHtml:
-        self.comp=createAricleHtml.readlines()
-        pass
-
-      with open(local,'w') as w:
-        for lines in self.text:
-          w.write(lines)
-          indexcount+=1
-          if indexcount == lineIndex:
-            print(self.comp)
-            for linesx in self.comp:
-              w.write(linesx)
-            pass
-        pass
+      self._insertCodeCompReader(R"Framework\Components\article.html",local,lineIndex)
       pass
     if(nameComponent == "nav"):
-      with open(local,'r') as f:
-        self.text= f.readlines()
+      self._insertCodeCompReader(R"Framework\Components\nav.html",local,lineIndex)
       pass
-
-      with open(R"Framework\Components\nav.html",'r') as c:
-        self.comp=c.readlines()
-        pass
-
-      with open(local,'w') as w:
-        for lines in self.text:
-          w.write(lines)
-          indexcount+=1
-          if indexcount == lineIndex:
-            print(self.comp)
-            for linesx in self.comp:
-              w.write(linesx)
-            pass
-        pass
     if(nameComponent == "template-mobile"):
-      with open(local,'r') as f:
-        self.text= f.readlines()
+      self._insertCodeCompReader(R"Framework\Template\respMobile.html",local,lineIndex)      
       pass
-
-      with open(R"Framework\Template\respMobile.html",'r') as c:
-        self.comp=c.readlines()
-        pass
-
-      with open(local,'w') as w:
-        for lines in self.text:
-          w.write(lines)
-          indexcount+=1
-          if indexcount == lineIndex:
-            print(self.comp)
-            for linesx in self.comp:
-              w.write(linesx)
-            pass
-        pass   
-    if(nameComponent == "banner-slider"):
-        with open(local,'r') as f:
-          self.text= f.readlines()
-          pass
-
-        with open(R"Framework\Components\slider.html",'r') as c:
-          self.comp=c.readlines()
-          pass
-
-        with open(local,'w') as w:
-          for lines in self.text:
-            w.write(lines)
-            indexcount+=1
-            if indexcount == lineIndex:
-              print(self.comp)
-              for linesx in self.comp:
-                w.write(linesx)
-            pass
-        pass        
+    if(nameComponent == "template-mobile"):
+      self._insertCodeCompReader(R"Framework\Template\respMobile.html",local,lineIndex)   
+      pass
   pass
