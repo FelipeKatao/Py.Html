@@ -20,19 +20,11 @@ class HtmlPy():
         c.write(lines)
         pass
     pass
+    
   def _createElements(self,local,element,lineIndexCr):
-    text=""
-    with open(local,'r') as f:
-      text=f.readlines()
-      f.close()
-      pass
-    with open(local,'w')as f:
-      lineIndexCr-=1
-      text[lineIndexCr]+=element
-      for lines in text:
-        f.write(lines)
-      pass  
+    self._createElements(local,element,lineIndexCr)
     pass
+
   def CreateNewHtml(self,NameHtml,LocalFile,PreCode):
     #Project\codReadme.md
     if PreCode == 1:
@@ -41,22 +33,10 @@ class HtmlPy():
       with open(LocalFile,"w") as f:
         f.write("<html>\n\n</html>")
         f.close()  
-  def LinkCssStarter(self,CssName,HtmlPath):
-    line=0
-    text=""
-    with open(HtmlPath,"r")as f:
-      text=f.readlines()
-      for linha in text:
-        if "<link>" in linha:
-          print(line)
-          f.close()
-          break
-        line+=1
-    with open(HtmlPath,"w")as f:
-      text[line]="<link href='{Cssname}' rel='stylesheet' type='text/css' />\n".format(Cssname=CssName)
-      for linha in text:
-        f.write(linha)
-      f.close()          
+
+  def LinkCssStarter(self,CssName,HtmlPath,LineIndex):
+    self._createElements(HtmlPath,"<link href='{Cssname}' rel='stylesheet' type='text/css' />\n".format(Cssname=CssName),LineIndex)
+    pass         
 
   def CreateMenuHtml(self,local,idMenu,LineIndex):
     self._createElements(local,"\n"+self._menuHtmlConst.format(Menuname="'"+idMenu+"'"),LineIndex)
@@ -73,62 +53,21 @@ class HtmlPy():
   def createNewElement(self,local,id,Element,Lineindex,Value):
     self._createElements(local,"\n"+self._geneticElement.format(element=Element,idElement=id,value=Value)+"\n",Lineindex)
     pass
+
   def responsiveWindowMeta(self,local,escale,LineIndex):
     self._createElements(local,"\n"+"<meta name='Viewport' content='width=device-width, initial-scale={scale}'>\n".format(scale=escale),LineIndex)
     pass
-  def createAppSpaDefault(self,local,AppName,Content,LineIndex):
-    text=""
-    element="<div id='content'>    \n<main>    \n<div id='{name}' class='app default'>\n     <div>{content}</div>\n     </div>     \n    </main>\n</div>\n".format(name=AppName,content=Content)
-    with open(local,"r") as f:
-      text=f.readlines()
-      f.close()
-    pass
-    with open(local,"w")as f:
-      LineIndex-=1
-      text[LineIndex]+=element
-      for lines in text:
-        f.write(lines)
-      f.close()
-      pass
+
   def createAppSpa(self,local,AppName,Content,LineIndex):
-    text=""
-    element="<div id='{name}' class='app'>\n     <div>{content}</div>\n     </div>\n".format(name=AppName,content=Content)
-    with open(local,"r") as f:
-      text=f.readlines()
-      f.close()
+    self._createElements(local,"<div id='{name}' class='app'>\n     <div>{content}</div>\n     </div>\n".format(name=AppName,content=Content),LineIndex)
     pass
-    with open(local,"w")as f:
-      LineIndex-=1
-      text[LineIndex]+=element
-      for lines in text:
-        f.write(lines)
-      f.close()
-      pass
+
   def LinkJsFile(self,local,jsPath,LineIndex):
-    text=""
-    with open(local,"r")as f:
-      text=f.readlines()
-      f.close()
-      pass
-    with open(local,"w")as f:
-      LineIndex-=1
-      text[LineIndex]+=self._ScriptElement.format(locaLink=local)+"\n"
-      for lines in text:
-        f.write(lines)
-      pass
+    self._createElements(local,self._ScriptElement.format(locaLink=local)+"\n",LineIndex)
     pass
+
   def LinkJquery(self,local,LineIndex):
-    text=""
-    with open(local,"r")as f:
-      text=f.readlines()
-      f.close()
-      pass
-    with open(local,"w")as f:
-      LineIndex-=1
-      text[LineIndex]+=self._ScriptElement.format(localLink="https://code.jquery.com/jquery-3.2.1.min.js")+"\n"
-      for lines in text:
-        f.write(lines)
-      pass
+    self._createElements(local,self._ScriptElement.format(localLink="https://code.jquery.com/jquery-3.2.1.min.js")+"\n",LineIndex)
     pass
 
   pass
