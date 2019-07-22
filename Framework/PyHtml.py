@@ -22,7 +22,17 @@ class HtmlPy():
     pass
     
   def _createElements(self,local,element,lineIndexCr):
-    self._createElements(local,element,lineIndexCr)
+    text=""
+    with open(local,'r') as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,'w')as f:
+      lineIndexCr-=1
+      text[lineIndexCr]+=element
+      for lines in text:
+        f.write(lines)
+      pass  
     pass
 
   def CreateNewHtml(self,NameHtml,LocalFile,PreCode):
@@ -73,109 +83,45 @@ class HtmlPy():
   pass
 
 #Create, edit and read CSS files 
-class CssPy():
+class CsPy():
+  _elementgenericCss="\n#{idCss}"
+  _elementgenericCssClass="\n.{idCss}"
+  
+  def _createElements(self,local,element,lineIndexCr):
+    text=""
+    with open(local,'r') as f:
+      text=f.readlines()
+      f.close()
+      pass
+    with open(local,'w')as f:
+      lineIndexCr-=1
+      text[lineIndexCr]+=element
+      for lines in text:
+        f.write(lines)
+      pass  
+    pass
+
   def CreateCss(self,pathCss,CssName):
     with open(pathCss,"w") as f:
       f.write("/*Css Code write with: [Py.Html]*/")
       f.close()
       pass
     pass
-  def CreateRuleId(self,NameCss,LocalCss,Id,Rule):
-    try:
-      with open(LocalCss, "a") as f: 
-        f.write("\n")
-        f.write("#"+Id+"{\n"+Rule+"\n" +"} \n")
-        f.close()
-        pass
-      pass
-    except:
-      print("Error of local CSS file.")
-      pass
-    pass
+
   def CreateRuleClass(self,NameCss,LocalCss,Class,Rule):
-    try:
-      with open(LocalCss, "a") as f: 
-        f.write("\n")
-        f.write("."+Class+"{\n"+Rule+"\n" +"} \n")
-        f.close()
-        pass
-      pass
-    except:
-      print("Error of local CSS file.")
-      pass
+    self._createElements(LocalCss,self._elementgenericCssClass.format(idCss=Class)+"{\n\n}",0)
+    pass 
+
+  def CreateRuleIdRules(self,NameCss,LocalCss,rule,lineIndex):
+    self._createElements(LocalCss,rule,lineIndex);
     pass
-  def CreateMultipleRules(self,NameCss,LocalCss,classCss,RuleA,Rule0,Rule1,Rule2):
-    try:
-      with open(LocalCss, "a") as f: 
-        f.write("\n")
-        f.write("."+classCss+"{\n"+RuleA+"\n")
-        f.write(Rule0+"\n"+Rule1+"\n"+Rule2+"\n")
-        f.write("}\n")
-        f.close()
-        pass
-      pass
-    except:
-      print("Error of local CSS file.")
-      pass
-    pass  
-  def CreateRuleIdRules(self,NameCss,LocalCss,Id,RuleA,Rule0,Rule1,Rule2):
-    try:
-      with open(LocalCss, "a") as f: 
-        f.write("\n")
-        f.write("#"+Id+"{\n"+RuleA+"\n")
-        f.write(Rule0+"\n"+Rule1+"\n"+Rule2+"\n")
-        f.write("}\n")
-        f.close()
-        pass
-      pass
-    except:
-      print("Error of local CSS file.")
-      pass
-    pass  
-  def appendNewRule(self,LocalCss,Id,RuleX1,RuleX2,RuleX3):
-    line=0
-    endline=0
-    text=""
-    with open(LocalCss,"r")as f:
-      text=f.readlines()
-      for linha in text:
-        print(linha)
-        if "#"+Id+"{" == linha:
-          print(line)
-          for enline  in text:
-            if "}" in enline:
-              print(enline)
-              break
-            endline+=1
-          f.close()
-          break
-        line+=1
-      f.close()    
+
+  def appendNewRule(self,LocalCss,Id,LineIndex):
+    self._createElements(LocalCss,self._elementgenericCss.format(idCss=Id)+"{\n\n}",0)
     pass
-    with open(LocalCss,"w")as f:
-      if(RuleX1!=""):
-        text[endline-2]+=RuleX1+"\n"
-      if(RuleX2!=""):
-        text[endline-2]+=RuleX2+"\n"
-      if(RuleX3!=""):
-        text[endline-2]+=RuleX3+"\n"         
-      for linha in text:
-        f.write(linha)
-      f.close()   
-      pass
+
   def appendLinkSpaRule(self,HtmlPath,LineIndex):
-    text=""
-    rule= R"\n<link href='\Framework\cssComponents\Spa.css' rel='stylesheet' type='text/css' />\n"
-    with open(HtmlPath,"r")as f:
-      text=f.readlines()
-      LineIndex-=1
-      f.close()
-    with open(HtmlPath,"w")as f:
-      text[LineIndex]= rule
-      for linha in text:
-        f.write(linha)
-      f.close()      
-    pass
+    self._createElements(HtmlPath,R"\n<link href='\Framework\cssComponents\Spa.css' rel='stylesheet' type='text/css' />\n",LineIndex)
   pass
 
 #Class for search data in HTML files and create analitic data.
