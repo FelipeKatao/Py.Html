@@ -10,160 +10,64 @@ class HtmlPy():
   _LinkElement="<link href={locaLink} rel={typeLink} type={type} />"
   _ScriptElement="<script src={localLink}></script>"
 
+  def _BaseElement(self,local,componentTarget,lineIndex):
+    text=""
+    with open(componentTarget,'r') as f:
+      text= f.readlines()
+      pass
+    with open(local,'w')as c:
+      for lines in text:
+        c.write(lines)
+        pass
+    pass
+    
+  def _createElements(self,local,element,lineIndexCr):
+    self._createElements(local,element,lineIndexCr)
+    pass
+
   def CreateNewHtml(self,NameHtml,LocalFile,PreCode):
     #Project\codReadme.md
     if PreCode == 1:
-      with open(LocalFile, "w") as f:   
-        f.write("<!DOCTYPE html>")
-        f.write("\n<html>")
-        f.write("\n<head>  <title>{Html}</title>".format(Html=NameHtml))
-        f.write("\n<meta charset='UTF-8'>") 
-        f.write("\n<meta name="+"'viewport'"+ "content="+"'width=device-width, initial-scale=1.0'"+">")
-        f.write("\n<link>     ")      
-        f.write("\n </head>")
-        f.write("\n   <body>")
-        f.write("\n      </body>")
-        f.write("\n        </html>")
-        f.close() 
+      self._BaseElement(LocalFile,"htmlBase.html",1)
     else:
       with open(LocalFile,"w") as f:
-        f.write("<html></html>")
+        f.write("<html>\n\n</html>")
         f.close()  
-  def LinkCssStarter(self,CssName,HtmlPath):
-    line=0
-    text=""
-    with open(HtmlPath,"r")as f:
-      text=f.readlines()
-      for linha in text:
-        if "<link>" in linha:
-          print(line)
-          f.close()
-          break
-        line+=1
-    with open(HtmlPath,"w")as f:
-      text[line]="<link href='{Cssname}' rel='stylesheet' type='text/css' />\n".format(Cssname=CssName)
-      for linha in text:
-        f.write(linha)
-      f.close()                           
+
+  def LinkCssStarter(self,CssName,HtmlPath,LineIndex):
+    self._createElements(HtmlPath,"<link href='{Cssname}' rel='stylesheet' type='text/css' />\n".format(Cssname=CssName),LineIndex)
+    pass         
+
   def CreateMenuHtml(self,local,idMenu,LineIndex):
-    text=""
-    with open(local,'r') as f:
-      text=f.readlines()
-      f.close()
-      pass
-    with open(local,'w')as f:
-      LineIndex-=1
-      text[LineIndex]+="\n"+self._menuHtmlConst.format(Menuname="'"+idMenu+"'")
-      for lines in text:
-        f.write(lines)
-      pass
-      f.close()
+    self._createElements(local,"\n"+self._menuHtmlConst.format(Menuname="'"+idMenu+"'"),LineIndex)
     pass  
+
   def CreateFormHtml(self,local,idform,LineIndex,ActForm,IdnameInput):
-    text=""
-    with open(local,'r') as f:
-      text=f.readlines()
-      f.close()
-      pass
-    with open(local,'w')as f:
-      LineIndex-=1
-      text[LineIndex]+="\n"+self._formHtmlConst.format(actForm1=ActForm,idName=IdnameInput)+"\n"
-      for lines in text:
-        f.write(lines)
-      pass  
+    self._createElements(local,"\n"+self._formHtmlConst.format(actForm1=ActForm,idName=IdnameInput)+"\n",LineIndex)
     pass
+
   def linkCssFile(self,local,CssPath,LineIndex):
-    text=""
-    with open(local,"r")as f:
-      text=f.readlines()
-      f.close()
-      pass
-    with open(local,"w")as f:
-      LineIndex-=1
-      text[LineIndex]+=self._LinkElement.format(locaLink=local,typeLink="stylesheet",type="text/css")+"\n"
-      for lines in text:
-        f.write(lines)
-      pass
+    self._createElements(local,self._LinkElement.format(locaLink=local,typeLink="stylesheet",type="text/css")+"\n",LineIndex)
     pass
+
   def createNewElement(self,local,id,Element,Lineindex,Value):
-    text=""
-    with open(local,"r") as f:
-      text=f.readlines()
-      f.close()
-      pass
-    with open(local,"w") as f:
-      Lineindex-=1
-      text[Lineindex]+="\n"+self._geneticElement.format(element=Element,idElement=id,value=Value)+"\n"
-      for lines in text:
-        f.write(lines)
-        pass
+    self._createElements(local,"\n"+self._geneticElement.format(element=Element,idElement=id,value=Value)+"\n",Lineindex)
     pass
+
   def responsiveWindowMeta(self,local,escale,LineIndex):
-    text=""
-    with open(local,"r") as f:
-      text=f.readlines()
-      f.close()
+    self._createElements(local,"\n"+"<meta name='Viewport' content='width=device-width, initial-scale={scale}'>\n".format(scale=escale),LineIndex)
     pass
-    with open(local,"w")as f:
-      LineIndex-=1
-      text[LineIndex]+="\n"+"<meta name='Viewport' content='width=device-width, initial-scale={scale}'>\n".format(scale=escale)
-      for lines in text:
-        f.write(lines)
-      f.close()
-      pass
-  def createAppSpaDefault(self,local,AppName,Content,LineIndex):
-    text=""
-    element="<div id='content'>    \n<main>    \n<div id='{name}' class='app default'>\n     <div>{content}</div>\n     </div>     \n    </main>\n</div>\n".format(name=AppName,content=Content)
-    with open(local,"r") as f:
-      text=f.readlines()
-      f.close()
-    pass
-    with open(local,"w")as f:
-      LineIndex-=1
-      text[LineIndex]+=element
-      for lines in text:
-        f.write(lines)
-      f.close()
-      pass
+
   def createAppSpa(self,local,AppName,Content,LineIndex):
-    text=""
-    element="<div id='{name}' class='app'>\n     <div>{content}</div>\n     </div>\n".format(name=AppName,content=Content)
-    with open(local,"r") as f:
-      text=f.readlines()
-      f.close()
+    self._createElements(local,"<div id='{name}' class='app'>\n     <div>{content}</div>\n     </div>\n".format(name=AppName,content=Content),LineIndex)
     pass
-    with open(local,"w")as f:
-      LineIndex-=1
-      text[LineIndex]+=element
-      for lines in text:
-        f.write(lines)
-      f.close()
-      pass
+
   def LinkJsFile(self,local,jsPath,LineIndex):
-    text=""
-    with open(local,"r")as f:
-      text=f.readlines()
-      f.close()
-      pass
-    with open(local,"w")as f:
-      LineIndex-=1
-      text[LineIndex]+=self._ScriptElement.format(locaLink=local)+"\n"
-      for lines in text:
-        f.write(lines)
-      pass
+    self._createElements(local,self._ScriptElement.format(locaLink=local)+"\n",LineIndex)
     pass
+
   def LinkJquery(self,local,LineIndex):
-    text=""
-    with open(local,"r")as f:
-      text=f.readlines()
-      f.close()
-      pass
-    with open(local,"w")as f:
-      LineIndex-=1
-      text[LineIndex]+=self._ScriptElement.format(localLink="https://code.jquery.com/jquery-3.2.1.min.js")+"\n"
-      for lines in text:
-        f.write(lines)
-      pass
+    self._createElements(local,self._ScriptElement.format(localLink="https://code.jquery.com/jquery-3.2.1.min.js")+"\n",LineIndex)
     pass
 
   pass
@@ -296,6 +200,26 @@ class Component():
   text=""
   comp=""
 
+  def _insertCodeCompReader(self,componentTarget,local,LineIndex):
+    indexcount=0
+    with open(local,'r') as f:
+      self.text= f.readlines()
+    pass
+    with open(componentTarget,'r') as g:
+      self.comp=g.readlines();
+      pass
+    with open(local,'w')as c:
+      for lines in self.text:
+        c.write(lines)
+        indexcount+=1
+        if indexcount == LineIndex:
+          print(self.comp)
+          for linesx in self.comp:
+            c.write(linesx);
+            pass
+          pass
+        pass
+      pass
   def insertComponent(self,local,lineIndex,nameComponent):
      
     """Inserts components target to Html file.
@@ -306,64 +230,13 @@ class Component():
         nameComponent {string} -- Select name valid names: nav , list , article
     """
 
-    indexcount=0
-
     if(nameComponent == "article"):
-      with open(local,'r') as f:
-        self.text= f.readlines()
-      pass
-
-      with open(R"Framework\Components\article.html",'r') as c:
-        self.comp=c.readlines()
-        pass
-
-      with open(local,'w') as w:
-        for lines in self.text:
-          w.write(lines)
-          indexcount+=1
-          if indexcount == lineIndex:
-            print(self.comp)
-            for linesx in self.comp:
-              w.write(linesx)
-            pass
-        pass
+      self._insertCodeCompReader("article.html",local,lineIndex)
       pass
     if(nameComponent == "nav"):
-      with open(local,'r') as f:
-        self.text= f.readlines()
+      self._insertCodeCompReader("ColocaOlinkAqui",local,lineIndex)
       pass
-
-      with open(R"Framework\Components\nav.html",'r') as c:
-        self.comp=c.readlines()
-        pass
-
-      with open(local,'w') as w:
-        for lines in self.text:
-          w.write(lines)
-          indexcount+=1
-          if indexcount == lineIndex:
-            print(self.comp)
-            for linesx in self.comp:
-              w.write(linesx)
-            pass
-        pass
     if(nameComponent == "template-mobile"):
-      with open(local,'r') as f:
-        self.text= f.readlines()
-      pass
-
-      with open(R"Framework\Template\respMobile.html",'r') as c:
-        self.comp=c.readlines()
-        pass
-
-      with open(local,'w') as w:
-        for lines in self.text:
-          w.write(lines)
-          indexcount+=1
-          if indexcount == lineIndex:
-            print(self.comp)
-            for linesx in self.comp:
-              w.write(linesx)
-            pass
-        pass          
+      self._insertCodeCompReader("ColocaOlinkAqui",local,lineIndex)      
+      pass    
   pass
