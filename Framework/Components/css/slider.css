@@ -1,26 +1,22 @@
-/*////////////////////////////////////////////////
-//////////////////// SLIDER CSS //////////////////////
-////////////////////////////////////////////////*/
+/*////////////////////////////////
+///// SLIDER CSS //////////
+////////////////////////////////*/
 
 @charset "utf-8";
 
-html,body{
-	margin:0;
-	padding:0;
-}
-
-div, p{
-	margin: 0 auto;
-	padding:0;
-}
+*{ margin:0; padding:0; }
 
 #slider{
-	margin: 0 auto;
+	box-shadow: #000 3px 10px 25px;
+	max-height: 600px;
 	text-align: center;
+	background: #333;	
+	overflow: hidden;
+	position: relative;
+	top: 0;
 }
 
 #slider img{
-	margin:0 auto;
 	max-width: 100%;
-
+	display: none;
 }
