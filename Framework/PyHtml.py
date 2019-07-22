@@ -87,15 +87,15 @@ class CsPy():
   _elementgenericCss="\n#{idCss}"
   _elementgenericCssClass="\n.{idCss}"
   
-  def _createElements(self,local,element,lineIndexCr):
-    text=""
-    with open(local,'r') as f:
-      text=f.readlines()
+  def _createElements(self,localCss,element,lineIndexCr):
+    textCss=""
+    with open(localCss,'r') as f:
+      textCss=f.readlines()
       f.close()
       pass
-    with open(local,'w')as f:
+    with open(localCss,'w')as f:
       lineIndexCr-=1
-      text[lineIndexCr]+=element
+      textCss[lineIndexCr]+=element
       for lines in text:
         f.write(lines)
       pass  
