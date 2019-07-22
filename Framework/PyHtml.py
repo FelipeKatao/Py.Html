@@ -96,7 +96,7 @@ class CsPy():
     with open(localCss,'w')as f:
       lineIndexCr-=1
       textCss[lineIndexCr]+=element
-      for lines in text:
+      for lines in textCss:
         f.write(lines)
       pass  
     pass
