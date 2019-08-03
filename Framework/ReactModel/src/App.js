@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Menu from "./menu.js"
 
 class App extends Component {
   render() {
-   //Create here the Menu component//
+    return (
+      <div>
+      <h1>Py.Html React model</h1>
+      <h3>Insert componets avaliable here></h3>
+      </div>
+    );
   }
 }
 
