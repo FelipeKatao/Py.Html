@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Button } from 'antd';
+import 'antd/dist/antd.css';
 import './App.css';
+import Sidebar from './Components/Sidebar';
+import Navbar from './Components/Navbar';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-      <h1>Py.Html React model</h1>
-      <h3>Insert componets avaliable here></h3>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <Navbar />
+      <Sidebar />
+    </div>
+  );
 }
 
 export default App;
