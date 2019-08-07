@@ -14,13 +14,12 @@ import os
 
 #Class for create
 html= PyHtml.HtmlPy()
-css= PyHtml.CssPy()
 cht= PyHtml.Component()
 resp=CssTool.Responsive()
 #start code
 #resp.CollectionMobile(R"DemoAplication\app.html","Hello Py.html","Element one",12)
 #This code for mobile devices.
 #cht.insertComponent(R"C:\Users\Windows 8\Nova pasta\VsCode\Python\Py.Html-2\app.html",2,"template-mobile")
-cht.insertComponent(R"C:\Users\Windows 8\Nova pasta\VsCode\Python\Py.Html-2\app.html",2,"banner-slider")
+cht.insertComponent(R"C:\Users\Windows 8\Nova pasta\VsCode\Python\Py.Html-2\app.html",4,"slider")
 #Teste para branch
 #Test

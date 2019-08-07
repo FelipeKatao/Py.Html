@@ -185,4 +185,10 @@ class Component():
     if(nameComponent == "template-mobile"):
       self._insertCodeCompReader("ColocaOlinkAqui",local,lineIndex)      
       pass    
+    if(nameComponent == "slider"):
+      self._insertCodeCompReader("Framework\Components\slider.html",local,lineIndex)
+      pass
+    if(nameComponent == "menu"):
+      self._insertCodeCompReader("nav.html",local,lineIndex)
+      pass
   pass
