@@ -4,7 +4,14 @@ import os
 import ctypes, sys
 
 #Command list
-LISTCOMMAND= ["help","crete.html","exit"]
+LISTCOMMAND= ["help","create.html","exit","create.html.menu"]
+#var envirioments 
+HTML= PyHtml.HtmlPy()
+#args 
+args0=""
+argsX=""
+argsY=""
+LineIndex=""
 
 def main():
     CreateText("start")
@@ -42,10 +49,27 @@ def ExecuteCommand(command):
         print("      create.html = Create one html file ")
         print("      create.css = = Create one Css file ")
         print("      exit = = Close the PY.html \n")
-
+        print("create.html.menu = = Close the PY.html \n")
         pass
+
     if command =="exit":
         sys.exit()
+
+    if command == "create.html":
+      args0 =input("   >Insert the name Html: ")
+      argsX = input("   >Insert local Path:  ")
+      argsY = input("  >Enter 0 or 1 (0: to create empety HTML and 1:to create with html template:  ")
+      HTML.CreateNewHtml(args0,argsX,int(argsY))
+      print("      >HTML create with  sucefull")
+      pass
+
+    if command == "create.html.menu":
+      args0 =input("   >Insert local Html: ")
+      argsX = input("   >Id of menu:  ")
+      LineIndex = input("  >Line index to create menu: ") 
+      HTML.CreateMenuHtml(args0,argsX,int(LineIndex))
+      print("      >Menu create with  sucefull")
+      pass
     pass
 
 if __name__ == '__main__':
