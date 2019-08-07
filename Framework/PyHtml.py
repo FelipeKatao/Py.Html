@@ -124,6 +124,13 @@ class CsPy():
     self._createElements(HtmlPath,R"\n<link href='\Framework\cssComponents\Spa.css' rel='stylesheet' type='text/css' />\n",LineIndex)
   pass
 
+  def appendAllPyHtmlRules(self,HtmlPath,LineIndex):
+    self._createElements(HtmlPath,R"\n<link href='Framework\Components\css\slider.css' rel='stylesheet' type='text/css' />\n",LineIndex)
+    self._createElements(HtmlPath,R"\n<link href='Framework\Components\css\menubar.css' rel='stylesheet' type='text/css' />\n",LineIndex)
+    
+    pass
+
+
 #Class for search data in HTML files and create analitic data.
 class SearchData():
 
@@ -177,7 +184,7 @@ class Component():
     """
 
     if(nameComponent == "article"):
-      self._insertCodeCompReader("article.html",local,lineIndex)
+      self._insertCodeCompReader("Framework\Components\article.html",local,lineIndex)
       pass
     if(nameComponent == "nav"):
       self._insertCodeCompReader("ColocaOlinkAqui",local,lineIndex)
@@ -189,6 +196,6 @@ class Component():
       self._insertCodeCompReader("Framework\Components\slider.html",local,lineIndex)
       pass
     if(nameComponent == "menu"):
-      self._insertCodeCompReader("nav.html",local,lineIndex)
+      self._insertCodeCompReader("Framework\Components\nav.html",local,lineIndex)
       pass
   pass
