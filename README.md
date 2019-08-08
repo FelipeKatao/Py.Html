@@ -29,6 +29,8 @@ Algorithm makes an HTML file from scratch starting idea is *organization* where 
 
 *[William Sousa](https://github.com/W1llss)* - Web Developer
 
+*[Patrick Viveiros](https://github.com/trickpsv )* - Python Developer
+
 # Sumary: 
 In this document your can see: 
 
