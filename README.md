@@ -67,7 +67,8 @@ In this document your can see:
     + ( Others functions )
     + Animate Basic functions 
     + Advanced Function Animate Css
-
+    + 
+**Part one: Basic functions**
 #  Part one: Basic functions 
 Hello, if your install the *Py.html* now, start to its in this block your learn to: create and edit code html and css with py.html tecnology, one note very important  **PyHtml is organization web project , not one creator and editor web.** Its tool  is very cool for start project with basic elements not one very big editor web, we use this note in mind.
 
@@ -192,18 +193,18 @@ VyIGxpbmUgaXM6Iiwic3RhcnQiOjIyNTYsImVuZCI6MjMxM30s
 IkpEcEFDSTJydGFndGt1enciOnsidGV4dCI6IkRlZmluZSBuYW
 1lIHlvdXIgSHRtbCBkZWZpbmUgc29tZSB0aGUgdGl0bGUgY29k
 ZSBubyBkZWZpbmUgbmFtZSB0aGlzIGZpbGUuIiwic3RhcnQiOj
-I3ODIsImVuZCI6Mjg1Nn0sInRROHg4WUk4bExRVlV2U3giOnsi
+I4MTgsImVuZCI6Mjg5Mn0sInRROHg4WUk4bExRVlV2U3giOnsi
 dGV4dCI6IkluIHlvdXIgUHl0aG9uIGNvZGUsIHlvdXIgY2FsbC
 BmdW5jdGlvbiB0byBjcmVhdGlvbiBUYWdzIG9yIFJ1bGVzIENz
-cyBhZnRlciBjcmXigKYiLCJzdGFydCI6MzM0NSwiZW5kIjozNT
-Y3fSwiUTJZb2FtUW9LQk9zcG05ZCI6eyJ0ZXh0IjoiSW4gZHlu
+cyBhZnRlciBjcmXigKYiLCJzdGFydCI6MzM4MSwiZW5kIjozNj
+AzfSwiUTJZb2FtUW9LQk9zcG05ZCI6eyJ0ZXh0IjoiSW4gZHlu
 YW1pYyB5b3VyIG5vdCBlcmFzZXMgZnVuY3Rpb25zLHNvbWUgZW
 RpdCBpbiBIVE1MIGNvZGUsIGlmIHlvdXIgZWRpdCBQeSBjb+KA
-piIsInN0YXJ0IjozNjQwLCJlbmQiOjM4MDF9LCJpZEllSWZJV0
+piIsInN0YXJ0IjozNjc2LCJlbmQiOjM4Mzd9LCJpZEllSWZJV0
 5EV3lYZGluIjp7InRleHQiOiJUaGluZyBpZiB5b3VyIHVzZSBQ
 eS5IdG1sIGZvciBjcmVhdGUgbmV3cyB0YWdzIHVzZSB0aGUgUH
 l0aG9uIGNvZGUsIGZvciBlZGl0ICB04oCmIiwic3RhcnQiOjUx
-MDEsImVuZCI6NTIxNH19LCJjb21tZW50cyI6eyJxTjBFSVI2Wj
+MzcsImVuZCI6NTI1MH19LCJjb21tZW50cyI6eyJxTjBFSVI2Wj
 VLa0phNGtPIjp7ImRpc2N1c3Npb25JZCI6ImVnbFNjYmx3cDJG
 R2Y0aVIiLCJzdWIiOiJnaDozNDU1OTA4MSIsInRleHQiOiJFc3
 RhIHBhcnRlIGVzdGEgY29tICB1bWEgc2ludGF4ZSBxdWVicmFk
@@ -228,11 +229,11 @@ F0ZWQiOjE1NTg1Nzk5OTI4Njh9LCI2MGR5R1VJU2UzUWhZYWhy
 Ijp7ImRpc2N1c3Npb25JZCI6ImlkSWVJZklXTkRXeVhkaW4iLC
 JzdWIiOiJnaDozNDU1OTA4MSIsInRleHQiOiJUYSBtdWl0byBt
 YWwgZGVmaW5pZG8iLCJjcmVhdGVkIjoxNTU4NTgwMDkzODU2fX
-0sImhpc3RvcnkiOlstMTk0NjA2MzkxLC0xNTE3MDY4Mjk5LC0x
-OTE5NTExODAzLC0xODI2NjE1OTQ4LC0yNDMzOTU1NTcsLTExNT
-M3ODk3NjcsLTEwNTI5MTQ1ODUsLTEyMzI2OTU4NDQsMTkzOTEx
-OTkwNiw2Mzg5OTI4NSwtOTU0NDg1ODcwLDEzODkxMTQwMjEsLT
-E3OTUxNzg2OTQsLTMxNTU0NTY4NywtNzQ2NjI3ODI2LDEzNjg1
-NjI0NzcsLTk1NTg5ODAxMiwxNTc5ODgxNjEyLDEwNTQzNzM2Nj
-YsLTE0MTU2Nzk1MzNdfQ==
+0sImhpc3RvcnkiOlsxMTcwMDc5NTg3LC0xOTQ2MDYzOTEsLTE1
+MTcwNjgyOTksLTE5MTk1MTE4MDMsLTE4MjY2MTU5NDgsLTI0Mz
+M5NTU1NywtMTE1Mzc4OTc2NywtMTA1MjkxNDU4NSwtMTIzMjY5
+NTg0NCwxOTM5MTE5OTA2LDYzODk5Mjg1LC05NTQ0ODU4NzAsMT
+M4OTExNDAyMSwtMTc5NTE3ODY5NCwtMzE1NTQ1Njg3LC03NDY2
+Mjc4MjYsMTM2ODU2MjQ3NywtOTU1ODk4MDEyLDE1Nzk4ODE2MT
+IsMTA1NDM3MzY2Nl19
 -->
