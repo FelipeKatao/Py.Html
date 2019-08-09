@@ -67,8 +67,9 @@ In this document your can see:
     + ( Others functions )
     + Animate Basic functions 
     + Advanced Function Animate Css
-    + 
-**Part one: Basic functions**
+    
+**Part two : Using console app**
+      -
 #  Part one: Basic functions 
 Hello, if your install the *Py.html* now, start to its in this block your learn to: create and edit code html and css with py.html tecnology, one note very important  **PyHtml is organization web project , not one creator and editor web.** Its tool  is very cool for start project with basic elements not one very big editor web, we use this note in mind.
 
@@ -193,18 +194,18 @@ VyIGxpbmUgaXM6Iiwic3RhcnQiOjIyNTYsImVuZCI6MjMxM30s
 IkpEcEFDSTJydGFndGt1enciOnsidGV4dCI6IkRlZmluZSBuYW
 1lIHlvdXIgSHRtbCBkZWZpbmUgc29tZSB0aGUgdGl0bGUgY29k
 ZSBubyBkZWZpbmUgbmFtZSB0aGlzIGZpbGUuIiwic3RhcnQiOj
-I4MTgsImVuZCI6Mjg5Mn0sInRROHg4WUk4bExRVlV2U3giOnsi
+I4MjcsImVuZCI6MjkwMX0sInRROHg4WUk4bExRVlV2U3giOnsi
 dGV4dCI6IkluIHlvdXIgUHl0aG9uIGNvZGUsIHlvdXIgY2FsbC
 BmdW5jdGlvbiB0byBjcmVhdGlvbiBUYWdzIG9yIFJ1bGVzIENz
-cyBhZnRlciBjcmXigKYiLCJzdGFydCI6MzM4MSwiZW5kIjozNj
-AzfSwiUTJZb2FtUW9LQk9zcG05ZCI6eyJ0ZXh0IjoiSW4gZHlu
+cyBhZnRlciBjcmXigKYiLCJzdGFydCI6MzM5MCwiZW5kIjozNj
+EyfSwiUTJZb2FtUW9LQk9zcG05ZCI6eyJ0ZXh0IjoiSW4gZHlu
 YW1pYyB5b3VyIG5vdCBlcmFzZXMgZnVuY3Rpb25zLHNvbWUgZW
 RpdCBpbiBIVE1MIGNvZGUsIGlmIHlvdXIgZWRpdCBQeSBjb+KA
-piIsInN0YXJ0IjozNjc2LCJlbmQiOjM4Mzd9LCJpZEllSWZJV0
+piIsInN0YXJ0IjozNjg1LCJlbmQiOjM4NDZ9LCJpZEllSWZJV0
 5EV3lYZGluIjp7InRleHQiOiJUaGluZyBpZiB5b3VyIHVzZSBQ
 eS5IdG1sIGZvciBjcmVhdGUgbmV3cyB0YWdzIHVzZSB0aGUgUH
 l0aG9uIGNvZGUsIGZvciBlZGl0ICB04oCmIiwic3RhcnQiOjUx
-MzcsImVuZCI6NTI1MH19LCJjb21tZW50cyI6eyJxTjBFSVI2Wj
+NDYsImVuZCI6NTI1OX19LCJjb21tZW50cyI6eyJxTjBFSVI2Wj
 VLa0phNGtPIjp7ImRpc2N1c3Npb25JZCI6ImVnbFNjYmx3cDJG
 R2Y0aVIiLCJzdWIiOiJnaDozNDU1OTA4MSIsInRleHQiOiJFc3
 RhIHBhcnRlIGVzdGEgY29tICB1bWEgc2ludGF4ZSBxdWVicmFk
@@ -229,7 +230,7 @@ F0ZWQiOjE1NTg1Nzk5OTI4Njh9LCI2MGR5R1VJU2UzUWhZYWhy
 Ijp7ImRpc2N1c3Npb25JZCI6ImlkSWVJZklXTkRXeVhkaW4iLC
 JzdWIiOiJnaDozNDU1OTA4MSIsInRleHQiOiJUYSBtdWl0byBt
 YWwgZGVmaW5pZG8iLCJjcmVhdGVkIjoxNTU4NTgwMDkzODU2fX
-0sImhpc3RvcnkiOlsxMTcwMDc5NTg3LC0xOTQ2MDYzOTEsLTE1
+0sImhpc3RvcnkiOlstMzY0ODEzMjMwLC0xOTQ2MDYzOTEsLTE1
 MTcwNjgyOTksLTE5MTk1MTE4MDMsLTE4MjY2MTU5NDgsLTI0Mz
 M5NTU1NywtMTE1Mzc4OTc2NywtMTA1MjkxNDU4NSwtMTIzMjY5
 NTg0NCwxOTM5MTE5OTA2LDYzODk5Mjg1LC05NTQ0ODU4NzAsMT
