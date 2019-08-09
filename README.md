@@ -31,6 +31,8 @@ Algorithm makes an HTML file from scratch starting idea is *organization* where 
 
 *[Patrick Viveiros](https://github.com/trickpsv )* - Python Developer
 
+*[Paulo Macedo](https://github.com/pauloAMacedo )* - Python Developer
+
 # Sumary: 
 In this document your can see: 
 
