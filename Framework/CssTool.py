@@ -148,28 +148,6 @@ class Responsive():
                 f.write(lines)
                 pass
             pass 
-    def CollectionLinksMobile(self,local,title,element,lineIndex):
-
-        """Create Collection of links Mobile
-        Arguments:
-            local {String} -- Select local to your Html code
-            title {String]} -- Create Title to collection
-            element {String} -- Create element to your collection
-            lineIndex {Int} -- Select line to your Htmll, for insert its collection 
-        """
-        collectDiv="\n<div class='collection'>\n<a href='#!' class='collection-item'>{contentName}</a>\n</div>\n ".format(titleName=title,contentName=element)
-        text=""
-        with open(local,'r',encoding=OUTPUT_CODEC) as f:
-            text=f.readlines()
-            f.close()
-            pass
-        with open(local,"w",encoding=OUTPUT_CODEC)as f:
-            lineIndex-=1
-            text[lineIndex]=collectDiv
-            for lines in text:
-                f.write(lines)
-                pass
-            pass 
     pass
 
 
