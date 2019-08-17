@@ -1,0 +1,61 @@
+/*////////////////////////////////
+///// NAV COMPONENT //////////
+////////////////////////////////*/
+
+@charset "utf-8";
+
+*{ margin:0; padding:0;}
+
+body{
+	font-family: arial, helvetic, tahoma;
+	font-size: 13px;
+	color: #fff;
+}
+
+#slider{
+	box-shadow: #000 3px 10px 25px;
+	max-height: 600px;
+	text-align: center;
+	background: #333;	
+	overflow: hidden;
+	position: relative;
+	top: 0;
+}
+
+#slider img{
+	max-width: 100%;
+	display: none;
+}
+
+nav{
+	background: #666;
+	height: 50px;
+}
+
+#menu ul , li > a{
+	//border:1px solid #c0c0c0;
+	list-style: none;
+	float: left;
+}
+#menu a{
+	text-decoration: none;
+	background: #fff;
+	font-weight: bold;
+	display: block;
+	color: #000;
+	padding: 3px 30px;
+	margin: 12px 10px;
+	box-shadow: 2px 2px 5px #000;
+}
+#menu li{
+	display: inline;
+}
+#menu li > ul:nth-child(even){
+	display: none;
+}
+#menu li:hover ul{
+	position: absolute;
+	display:block;
+	top:32px;
+	left:0px;	
+}
