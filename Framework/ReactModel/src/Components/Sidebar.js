@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Breadcrumb, Icon } from 'antd';
 
+import mainContent from './table';
+
 const { SubMenu } = Menu;
 const { Header, Content, Sider } = Layout;
 
@@ -73,7 +75,7 @@ export default class Sidebar extends Component {
               minHeight: 280,
             }}
           >
-            Content
+              <mainContent />
           </Content>
         </Layout>
     </Layout>
