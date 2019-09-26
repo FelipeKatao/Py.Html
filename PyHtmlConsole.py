@@ -7,7 +7,7 @@ import ctypes, sys
 LISTCOMMAND= ["help","create.html","exit","create.html.menu"]
 #var envirioments 
 HTML= PyHtml.HtmlPy()
-#args 
+#args for new imputs 
 args0=""
 argsX=""
 argsY=""
