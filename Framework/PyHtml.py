@@ -82,55 +82,6 @@ class HtmlPy():
 
   pass
 
-#Create, edit and read CSS files 
-class CsPy():
-  _elementgenericCss="\n#{idCss}"
-  _elementgenericCssClass="\n.{idCss}"
-  
-  def _createElements(self,localCss,element,lineIndexCr):
-    textCss=""
-    with open(localCss,'r') as f:
-      textCss=f.readlines()
-      f.close()
-      pass
-    with open(localCss,'w')as f:
-      lineIndexCr-=1
-      textCss[lineIndexCr]+=element
-      for lines in textCss:
-        f.write(lines)
-      pass  
-    pass
-
-  def CreateCss(self,pathCss,CssName):
-    with open(pathCss,"w") as f:
-      f.write("/*Css Code write with: [Py.Html]*/")
-      f.close()
-      pass
-    pass
-
-  def CreateRuleClass(self,NameCss,LocalCss,Class,Rule):
-    self._createElements(LocalCss,self._elementgenericCssClass.format(idCss=Class)+"{\n\n}",0)
-    pass 
-
-  def CreateRuleIdRules(self,NameCss,LocalCss,rule,lineIndex):
-    self._createElements(LocalCss,rule,lineIndex);
-    pass
-
-  def appendNewRule(self,LocalCss,Id,LineIndex):
-    self._createElements(LocalCss,self._elementgenericCss.format(idCss=Id)+"{\n\n}",0)
-    pass
-
-  def appendLinkSpaRule(self,HtmlPath,LineIndex):
-    self._createElements(HtmlPath,R"\n<link href='\Framework\cssComponents\Spa.css' rel='stylesheet' type='text/css' />\n",LineIndex)
-  pass
-
-  def appendAllPyHtmlRules(self,HtmlPath,LineIndex):
-    self._createElements(HtmlPath,R"\n<link href='Framework\Components\css\slider.css' rel='stylesheet' type='text/css' />\n",LineIndex)
-    self._createElements(HtmlPath,R"\n<link href='Framework\Components\css\menubar.css' rel='stylesheet' type='text/css' />\n",LineIndex)
-    
-    pass
-
-
 #Class for search data in HTML files and create analitic data.
 class SearchData():
 
