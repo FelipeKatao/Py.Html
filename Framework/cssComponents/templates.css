@@ -1,0 +1,12 @@
+.sandbox{
+    background-color: blueviolet;
+    height: 100vh;
+}
+.sandbox h1{
+    position: fixed;
+    margin-top: 50vh;
+    margin-left: 60vh;
+    color:white;
+    text-align: center;
+    font-style: oblique;
+} 
