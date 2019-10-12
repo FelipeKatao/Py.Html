@@ -4,7 +4,6 @@
 }
 .sandbox h1{
     position: fixed;
-    margin-top: 50vh;
     margin-left: 60vh;
     color:white;
     text-align: center;
@@ -12,8 +11,8 @@
 } 
 .sandbox h3{
     position:fixed;
-    margin-top: 60vh;
-    margin-left: 60vh;
+    margin-top: 10vh;
+    margin-left: 50vh;
     color:white;
     text-align: center;
     font-style: oblique;

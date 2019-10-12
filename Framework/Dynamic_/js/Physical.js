@@ -1,6 +1,9 @@
-class Physical{
-    //Pyshical class for elements Js//
-    gravity(element,force,startsForce){
-        element.style.top = force+"px";
+function myMove(target) {
+    var elem = document.getElementById(target);   
+    var pos = 0;
+    var id = setInterval(frame, 13);
+    function frame() {
+        pos++; 
+        elem.style.top = pos + "px"; 
     }
-} 
+  }
