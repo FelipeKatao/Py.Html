@@ -11,26 +11,27 @@ function gravity(target,force) {
     },force);
   }
 function detectColider(target,targetCol){
-    target=document.getElementById(target);
+   target=document.getElementById(target);
     targetCol=document.getElementById(targetCol);
 
-    let colider=[target.offsetLeft,target.offsetTop,target.offsetWidth,target.offsetHeight];
-    let coliderTarget=[targetCol.offsetLeft,targetCol.offsetTop,targetCol.offsetWidth,targetCol.offsetHeight];
-    let colidercheck= (coliderTarget[0]+coliderTarget[2]>=colider[0])&&(colider[0]+colider[2]>=coliderTarget[0]);
-    let coliderchecktarget= (coliderTarget[1]+coliderTarget[3]>=colider[0])&&(colider[1]+colider[3]>=coliderTarget[1]);
+    let top=0;
+    let left=0;
+    let BBoxA
+    let BBoxB
 
     let id= setInterval(function frame(){   
-        
-         colider=[target.offsetLeft,target.offsetTop,target.offsetWidth,target.offsetHeight];
-         coliderTarget=[targetCol.offsetLeft,targetCol.offsetTop,targetCol.offsetWidth,targetCol.offsetHeight];
-         colidercheck= (coliderTarget[0]+coliderTarget[2]>=colider[0])&&(colider[0]+colider[2]>=coliderTarget[0]);
-        // coliderchecktarget= (coliderTarget[1]+coliderTarget[3]>=colider[0])&&(colider[1]+colider[3]>=coliderTarget[1]);
-
-        if((colidercheck && coliderchecktarget)){
-            console.log("colidiu!");
+        let rangeIntersect = function(min0, max0, min1, max1) {
+            return Math.max(min0, max0) >= Math.min(min1, max1) && Math.min(min0, max0) <= Math.max(min1, max1)
         }
-        else{
-            console.log("procurando...")
+        //Função para detectar se 2 BoundingClientRect's estão colidindo
+        let rectIntersect = function (r0, r1) {
+            return rangeIntersect(r0.left, r0.right, r1.left, r1.right) && rangeIntersect(r0.top, r0.bottom, r1.top, r1.bottom)
+        }
+        BBoxA = target.getBoundingClientRect()
+        BBoxB = targetCol.getBoundingClientRect()
+
+        if(rectIntersect(BBoxA, BBoxB)){
+           this.colider=true;
         }
     },5);
 }

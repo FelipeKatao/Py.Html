@@ -20,9 +20,16 @@
 
 #box-animate{
     position:fixed;
-    height: 200px;
+    height: 50px;
+    width: 400px;
+    margin-top:50vh;
+    margin-left: 50vh;
+    background-color:white;
+}
+#box-colider{
+    position:fixed;
+    height: 50px;
     width: 400px;
     margin-top:40vh;
     margin-left: 50vh;
-    background-color:white;
 }

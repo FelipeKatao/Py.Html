@@ -10,12 +10,14 @@
         <div class="container-fluid sandbox">
             <h1 id="titulo">Hello Py.html</h1>
             <h3 id="subtitulo">Welcome to interactive page creation</h3>
+            <div id="box-colider"></div>
             <div id="box-animate"></div>
+            
 		</div>
 		<script src="Framework\Dynamic_\js\Physical.js"></script>
 		<script>
             var documentX= document.getElementById("titulo");
-            detectColider("titulo","box-animate");
+            detectColider("titulo","box-colider");
             gravity("titulo");
             gravity("subtitulo");
 
