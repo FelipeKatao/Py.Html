@@ -10,6 +10,15 @@ function gravity(target,force) {
         }
     },force);
   }
+function returnColider(functionTarget){
+    let colFunc=false;
+    let id = setInterval(function frame(){
+        if(colider==true && colFunc==false){
+            functionTarget()
+            colFunc=true;
+        }
+    },5)
+}
 function detectColider(target,targetCol){
    target=document.getElementById(target);
     targetCol=document.getElementById(targetCol);

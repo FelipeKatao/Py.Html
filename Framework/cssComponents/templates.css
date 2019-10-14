@@ -33,3 +33,10 @@
     margin-top:40vh;
     margin-left: 50vh;
 }
+#menu{
+    opacity: 0;
+     transition: opacity .5s;
+ }
+ #menu.fadein{
+       opacity: 1;
+ }

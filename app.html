@@ -7,8 +7,30 @@
         <link rel="stylesheet" href="Framework\cssComponents\templates.css">
         </head>
     <body>
+
         <div class="container-fluid sandbox">
-        <div>Construct</div>
+<nav id="menu" class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">PyHtml SandBox</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">New fatures</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Interactive</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Game space</a>
+      </li>
+    </ul>
+  </div>
+</nav>       
             <h1 id="titulo">Hello Py.html</h1>
             <h3 id="subtitulo">Welcome to interactive page creation</h3>
             <div id="box-colider"></div>
@@ -16,11 +38,16 @@
             
 		</div>
 		<script src="Framework\Dynamic_\js\Physical.js"></script>
+        <script src="Framework\Dynamic_\js\Effects.js"></script>
 		<script>
+            function menuopen(){
+              fadeObj("menu");
+            }
             var documentX= document.getElementById("titulo");
             detectColider("titulo","box-colider");
             gravity("titulo");
             gravity("subtitulo");
+            returnColider(menuopen);
 
 		</script>
         <body>
