@@ -1,27 +1,23 @@
+//Variaveis globais
 var targetSelect="";
 var speed=0;
 var _posX=0;
 var _posY=0
 
-document.addEventListener('keydown',(event)=>{
-    
+//Move the obj target with key//
+document.addEventListener('keydown',(event)=>{    
     var keyName= event.key;
-    
-
     if(keyName=="ArrowDown" || keyName=="s"){
-        _movetargetLeft();
+        _movetargeDown();
     }
     if(keyName=="ArrowLeft" || keyName=="d"){
-        targetMove.style.left=+speed+"px";
-        console.log("left");
+        _movetargeLeft();
     }
     if(keyName=="ArrowRight" || keyName=="a"){
-        targetMove.style.right=+speed+"px";
-        console.log("right");
+        _movetargeRight()
     }
     if(keyName=="ArrowUp" || keyName=="w"){
-        targetMove.style.top=+speed+"px";
-        console.log("Up");
+        _movetargeUp();
     }
 });
 
@@ -33,6 +29,21 @@ function selectTarget(target,speedTarget,posX,PosY){
 }
 function _movetargeDown(){
     let targetMove= document.getElementById(targetSelect);
+    _posY=_posY+speed;
+    targetMove.style.top=_posY+"px";
+}
+function _movetargeUp(){
+    let targetMove= document.getElementById(targetSelect);
     _posY=_posY-speed;
     targetMove.style.top=_posY+"px";
+}
+function _movetargeLeft(){
+    let targetMove= document.getElementById(targetSelect);
+    _posX=_posX-speed;
+    targetMove.style.left=_posX+"px";
+}
+function _movetargeRight(){
+    let targetMove= document.getElementById(targetSelect);
+    _posX=_posX+speed;
+    targetMove.style.left=_posX+"px";
 }
