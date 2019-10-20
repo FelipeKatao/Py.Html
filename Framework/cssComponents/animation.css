@@ -1,0 +1,12 @@
+/*Animation default to Py.Html*/
+.redOrangeChangeColor{
+    animation-name: changecolor;
+    animation-duration:infinite;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes changecolor {
+    from{background-color: red;}
+    to{background-color: orange;}
+}

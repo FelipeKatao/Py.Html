@@ -7,6 +7,9 @@ function hiddenObj(target){
   document.getElementById(target).classList.add('hid-element');
 }
 function visibleObj(target){
-  document.getElementById(target).classList.remove('hid-element')
+  document.getElementById(target).classList.remove('hid-element');
   document.getElementById(target).classList.add('visi-element');
+}
+function animationColorRed(target){
+  document.getElementById(target).classList.add('redOrangeChangeColor');
 }
