@@ -1,30 +1,38 @@
 var targetSelect="";
 var speed=0;
+var _posX=0;
+var _posY=0
 
 document.addEventListener('keydown',(event)=>{
-    const keyName= event.key;
-    let targetMove= document.getElementById(targetSelect);
+    
+    var keyName= event.key;
+    
 
     if(keyName=="ArrowDown" || keyName=="s"){
-        targetMove.style.down=speed+"px";
-        console.log("down"+speed);
-
+        _movetargetLeft();
     }
     if(keyName=="ArrowLeft" || keyName=="d"){
-        targetMove.style.left=speed+"px";
+        targetMove.style.left=+speed+"px";
         console.log("left");
     }
     if(keyName=="ArrowRight" || keyName=="a"){
-        targetMove.style.right=speed+"px";
+        targetMove.style.right=+speed+"px";
         console.log("right");
     }
     if(keyName=="ArrowUp" || keyName=="w"){
-        targetMove.style.top=speed+"px";
+        targetMove.style.top=+speed+"px";
         console.log("Up");
     }
-})
+});
 
-function selectTarget(target,speedTarget){
+function selectTarget(target,speedTarget,posX,PosY){
     targetSelect=target;
     speed=speedTarget;
+    _posX=posX;
+    _posY=PosY;
+}
+function _movetargeDown(){
+    let targetMove= document.getElementById(targetSelect);
+    _posY=_posY-speed;
+    targetMove.style.top=_posY+"px";
 }
