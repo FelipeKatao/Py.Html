@@ -32,7 +32,7 @@ function detectColider(target,targetCol){
         let rangeIntersect = function(min0, max0, min1, max1) {
             return Math.max(min0, max0) >= Math.min(min1, max1) && Math.min(min0, max0) <= Math.max(min1, max1)
         }
-        //Função para detectar se 2 BoundingClientRect's estão colidindo
+
         let rectIntersect = function (r0, r1) {
             return rangeIntersect(r0.left, r0.right, r1.left, r1.right) && rangeIntersect(r0.top, r0.bottom, r1.top, r1.bottom)
         }
@@ -41,6 +41,9 @@ function detectColider(target,targetCol){
 
         if(rectIntersect(BBoxA, BBoxB)){
            this.colider=true;
+        }
+        else{
+            this.colider=false;
         }
     },5);
 }

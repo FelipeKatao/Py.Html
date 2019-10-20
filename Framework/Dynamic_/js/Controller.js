@@ -7,10 +7,10 @@ var _posY=0
 //Move the obj target with key//
 document.addEventListener('keydown',(event)=>{    
     var keyName= event.key;
-    if(keyName=="ArrowDown" || keyName=="s"){
+    if(keyName=="ArrowDown" || keyName=="d"){
         _movetargeDown();
     }
-    if(keyName=="ArrowLeft" || keyName=="d"){
+    if(keyName=="ArrowLeft" || keyName=="s"){
         _movetargeLeft();
     }
     if(keyName=="ArrowRight" || keyName=="a"){
