@@ -46,10 +46,3 @@
  #menu.fadein{
        opacity: 1;
  }
- #square{
-     position:fixed;
-     height: 40px;
-     width: 40px;
-     margin-top:20px;
-     margin-left: 20px;
- }
