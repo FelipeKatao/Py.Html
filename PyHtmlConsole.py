@@ -1,10 +1,11 @@
 from Framework import PyHtml
 from Framework import CssTool
+from Framework import HtmlData
 import os
 import ctypes, sys
 
 #Command list
-LISTCOMMAND= ["help","create.html","exit","create.html.menu"]
+LISTCOMMAND= ["help","create.html","exit","create.html.menu","set.path"]
 #var envirioments 
 HTML= PyHtml.HtmlPy()
 #args for new imputs 
@@ -12,6 +13,8 @@ args0=""
 argsX=""
 argsY=""
 LineIndex=""
+#Create all constructors
+dt=HtmlData.SearchData()
 
 def main():
     CreateText("start")
@@ -54,6 +57,14 @@ def ExecuteCommand(command):
 
     if command =="exit":
         sys.exit()
+
+    if command == "set.path":
+        args0 = input("  >insert Html local File")
+        argsX = input("  >Insert CSS local file")
+        argsY = input("  >Insert Js local file")
+        dt.createNewFileLocal(args0,argsX,argsY)
+        print("         >The local files created: "+args0+"| |"+argsX+"| |"+argsY)
+        pass
 
     if command == "create.html":
       args0 =input("   >Insert the name Html: ")

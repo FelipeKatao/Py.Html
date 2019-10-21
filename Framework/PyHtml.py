@@ -124,7 +124,7 @@ class Component():
       self._insertCodeCompReader("ColocaOlinkAqui",local,lineIndex)
       pass
     if(nameComponent == "template-mobile"):
-      self._insertCodeCompReader("ColocaOlinkAqui",local,lineIndex)      
+      #self._insertCodeCompReader("ColocaOlinkAqui",local,lineIndex)      
       pass    
     if(nameComponent == "slider"):
       #Create component slider
