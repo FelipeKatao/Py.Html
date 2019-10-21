@@ -81,6 +81,13 @@ def ExecuteCommand(command):
       HTML.CreateMenuHtml(args0,argsX,int(LineIndex))
       print("      >Menu create with  sucefull")
       pass
+
+    if command == "create.html.form":
+        if(dt._localHtmlFiles!=""):
+            HTML.CreateFormHtml(dt._localHtmlFiles,"",0,",","")
+        else:
+            pass
+        pass
     pass
 
 if __name__ == '__main__':
