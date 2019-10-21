@@ -14,15 +14,19 @@ class Dynamic():
             pass
         pass
     def CreateScriptArea(self,local,element,LineIndex):
-        elementJs="<script src='Framework\Dynamic_\js\Physical.js'></script> \n<script src='Framework\Dynamic_\js\Effects.js'></script> \n<script src='Framework\Dynamic_\js\Controller.js'></script>\n<script>\n\n<\script>"
+        elementJs="\n <script src='Framework\Dynamic_\js\Physical.js'></script> \n<script src='Framework\Dynamic_\js\Effects.js'></script> \n<script src='Framework\Dynamic_\js\Controller.js'></script>\n<script>\n\n<\script>"
         self._createJsElements(local,"",LineIndex)        
         pass
     def AnimationOpacity(self,local,target,LineIndex):
-        elementJs="opacityRepeat("+target+");"
+        elementJs="\n opacityRepeat("+target+");"
         self._createJsElements(local,"",LineIndex)
         pass
     def AnimationChangeColorRed(self,local,target,LineIndex):
-        elementJs="animationColorRed("+target+");"
+        elementJs="\n animationColorRed("+target+");"
         self._createJsElements(local,"",LineIndex)        
+        pass
+    def AnimationFadeObj(self,local,target,LineIndex):
+        elementJs="\n fadeObj("+target+");"
+        self._createJsElements(local,"",LineIndex)   
         pass
     pass
