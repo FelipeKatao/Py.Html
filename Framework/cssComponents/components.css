@@ -1,3 +1,11 @@
+
+/*
+          CSS COMPONENTS  
+      Its  Css is componenets path, so class
+      and Ids styles,not have position top 
+      down,left or rigjht defines.
+*/
+
 .articleCl{
   background-color: rgb(231, 231, 231);
   border-radius: 10px;

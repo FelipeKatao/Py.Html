@@ -1,4 +1,10 @@
 /*Animation default to Py.Html*/
+/*
+      ANIMATION EFFECTS 
+  Create animations and styles for animations
+  sites and interactive, its css have some 
+  class types ans Keyframes.
+*/
 .redOrangeChangeColor{
     -webkit-animation: changeColorRed 3s;  /* Safari 4.0 - 8.0 */
     -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
