@@ -127,7 +127,7 @@ class Component():
       self._insertCodeCompReader("ColocaOlinkAqui",local,lineIndex)      
       pass    
     if(nameComponent == "slider"):
-      self._insertCodeCompReader("Framework\Components\slider.html",local,lineIndex)
+      #Create component slider
       pass
     if(nameComponent == "menu"):
       self._insertCodeCompReader("Framework\Components\nav.html",local,lineIndex)
