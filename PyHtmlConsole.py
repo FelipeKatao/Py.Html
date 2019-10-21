@@ -82,6 +82,7 @@ def ExecuteCommand(command):
       print("      >Menu create with  sucefull")
       pass
 
+      #Utilizar como exemplo de criação este onde elepeccore primeiro o Data
     if command == "create.html.form":
         if(dt._localHtmlFiles!=""):
             args0= input("    >Insert the IdForm: ")
@@ -89,6 +90,7 @@ def ExecuteCommand(command):
             argsY = input("   >Act form: ")
             argz =input("Id name Input form: ")
             HTML.CreateFormHtml(dt._localHtmlFiles,args0,int(argsX),argsY,argz)
+            print("Forms create with susefull")
         else:
             argsE= input("    >Insert the local Html: ")
             args0= input("    >Insert the IdForm: ")
@@ -96,6 +98,7 @@ def ExecuteCommand(command):
             argsY = input("   >Act form: ")
             argz =input("Id name Input form: ")
             HTML.CreateFormHtml(argsE,args0,int(argsX),argsY,argz)
+            print("Forms create with susefull")
         pass
     pass
 
