@@ -82,23 +82,6 @@ class HtmlPy():
 
   pass
 
-#Class for search data in HTML files and create analitic data.
-class SearchData():
-
-  _localHtmlFiles=[]
-  _localCssFiles=[]
-  _localJsFiles=[]
-
-  def createNewFileLocal(self,html,css,js):
-    if html!="":
-      self._localHtmlFiles.append(html)
-    if css!="":
-      self._localCssFiles.append(css)
-    if js!="":
-      self._localJsFiles.append(js)
-    pass
-  pass
-
 class Component():
 
   text=""
