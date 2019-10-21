@@ -13,3 +13,9 @@ function visibleObj(target){
 function animationColorRed(target){
   document.getElementById(target).classList.add('redOrangeChangeColor');
 }
+function opacityRepeat(target){
+  document.getElementById(target).classList.add('alphaRepeat');
+}
+function opacityAnim(target){
+  document.getElementById(target).classList.add('animAlpha');
+}

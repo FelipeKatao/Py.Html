@@ -5,6 +5,17 @@
     animation: changeColorRed 3s;
     animation-iteration-count: infinite;
 }
+.alphaRepeat{
+    -webkit-animation: alphaAnimation 3s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    animation: alphaAnimation 3s ease-out;
+    animation-iteration-count: infinite;
+}
+.animAlpha{
+    -webkit-animation: alphaAnimation 3s ease-out;
+    animation: alphaAnimation 3s ease-out;
+    animation-iteration-count: infinite;   
+}
 
 @-webkit-keyframes changeColorRed {
     0% {background-color:#ff4d4d;}
@@ -30,3 +41,36 @@
     70% {background-color:#ff4d4d;}
     100% {background-color:#ff4d4d;}
   }
+
+@-webkit-keyframes alphaAnimation{
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    50% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 0;
+    }
+}
+@keyframes alphaAnimation{
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    50% {
+        display: block;
+        opacity: 1;
+    }
+
+    100% {
+        display: block;
+        opacity: 0;
+    }
+}
