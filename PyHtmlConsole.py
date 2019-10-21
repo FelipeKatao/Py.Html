@@ -84,7 +84,11 @@ def ExecuteCommand(command):
 
     if command == "create.html.form":
         if(dt._localHtmlFiles!=""):
-            HTML.CreateFormHtml(dt._localHtmlFiles,"",0,",","")
+            args0= input("    >Insert the IdForm: ")
+            argsX = input("   >Insert the index Line: ")
+            argsY = input("   >Act form: ")
+            argz =input("Id name Input form: ")
+            HTML.CreateFormHtml(dt._localHtmlFiles,args0,int(argsX),argsY,argz)
         else:
             pass
         pass
