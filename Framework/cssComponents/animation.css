@@ -1,12 +1,32 @@
 /*Animation default to Py.Html*/
 .redOrangeChangeColor{
-    animation-name: changecolor;
-    animation-duration:infinite;
+    -webkit-animation: changeColorRed 3s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+    animation: changeColorRed 3s;
     animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes changeColorRed {
+    0% {background-color:#ff4d4d;}
+    10% {background-color:#ff3333;}
+    20% {background-color:#ff1a1a;}
+    30% {background-color:#ff0000;}
+    40% {background-color:#e60000;}
+    50% {background-color:#ff1a1a;}
+    60% {background-color:#ff3333;}
+    70% {background-color:#ff4d4d;}
+    100% {background-color:#ff4d4d;}
 
-@keyframes changecolor {
-    from{background-color: red;}
-    to{background-color: orange;}
-}
+  }
+  
+  @keyframes changeColorRed {
+    0% {background-color:#ff4d4d;}
+    10% {background-color:#ff3333;}
+    20% {background-color:#ff1a1a;}
+    30% {background-color:#ff0000;}
+    40% {background-color:#e60000;}
+    50% {background-color:#ff1a1a;}
+    60% {background-color:#ff3333;}
+    70% {background-color:#ff4d4d;}
+    100% {background-color:#ff4d4d;}
+  }
