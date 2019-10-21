@@ -1,4 +1,5 @@
 from Framework import HtmlData
+from Framework import PyHtml
 import os
 import ctypes, sys
 
@@ -13,6 +14,7 @@ argsY=""
 LineIndex=""
 #Create all constructors
 dt=HtmlData.SearchData()
+HTML=PyHtml.HtmlPy()
 
 def main():
     CreateText("start")
