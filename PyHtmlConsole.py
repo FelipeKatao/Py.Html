@@ -4,7 +4,7 @@ import os
 import ctypes, sys
 
 #Command list
-LISTCOMMAND= ["help","create.html","exit","create.html.menu","set.path","link.css"]
+LISTCOMMAND= ["help","create.html","exit","create.html.menu","set.path","link.css","create.element"]
 #var envirioments 
 
 #args for new imputs 
@@ -109,15 +109,32 @@ def ExecuteCommand(command):
         pass
     if command == "link.css":
          if(dt._localHtmlFiles!=""):
-             
-             pass
-         else:
-            args0= input("    >Insert the IdForm: ")
-            argsX = input("   >Insert the index Line: ")
-            argsY = input("   >Act form: ")
-            HTML.linkCssFile(args0,argsX,int(argsY))
-            print("Forms create with susefull")
+            argsY = input("   >Insert the index Line: ")
+            HTML.linkCssFile(dt._localHtmlFiles,dt._localCssFiles,int(argsY))
+            print("Css Link anexed with susefull")             
             pass
+         else:
+            args0= input("    >Insert the Html Path: ")
+            argsX = input("   >Insert the Css Path: ")
+            argsY = input("   >Insert the index Line: ")
+            HTML.linkCssFile(args0,argsX,int(argsY))
+            print("Css Link anexed with susefull")
+            pass
+    if command == "":
+         if(dt._localHtmlFiles!="create.element"):
+            args0= input("    >Insert the Html Path: ")
+            argsX = input("   >Insert the Css Path: ")
+            argsY = input("   >Insert the index Line: ")
+            HTML.linkCssFile(args0,argsX,int(argsY))
+            print("Css Link anexed with susefull")             
+            pass
+         else:
+            args0= input("    >Insert the Html Path: ")
+            argsX = input("   >Insert the Css Path: ")
+            argsY = input("   >Insert the index Line: ")
+            HTML.linkCssFile(args0,argsX,int(argsY))
+            print("Css Link anexed with susefull")
+            pass        
     pass
 
 if __name__ == '__main__':
