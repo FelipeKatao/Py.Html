@@ -9,7 +9,7 @@ class ConsolePy():
 
 
 #Command list
-LISTCOMMAND= ["help","create.html","exit","create.html.menu","set.path","link.css","create.element","create.html.responsive"]
+LISTCOMMAND= ["help","create.html","exit","create.html.menu","create.html.form","set.path","link.css","create.element","create.html.responsive"]
 #var envirioments 
 
 #args for new imputs 
@@ -152,17 +152,18 @@ def ExecuteCommand(command):
          if(dt._localHtmlFiles[con._SETFILE]!="0"):
             argsY = input("   >Insert the scale: ")
             argsE = input("   >Insert the index Line: ")
-            HTML.responsiveWindowMeta(dt._localHtmlFiles[con._SETFILE],int(argsY),int(argsE))
+            HTML.responsiveWindowMeta(dt._localHtmlFiles[con._SETFILE],"'"+argsY+"'",int(argsE))
             print("Responsive meta-creation with sucefull") 
             pass
          else:
             args0= input("    >Insert the Html Path: ")
             argsY = input("   >Insert the scale: ")
             argsE = input("   >Insert the index Line: ")
-            HTML.responsiveWindowMeta(args0,int(argsY),int(argsE))
+            HTML.responsiveWindowMeta(args0,"'"+argsY+"'",int(argsE))
             print("Responsive meta-creation with sucefull") 
             pass  
     pass
+   #Add the funciton for responsive class
 
 if __name__ == '__main__':
     main()
