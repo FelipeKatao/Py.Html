@@ -4,7 +4,7 @@ import os
 import ctypes, sys
 
 #Command list
-LISTCOMMAND= ["help","create.html","exit","create.html.menu","set.path","link.css","create.element"]
+LISTCOMMAND= ["help","create.html","exit","create.html.menu","set.path","link.css","create.element","create.html.responsive"]
 #var envirioments 
 
 #args for new imputs 
@@ -15,9 +15,11 @@ LineIndex=""
 #Create all constructors
 dt=HtmlData.SearchData()
 HTML=PyHtml.HtmlPy()
+_SETFILE=0
 
 def main():
     CreateText("start")
+    dt.createNewFileLocal("0","0","0")
     while(True):
         codInput=input(">")
         CommandList(codInput)
@@ -75,7 +77,7 @@ def ExecuteCommand(command):
       pass
 
     if command == "create.html.menu":
-        if(dt._localHtmlFiles!=""):
+        if(dt._localHtmlFiles[_SETFILE]!="0"):
             argsX = input("   >Id of menu:  ")
             LineIndex = input("  >Line index to create menu: ") 
             HTML.CreateMenuHtml(dt._localHtmlFiles,argsX,int(LineIndex))
@@ -91,12 +93,12 @@ def ExecuteCommand(command):
         pass
 
     if command == "create.html.form":
-        if(dt._localHtmlFiles!=""):
+        if(dt._localHtmlFiles[_SETFILE]!="0"):
             args0= input("    >Insert the IdForm: ")
             argsX = input("   >Insert the index Line: ")
             argsY = input("   >Act form: ")
             argz =input("Id name Input form: ")
-            HTML.CreateFormHtml(dt._localHtmlFiles,args0,int(argsX),argsY,argz)
+            HTML.CreateFormHtml(dt._localHtmlFiles[_SETFILE],args0,int(argsX),argsY,argz)
             print("Forms create with susefull")
         else:
             argsE= input("    >Insert the local Html: ")
@@ -108,9 +110,9 @@ def ExecuteCommand(command):
             print("Forms create with susefull")
         pass
     if command == "link.css":
-         if(dt._localHtmlFiles!=""):
+         if(dt._localHtmlFiles[_SETFILE]!="0"):
             argsY = input("   >Insert the index Line: ")
-            HTML.linkCssFile(dt._localHtmlFiles,dt._localCssFiles,int(argsY))
+            HTML.linkCssFile(dt._localHtmlFiles[_SETFILE],dt._localCssFiles[_SETFILE],int(argsY))
             print("Css Link anexed with susefull")             
             pass
          else:
@@ -121,12 +123,12 @@ def ExecuteCommand(command):
             print("Css Link anexed with susefull")
             pass
     if command == "create.element":
-         if(dt._localHtmlFiles!=""):
+         if(dt._localHtmlFiles[_SETFILE]!="0"):
             argsX = input("   >Insert the ID of element: ")
             argsY = input("   >Insert the type element (ex: <div>): ")
             argsE = input("   >Insert the index Line: ")
             value = input("   >Value of the element: ")
-            HTML.createNewElement(dt._localHtmlFiles,argsX,argsY,int(argsE),value)
+            HTML.createNewElement(dt._localHtmlFiles[_SETFILE],argsX,argsY,int(argsE),value)
             print("Element create with susefull")             
             pass
          else:
@@ -138,6 +140,20 @@ def ExecuteCommand(command):
             HTML.createNewElement(args0,argsX,argsY,int(argsE),value)
             print("Element create with susefull") 
             pass        
+    if command == "create.html.responsive":
+         if(dt._localHtmlFiles[_SETFILE]!="0"):
+            argsY = input("   >Insert the scale: ")
+            argsE = input("   >Insert the index Line: ")
+            HTML.responsiveWindowMeta(dt._localHtmlFiles[_SETFILE],int(argsY),int(argsE))
+            print("Responsive meta-creation with sucefull") 
+            pass
+         else:
+            args0= input("    >Insert the Html Path: ")
+            argsY = input("   >Insert the scale: ")
+            argsE = input("   >Insert the index Line: ")
+            HTML.responsiveWindowMeta(args0,int(argsY),int(argsE))
+            print("Responsive meta-creation with sucefull") 
+            pass  
     pass
 
 if __name__ == '__main__':
