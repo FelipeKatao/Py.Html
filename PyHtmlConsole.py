@@ -121,7 +121,7 @@ def ExecuteCommand(command):
             print("Css Link anexed with susefull")
             pass
     if command == "create.element":
-         if(dt._localHtmlFiles!="create.element"):
+         if(dt._localHtmlFiles!=""):
             argsX = input("   >Insert the ID of element: ")
             argsY = input("   >Insert the type element (ex: <div>): ")
             argsE = input("   >Insert the index Line: ")
