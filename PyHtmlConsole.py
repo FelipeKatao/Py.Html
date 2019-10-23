@@ -4,7 +4,7 @@ import os
 import ctypes, sys
 
 #Command list
-LISTCOMMAND= ["help","create.html","exit","create.html.menu","set.path"]
+LISTCOMMAND= ["help","create.html","exit","create.html.menu","set.path","link.css"]
 #var envirioments 
 
 #args for new imputs 
@@ -90,7 +90,6 @@ def ExecuteCommand(command):
             pass
         pass
 
-      #Utilizar como exemplo de criação este onde elepeccore primeiro o Data
     if command == "create.html.form":
         if(dt._localHtmlFiles!=""):
             args0= input("    >Insert the IdForm: ")
@@ -108,6 +107,17 @@ def ExecuteCommand(command):
             HTML.CreateFormHtml(argsE,args0,int(argsX),argsY,argz)
             print("Forms create with susefull")
         pass
+    if command == "link.css":
+         if(dt._localHtmlFiles!=""):
+             
+             pass
+         else:
+            args0= input("    >Insert the IdForm: ")
+            argsX = input("   >Insert the index Line: ")
+            argsY = input("   >Act form: ")
+            HTML.linkCssFile(args0,argsX,int(argsY))
+            print("Forms create with susefull")
+            pass
     pass
 
 if __name__ == '__main__':
