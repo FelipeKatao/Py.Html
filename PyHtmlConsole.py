@@ -75,12 +75,20 @@ def ExecuteCommand(command):
       pass
 
     if command == "create.html.menu":
-      args0 =input("   >Insert local Html: ")
-      argsX = input("   >Id of menu:  ")
-      LineIndex = input("  >Line index to create menu: ") 
-      HTML.CreateMenuHtml(args0,argsX,int(LineIndex))
-      print("      >Menu create with  sucefull")
-      pass
+        if(dt._localHtmlFiles!=""):
+            argsX = input("   >Id of menu:  ")
+            LineIndex = input("  >Line index to create menu: ") 
+            HTML.CreateMenuHtml(dt._localHtmlFiles,argsX,int(LineIndex))
+            print("      >Menu create with  sucefull")           
+            pass
+        else:
+            args0 =input("   >Insert local Html: ")
+            argsX = input("   >Id of menu:  ")
+            LineIndex = input("  >Line index to create menu: ") 
+            HTML.CreateMenuHtml(args0,argsX,int(LineIndex))
+            print("      >Menu create with  sucefull")
+            pass
+        pass
 
       #Utilizar como exemplo de criação este onde elepeccore primeiro o Data
     if command == "create.html.form":
