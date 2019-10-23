@@ -3,6 +3,11 @@ from Framework import PyHtml
 import os
 import ctypes, sys
 
+class ConsolePy():
+    _SETFILE=0
+    pass
+
+
 #Command list
 LISTCOMMAND= ["help","create.html","exit","create.html.menu","set.path","link.css","create.element","create.html.responsive"]
 #var envirioments 
@@ -15,6 +20,7 @@ LineIndex=""
 #Create all constructors
 dt=HtmlData.SearchData()
 HTML=PyHtml.HtmlPy()
+con=ConsolePy()
 _SETFILE=0
 
 def main():
@@ -61,6 +67,7 @@ def ExecuteCommand(command):
         sys.exit()
 
     if command == "set.path":
+        con._SETFILE+=1
         args0 = input("  >insert Html local File: ")
         argsX = input("  >Insert CSS local file: ")
         argsY = input("  >Insert Js local file: ")
@@ -77,10 +84,10 @@ def ExecuteCommand(command):
       pass
 
     if command == "create.html.menu":
-        if(dt._localHtmlFiles[_SETFILE]!="0"):
+        if(dt._localHtmlFiles[con._SETFILE]!="0"):
             argsX = input("   >Id of menu:  ")
             LineIndex = input("  >Line index to create menu: ") 
-            HTML.CreateMenuHtml(dt._localHtmlFiles,argsX,int(LineIndex))
+            HTML.CreateMenuHtml(dt._localHtmlFiles[con._SETFILE],argsX,int(LineIndex))
             print("      >Menu create with  sucefull")           
             pass
         else:
@@ -93,12 +100,12 @@ def ExecuteCommand(command):
         pass
 
     if command == "create.html.form":
-        if(dt._localHtmlFiles[_SETFILE]!="0"):
+        if(dt._localHtmlFiles[con._SETFILE]!="0"):
             args0= input("    >Insert the IdForm: ")
             argsX = input("   >Insert the index Line: ")
             argsY = input("   >Act form: ")
             argz =input("Id name Input form: ")
-            HTML.CreateFormHtml(dt._localHtmlFiles[_SETFILE],args0,int(argsX),argsY,argz)
+            HTML.CreateFormHtml(dt._localHtmlFiles[con._SETFILE],args0,int(argsX),argsY,argz)
             print("Forms create with susefull")
         else:
             argsE= input("    >Insert the local Html: ")
@@ -110,9 +117,9 @@ def ExecuteCommand(command):
             print("Forms create with susefull")
         pass
     if command == "link.css":
-         if(dt._localHtmlFiles[_SETFILE]!="0"):
+         if(dt._localHtmlFiles[con._SETFILE]!="0"):
             argsY = input("   >Insert the index Line: ")
-            HTML.linkCssFile(dt._localHtmlFiles[_SETFILE],dt._localCssFiles[_SETFILE],int(argsY))
+            HTML.linkCssFile(dt._localHtmlFiles[con._SETFILE],dt._localCssFiles[con._SETFILE],int(argsY))
             print("Css Link anexed with susefull")             
             pass
          else:
@@ -123,12 +130,13 @@ def ExecuteCommand(command):
             print("Css Link anexed with susefull")
             pass
     if command == "create.element":
-         if(dt._localHtmlFiles[_SETFILE]!="0"):
+         print(dt._localHtmlFiles[con._SETFILE])
+         if(dt._localHtmlFiles[con._SETFILE]!="0"):
             argsX = input("   >Insert the ID of element: ")
             argsY = input("   >Insert the type element (ex: <div>): ")
             argsE = input("   >Insert the index Line: ")
             value = input("   >Value of the element: ")
-            HTML.createNewElement(dt._localHtmlFiles[_SETFILE],argsX,argsY,int(argsE),value)
+            HTML.createNewElement(dt._localHtmlFiles[con._SETFILE],argsX,argsY,int(argsE),value)
             print("Element create with susefull")             
             pass
          else:
@@ -141,10 +149,10 @@ def ExecuteCommand(command):
             print("Element create with susefull") 
             pass        
     if command == "create.html.responsive":
-         if(dt._localHtmlFiles[_SETFILE]!="0"):
+         if(dt._localHtmlFiles[con._SETFILE]!="0"):
             argsY = input("   >Insert the scale: ")
             argsE = input("   >Insert the index Line: ")
-            HTML.responsiveWindowMeta(dt._localHtmlFiles[_SETFILE],int(argsY),int(argsE))
+            HTML.responsiveWindowMeta(dt._localHtmlFiles[con._SETFILE],int(argsY),int(argsE))
             print("Responsive meta-creation with sucefull") 
             pass
          else:
