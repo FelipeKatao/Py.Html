@@ -120,20 +120,23 @@ def ExecuteCommand(command):
             HTML.linkCssFile(args0,argsX,int(argsY))
             print("Css Link anexed with susefull")
             pass
-    if command == "":
+    if command == "create.element":
          if(dt._localHtmlFiles!="create.element"):
-            args0= input("    >Insert the Html Path: ")
-            argsX = input("   >Insert the Css Path: ")
-            argsY = input("   >Insert the index Line: ")
-            HTML.linkCssFile(args0,argsX,int(argsY))
-            print("Css Link anexed with susefull")             
+            argsX = input("   >Insert the ID of element: ")
+            argsY = input("   >Insert the type element (ex: <div>): ")
+            argsE = input("   >Insert the index Line: ")
+            value = input("   >Value of the element: ")
+            HTML.createNewElement(dt._localHtmlFiles,argsX,argsY,int(argsE),value)
+            print("Element create with susefull")             
             pass
          else:
             args0= input("    >Insert the Html Path: ")
-            argsX = input("   >Insert the Css Path: ")
-            argsY = input("   >Insert the index Line: ")
-            HTML.linkCssFile(args0,argsX,int(argsY))
-            print("Css Link anexed with susefull")
+            argsX = input("   >Insert the ID of element: ")
+            argsY = input("   >Insert the type element (ex: <div>): ")
+            argsE = input("   >Insert the index Line: ")
+            value = input("   >Value of the element: ")
+            HTML.createNewElement(args0,argsX,argsY,int(argsE),value)
+            print("Element create with susefull") 
             pass        
     pass
 
