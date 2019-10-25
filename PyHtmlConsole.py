@@ -2,7 +2,7 @@ from Framework import HtmlData
 from Framework import PyHtml
 import os
 import ctypes, sys
-
+ 
 class ConsolePy():
     _SETFILE=0
     pass
