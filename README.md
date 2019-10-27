@@ -21,6 +21,7 @@ Algorithm makes an HTML file from scratch starting idea is *organization* where 
 **Development team:**
 
 *[Felipe Catão](https://github.com/FelipeKatao)* - Full Stack Web Developer
+*[Paulo Macedo](https://github.com/PauloAMacedo)* - Python Developer
 
 # Sumary: 
 In this document your can see: 
