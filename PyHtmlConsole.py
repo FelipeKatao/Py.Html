@@ -9,7 +9,7 @@ class ConsolePy():
 
 
 #Command list
-LISTCOMMAND= ["help","create.html","exit","create.html.menu","create.html.form","set.path","link.css","create.element","create.html.responsive","create.css"]
+LISTCOMMAND= ["help","create.html","exit","create.html.menu","create.html.form","set.path","link.css","create.element","create.html.responsive","create.css","create.css.rule.class","create.css.rule.id","responsive.create"]
 #var envirioments 
 
 #args for new imputs 
@@ -168,7 +168,7 @@ def ExecuteCommand(command):
     if command == "create.css.rule.class":
         print("Css create with susefull")             
         pass
-    if command == "reate.css.rule.id":
+    if command == "reate.css.rule.id":  
         print("Css create with susefull")             
         pass
     if command == "responsive.create":
