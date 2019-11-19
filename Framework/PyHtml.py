@@ -86,6 +86,15 @@ class Component():
 
   text=""
   comp=""
+  TemplateCommands=["article","nav","menu"]
+
+  def _verifyCommands(self,listTarget,command):
+    for item in listTarget:
+         if(command == item):
+           return "true"
+           pass
+         pass
+    pass
 
   def _insertCodeCompReader(self,componentTarget,local,LineIndex):
     indexcount=0
@@ -116,20 +125,8 @@ class Component():
         lineIndex {int} -- Select line of your Html code, for Component.
         nameComponent {string} -- Select name valid names: nav , list , article
     """
-
-    if(nameComponent == "article"):
-      self._insertCodeCompReader("Framework\Components\article.html",local,lineIndex)
-      pass
-    if(nameComponent == "nav"):
-      self._insertCodeCompReader("ColocaOlinkAqui",local,lineIndex)
-      pass
-    if(nameComponent == "template-mobile"):
-      #self._insertCodeCompReader("ColocaOlinkAqui",local,lineIndex)      
-      pass    
-    if(nameComponent == "slider"):
-      #Create component slider
-      pass
-    if(nameComponent == "menu"):
-      self._insertCodeCompReader("Framework\Components\nav.html",local,lineIndex)
+    ComInsert=self._verifyCommands(self.TemplateCommands,nameComponent)
+    if(ComInsert == "true"):
+      self._insertCodeCompReader("Framework\Components\""+nameComponent+".html",local,lineIndex)
       pass
   pass
