@@ -22,8 +22,7 @@ Algorithm makes an HTML file from scratch starting idea is *organization* where 
 
 *[Felipe Catão](https://github.com/FelipeKatao)* - Full Stack Web Developer Python and Web
 
-# Sumary: 
-In this document your can see: 
+*[Paulo Macedo](https://github.com/PauloAMacedo)* - Python Developer
 
 **Part one: Basic functions**
 -  How to use Py.html 
