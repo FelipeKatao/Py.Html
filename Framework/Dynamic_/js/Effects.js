@@ -24,3 +24,9 @@ function nextScene(targetScene,gotoScene){
   document.getElementById(targetScene).style.visibility="hidden"
   document.getElementById(gotoScene).style.visibility="visible"
 }
+function hiddenAllScenes(){
+  let diScenes=document.getElementsByClassName('sceneBox')
+  for(let i=0;i<diScenes.length;i++){
+    diScenes[i].style.visibility="hidden"
+  }
+}

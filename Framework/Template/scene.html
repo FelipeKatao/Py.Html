@@ -9,11 +9,12 @@
         <div id="Scene1" class="container-fluid sceneBox">Second Scene here <div id="bt2" class="btn btn-light">Next painel</div></div>
         <script src="/Framework\Dynamic_/js/Effects.js"></script>
         <script>
+            hiddenAllScenes()
             let btact=document.getElementById('bt2')
             let btact0=document.getElementById('bt1')
             document.getElementById("Scene0").style.visibility="hidden"
-            btact.addEventListener('click',function(){nextScene("Scene1","Scene0");console.log("hello")},false)
-            btact0.addEventListener('click',function(){nextScene("Scene0","Scene1");console.log("hello")},false)
+            btact.addEventListener('click',function(){nextScene("Scene1","Scene0")},false)
+            btact0.addEventListener('click',function(){nextScene("Scene0","Scene1")},false)
         </script>
     </body>
 </html>
