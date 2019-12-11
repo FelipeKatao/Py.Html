@@ -19,3 +19,8 @@ function opacityRepeat(target){
 function opacityAnim(target){
   document.getElementById(target).classList.add('animAlpha');
 }
+function nextScene(targetScene,gotoScene){
+  //Thing it: when your implemnt all scenes all stay hidden some frist scene is visible//
+  document.getElementById(targetScene).style.visibility="hidden"
+  document.getElementById(gotoScene).style.visibility="visible"
+}

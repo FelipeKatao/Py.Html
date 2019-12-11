@@ -1,10 +1,19 @@
 <html>
 <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
     <link rel="stylesheet" href="/Framework/cssComponents/templates.css">
     </head>
     <body>
-        <div id="IdYourScene" class="container-fluid sceneBox">Frist scene here</div>
+        <div id="Scene0" class="container-fluid sceneBox">Frist scene here <div id="bt1" class="btn btn-light">Next painel</div> </div>
+        <div id="Scene1" class="container-fluid sceneBox">Second Scene here <div id="bt2" class="btn btn-light">Next painel</div></div>
+        <script src="/Framework\Dynamic_/js/Effects.js"></script>
+        <script>
+            let btact=document.getElementById('bt2')
+            let btact0=document.getElementById('bt1')
+            document.getElementById("Scene0").style.visibility="hidden"
+            btact.addEventListener('click',function(){nextScene("Scene1","Scene0");console.log("hello")},false)
+            btact0.addEventListener('click',function(){nextScene("Scene0","Scene1");console.log("hello")},false)
+        </script>
     </body>
-
 </html>

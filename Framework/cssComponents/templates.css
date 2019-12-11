@@ -50,9 +50,10 @@
      background-color:black;
      color:white;
      height:90vh;
-     width: auto;
+     width: 100%;
      margin: auto;
      text-align: center;
      font-size: 10vh;
      font-family: Arial, Helvetica, sans-serif;
+     position: absolute;
  }
