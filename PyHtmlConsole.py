@@ -81,6 +81,14 @@ def ExecuteCommand(command):
         print("         >The html is read and saved in index : "+ _SETHTML)
         _SETHTML+=1 #indice number
         pass
+    if command == "load.html":
+        args0 = input("  >insert index Html  File: ")
+        try:
+            dt.loadHtml(args0)
+            print("         >HTML the loaded...")
+        except print("         >[ERROR]It  index is empty or break file."):
+            pass
+        pass
     if command == "create.html":
       args0 =input("   >Insert the name Html: ")
       argsX = input("   >Insert local Path:  ")
