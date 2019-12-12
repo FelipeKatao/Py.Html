@@ -24,4 +24,8 @@ class SearchData():
       pass
       self._HtmlFiles.append(text)
       pass
+  def loadHtml(self,indexHtml):
+      print(self._HtmlFiles[indexHtml])
+      return self._HtmlFiles[indexHtml]
+      pass
   pass
