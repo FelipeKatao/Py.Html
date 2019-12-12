@@ -28,4 +28,5 @@ class SearchData():
       print(self._HtmlFiles[indexHtml])
       return self._HtmlFiles[indexHtml]
       pass
+  #Criar um sistema onde o usuario consiga escolher quais nodes pegar#
   pass

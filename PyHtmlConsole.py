@@ -5,11 +5,12 @@ import ctypes, sys
  
 class ConsolePy():
     _SETFILE=0
+    _SETHTML=0
     pass
 
 
 #Command list
-LISTCOMMAND= ["help","create.html","exit","create.html.menu","create.html.form","set.path","link.css","create.element","create.html.responsive","create.css","create.css.rule.class","create.css.rule.id","responsive.create"]
+LISTCOMMAND= ["help","create.html","exit","create.html.menu","create.html.form","set.path","link.css","create.element","create.html.responsive","create.css","create.css.rule.class","create.css.rule.id","responsive.create","load.html","read.html"]
 #var envirioments 
 
 #args for new imputs 
@@ -78,13 +79,13 @@ def ExecuteCommand(command):
     if command == "read.html":
         args0 = input("  >insert Html local File: ")
         dt.readAllHtml(args0)
-        print("         >The html is read and saved in index : "+ _SETHTML)
-        _SETHTML+=1 #indice number
+        print("         >The html is read and saved in index : "+str(con._SETHTML))
+        con._SETHTML+=1 #indice number
         pass
     if command == "load.html":
         args0 = input("  >insert index Html  File: ")
         try:
-            dt.loadHtml(args0)
+            dt.loadHtml(int(args0))
             print("         >HTML the loaded...")
         except print("         >[ERROR]It  index is empty or break file."):
             pass
