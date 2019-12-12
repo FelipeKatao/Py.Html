@@ -51,7 +51,7 @@ class HtmlPy():
       comand=input("> Select your template type: ")
       templateTarget = self._verifyCommands(self._Templates,comand)
       if(templateTarget=="true"):
-        self._BaseElement(LocalFile,"Framework\Template\""+comand+".html",0)
+        self._BaseElement(LocalFile,R"Framework\\Template\\"+comand+".html",0)
         pass
 
     else:
