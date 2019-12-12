@@ -6,6 +6,8 @@ class SearchData():
   _localHtmlFiles=[]
   _localCssFiles=[]
   _localJsFiles=[]
+  #All content of HTML,CC and JS
+  _HtmlFiles=[]
 
   def createNewFileLocal(self,html,css,js):
     if html!="":
@@ -15,4 +17,11 @@ class SearchData():
     if js!="":
       self._localJsFiles.append(js)
     pass
+  def readAllHtml(self,html):
+      text=""
+      with open(html,'r') as f:
+        text= f.readlines()
+      pass
+      self._HtmlFiles.append(text)
+      pass
   pass
