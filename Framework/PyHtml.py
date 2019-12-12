@@ -9,6 +9,14 @@ class HtmlPy():
 
   _LinkElement="<link href={locaLink} rel={typeLink} type={type} />"
   _ScriptElement="<script src={localLink}></script>"
+  _Templates=["sandbox","mobile","scene","model"]
+
+  def _verifyCommands(self,listTarget,command):
+        for item in listTarget:
+         if(command == item):
+           return "true"
+           pass
+         pass
 
   def _BaseElement(self,local,componentTarget,lineIndex):
     text=""
@@ -39,6 +47,13 @@ class HtmlPy():
     #Project\codReadme.md
     if PreCode == 1:
       self._BaseElement(LocalFile,"htmlBase.html",1)
+    if PreCode == 2:
+      comand=input("> Select your template type: ")
+      templateTarget = self._verifyCommands(self._Templates,comand)
+      if(templateTarget=="true"):
+        self._BaseElement(LocalFile,"Framework\Template\""+comand+".html",0)
+        pass
+
     else:
       with open(LocalFile,"w") as f:
         f.write("<html>\n\n</html>")
@@ -128,5 +143,5 @@ class Component():
     ComInsert=self._verifyCommands(self.TemplateCommands,nameComponent)
     if(ComInsert == "true"):
       self._insertCodeCompReader("Framework\Components\""+nameComponent+".html",local,lineIndex)
-      pass
+      pass 
   pass
