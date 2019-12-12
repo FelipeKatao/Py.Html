@@ -22,6 +22,7 @@ dt=HtmlData.SearchData()
 HTML=PyHtml.HtmlPy()
 con=ConsolePy()
 _SETFILE=0
+_SETHTML=0
 
 def main():
     CreateText("start")
@@ -74,7 +75,12 @@ def ExecuteCommand(command):
         dt.createNewFileLocal(args0,argsX,argsY)
         print("         >The local files created: "+args0+"| |"+argsX+"| |"+argsY)
         pass
-
+    if command == "read.html":
+        args0 = input("  >insert Html local File: ")
+        dt.readAllHtml(args0)
+        print("         >The html is read and saved in index : "+ _SETHTML)
+        _SETHTML+=1 #indice number
+        pass
     if command == "create.html":
       args0 =input("   >Insert the name Html: ")
       argsX = input("   >Insert local Path:  ")
