@@ -78,7 +78,7 @@ def ExecuteCommand(command):
     if command == "create.html":
       args0 =input("   >Insert the name Html: ")
       argsX = input("   >Insert local Path:  ")
-      argsY = input("  >Enter 0 or 1 (0: to create empety HTML and 1:to create with html template:  ")
+      argsY = input("  >Enter 0 ,1 or 2 (0: to create empety HTML | 1:to create with html template |2:Create Html With template custom| >  ")
       HTML.CreateNewHtml(args0,argsX,int(argsY))
       print("      >HTML create with  sucefull")
       pass
