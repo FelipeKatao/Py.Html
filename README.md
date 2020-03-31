@@ -1,7 +1,7 @@
 # Py.Html Documentation 
 ### Framework for create web projects with python tecnology.
 [![Build Status](https://travis-ci.org/FelipeKatao/Py.Html.svg?branch=master)](https://travis-ci.org/FelipeKatao/Py.Html)
-
+s
 
 ![Semver](https://img.shields.io/github/issues/FelipeKatao/Py.Html.svg)
 
@@ -175,3 +175,6 @@ For start less functions is important prtatical in Py.Html, why? In your base co
 
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNjcxMzU1NDkzXX0=
+-->
